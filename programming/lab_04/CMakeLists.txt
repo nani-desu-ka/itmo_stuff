@@ -1,5 +1,0 @@
-cmake_minimum_required(VERSION 3.15)
-project(lab_04)
-set(CMAKE_CXX_STANDARD 17)
-include_directories(include)
-add_executable(lab_04 src/main.cpp src/side_lib.cpp include/Interfaces.hpp src/Circle.cpp src/Equil_triangle.cpp)
