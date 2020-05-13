@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lab_04.dir/src/main.cpp.o CMakeFiles/lab_04.dir/src/console_handler.cpp.o  -o lab_04 

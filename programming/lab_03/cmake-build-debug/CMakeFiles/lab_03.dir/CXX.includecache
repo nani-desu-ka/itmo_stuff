@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/functions.h
+
+/home/just/ITMO_lab/lab_03/src/main.cpp
+iostream
+-
+vector
+-
+functions.h
+/home/just/ITMO_lab/lab_03/src/functions.h
+

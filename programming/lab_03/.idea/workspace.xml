@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="lab_03" targetName="lab_03" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a59bccaf-ebb3-4e09-991d-2e778bcccbf4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1Xx7SGO6hdTTlg2krFzi1EJdU8U" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="CMake Application.lab_03">
+    <configuration name="lab_03" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab_03" TARGET_NAME="lab_03" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab_03" RUN_TARGET_NAME="lab_03">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="" workingDirectory="$PROJECT_DIR$" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="lab_03" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="all" workingDirectory="$PROJECT_DIR$" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.lab_03" />
+      <item itemvalue="Makefile.lab_03" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a59bccaf-ebb3-4e09-991d-2e778bcccbf4" name="Default Changelist" comment="" />
+      <created>1581975889388</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581975889388</updated>
+      <workItem from="1581975892627" duration="4021000" />
+      <workItem from="1582113303155" duration="310000" />
+      <workItem from="1582113808246" duration="2095000" />
+      <workItem from="1582116189091" duration="1229000" />
+      <workItem from="1582313972581" duration="48000" />
+      <workItem from="1582659910027" duration="628000" />
+      <workItem from="1582660621618" duration="947000" />
+      <workItem from="1582661826810" duration="3196000" />
+      <workItem from="1582665055159" duration="662000" />
+      <workItem from="1582695195374" duration="186000" />
+      <workItem from="1582695614429" duration="492000" />
+      <workItem from="1582699707137" duration="650000" />
+      <workItem from="1582700575305" duration="1578000" />
+      <workItem from="1582703027784" duration="1080000" />
+      <workItem from="1582799974349" duration="132000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="142" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581976146177">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="142" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1581976146177" />
+    <state x="466" y="125" width="432" height="487" key="FileChooserDialogImpl" timestamp="1582800091517">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="466" y="125" width="432" height="487" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1582800091517" />
+    <state width="1320" height="160" key="GridCell.Tab.0.bottom" timestamp="1582117405988">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1320" height="160" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1582117405988" />
+    <state width="1320" height="160" key="GridCell.Tab.0.center" timestamp="1582117405987">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1320" height="160" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1582117405987" />
+    <state width="1320" height="160" key="GridCell.Tab.0.left" timestamp="1582117405986">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1320" height="160" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1582117405986" />
+    <state width="1320" height="160" key="GridCell.Tab.0.right" timestamp="1582117405987">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1320" height="160" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582117405987" />
+    <state width="640" height="203" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1582012708193">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="640" height="203" key="ImportCMakeProjectWizard.bottomPanel/0.0.1366.768@0.0.1366.768" timestamp="1582012708193" />
+    <state width="640" height="475" key="ImportCMakeProjectWizard.topPanel" timestamp="1582012708192">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="640" height="475" key="ImportCMakeProjectWizard.topPanel/0.0.1366.768@0.0.1366.768" timestamp="1582012708192" />
+    <state x="345" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1582800080194">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="345" y="211" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1582800080194" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1582662769551">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1582662769551" />
+  </component>
+</project>

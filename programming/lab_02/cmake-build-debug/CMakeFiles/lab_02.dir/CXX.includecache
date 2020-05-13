@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/functions.h
+
+/home/just/ITMO_lab/lab_02/src/functions.cpp
+iostream
+-
+cmath
+-
+functions.h
+/home/just/ITMO_lab/lab_02/src/functions.h
+
+/home/just/ITMO_lab/lab_02/src/main.cpp
+iostream
+-
+functions.h
+/home/just/ITMO_lab/lab_02/src/functions.h
+

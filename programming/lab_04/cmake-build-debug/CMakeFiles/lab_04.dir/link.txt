@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lab_04.dir/src/main.cpp.o CMakeFiles/lab_04.dir/src/side_lib.cpp.o CMakeFiles/lab_04.dir/src/Circle.cpp.o CMakeFiles/lab_04.dir/src/Equil_triangle.cpp.o  -o lab_04 
