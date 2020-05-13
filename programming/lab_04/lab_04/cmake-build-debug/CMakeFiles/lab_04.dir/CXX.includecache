@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Circle.hpp
+Interfaces.hpp
+../include/Interfaces.hpp
+
+../include/Equil_triangle.hpp
+Interfaces.hpp
+../include/Interfaces.hpp
+
+../include/Interfaces.hpp
+iostream
+-
+
+../include/side_lib.hpp
+
+C:/Users/user/Desktop/lab_04/lab_04/src/side_lib.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+Interfaces.hpp
+C:/Users/user/Desktop/lab_04/lab_04/src/Interfaces.hpp
+side_lib.hpp
+C:/Users/user/Desktop/lab_04/lab_04/src/side_lib.hpp
+Circle.hpp
+C:/Users/user/Desktop/lab_04/lab_04/src/Circle.hpp
+Equil_triangle.hpp
+C:/Users/user/Desktop/lab_04/lab_04/src/Equil_triangle.hpp
+
