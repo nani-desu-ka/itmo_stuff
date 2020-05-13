@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/just/itmo_lab/graphix/lab_01/src/pnmlib.cpp
+iostream
+-
+pnmlib.h
+/home/just/itmo_lab/graphix/lab_01/src/pnmlib.h
+fstream
+-
+utility
+-
+
+include/pnmlib.h
+

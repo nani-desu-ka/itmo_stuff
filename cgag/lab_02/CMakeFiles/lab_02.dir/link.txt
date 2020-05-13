@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/lab_02.dir/src/main.cpp.o CMakeFiles/lab_02.dir/src/pnmlib_paint.cpp.o  -o lab_02 

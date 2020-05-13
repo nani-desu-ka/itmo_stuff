@@ -1,0 +1,3 @@
+/home/just/itmo_lab/graphix/lab_02/CMakeFiles/rebuild_cache.dir
+/home/just/itmo_lab/graphix/lab_02/CMakeFiles/lab_02.dir
+/home/just/itmo_lab/graphix/lab_02/CMakeFiles/edit_cache.dir
