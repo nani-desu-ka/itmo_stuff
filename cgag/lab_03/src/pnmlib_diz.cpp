@@ -6,13 +6,13 @@
 #include "diz_matrix.hpp"
 
 void image::ordered_diz_f() {
-    double shift = this->bit == 4 ? 0.1 : 0;
+    double temp = this->bit == 4 ? 0.1 : 0;
     for (int i = 0; i < this->row; i++) {
         for (int j = 0; j < this->column; j++) {
             double buffer = (gamma_uncorrect(this->body_char[i][j]) +
                              (static_cast<double>(this->max_color) / bit) *
                              (ordered_diz_mat[i % 8][j % 8] / 64. -
-                              (0.5 + bit / 20.0 + shift))) / this->max_color;
+                              (0.5 + bit / 20.0 + temp))) / this->max_color;
             if (buffer < 0) {
                 buffer = 0;
             }
@@ -26,58 +26,16 @@ void image::ordered_diz_f() {
 }
 
 void image::random_diz_f() {
-    double shift = 0;
-    switch (bit) {
-        case 1:
-            shift = 0.5;
-            break;
-
-        case 2:
-            shift = 0.65;
-            break;
-
-        case 3:
-            shift = 0.8;
-            break;
-
-        case 4:
-            shift = 0.85;
-            break;
-
-        case 5:
-        case 6:
-            shift = 0.9;
-            break;
-
-        case 7:
-            shift = 0.95;
-            break;
-
-        case 8:
-            shift = 1;
-            break;
-    }
+    double temp_max = this->brightness - 1;
+    srand(time(NULL));
     for (int i = 0; i < this->row; i++) {
         for (int j = 0; j < this->column; j++) {
-            double buffer = (gamma_uncorrect(this->body_char[i][j]) +
-                             (static_cast<double>(this->max_color) / this->bit) * (static_cast<double>(std::rand())
-                                                                             / RAND_MAX - shift)) /
-                            this->max_color;
-            if (buffer < 0) {
-                buffer = 0;
-            }
-            buffer *= this->brightness - 1;
-            buffer = std::round(buffer);
-            if (std::round(static_cast<int>(gamma_correct(buffer *
-                                                          (static_cast<double>(this->max_color) /
-                                                           (this->brightness - 1))))) > this->max_color) {
-                std::cout << std::round(gamma_correct(buffer *
-                                                      (static_cast<double>(this->max_color) / (this->brightness - 1))))
-                                                      << std::endl;
-            }
-            this->body_char[i][j] = std::round(
-                    gamma_correct(buffer * (static_cast<double>(this->max_color) /
-                                            (this->brightness - 1))));
+            double new_color = gamma_uncorrect(this->body_char[i][j]) / 255.0;
+            double distortion =  (double) rand() / RAND_MAX - 0.38;
+            double value = new_color + distortion / this->bit;
+            value = std::min(std::max(value, 0.0), 1.0);
+            double new_rand_color = round(value * temp_max);
+            this->body_char[i][j] = gamma_correct(new_rand_color / temp_max * 255);
         }
     }
 }
@@ -87,7 +45,7 @@ void image::floyd_diz_f() {
         for (int j = 0; j < this->column; j++) {
             double buffer = static_cast<double>(gamma_uncorrect(this->body_char[i][j]) +
                                                 error[i][j]) / this->max_color;
-            buffer *= brightness - 1;
+            buffer *= this->brightness - 1;
             buffer = std::round(buffer);
             buffer *= static_cast<double>(this->max_color) / (this->brightness - 1);
             int prev_err = this->body_char[i][j] + error[i][j] - static_cast<int>(buffer);
@@ -190,50 +148,13 @@ void image::atkinson_diz_f() {
 }
 
 void image::halftone_diz_f() {
-    double shift = 0;
-    switch (bit) {
-        case 1:
-            shift = 0.5;
-            break;
-
-        case 2:
-            shift = 0.6;
-            break;
-
-        case 3:
-            shift = 0.65;
-            break;
-
-        case 4:
-            shift = 0.7;
-            break;
-
-        case 5:
-            shift = 0.75;
-            break;
-
-        case 6:
-        case 7:
-            shift = 0.8;
-            break;
-
-        case 8:
-            shift = 0.85;
-            break;
-    }
     for (int i = 0; i < this->row; i++) {
         for (int j = 0; j < this->column; j++) {
-            double buffer = static_cast<double>(gamma_uncorrect(this->body_char[i][j]) +
-                                                (static_cast<double>(this->max_color) / bit) *
-                                                (halftone_diz_mat[i % 4][j % 4] / 16 - shift)) / this->max_color;
-            if (buffer < 0) {
-                buffer = 0;
-            }
-            buffer *= this->brightness - 1;
-            buffer = std::round(buffer);
-            this->body_char[i][j] = static_cast<unsigned char>(std::round(
-                    gamma_correct(buffer * (static_cast<double>(this->max_color) /
-                                            (this->brightness - 1)))));
+            double new_color = gamma_uncorrect(this->body_char[i][j]) / 255.0;
+            double value = new_color + (halftone_diz_mat[i % 4][j % 4] / 16.0 - 0.38) / this->bit;
+            value = std::min(std::max(value, 0.0), 1.0);
+            double newPaletteColor = round(value * this->brightness);
+            this->body_char[i][j] = round(newPaletteColor / this->brightness * 255);
         }
     }
 }
