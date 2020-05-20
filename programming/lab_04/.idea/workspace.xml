@@ -11,7 +11,50 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92810c52-ccfa-416e-9ad9-d7d40df4dfa6" name="Default Changelist" comment="" />
+    <list default="true" id="92810c52-ccfa-416e-9ad9-d7d40df4dfa6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/3.15.3/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/src/Circle.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/src/Equil_triangle.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/src/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/src/side_lib.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/CMakeFiles/lab_04.dir/vc140.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_04/cmake-build-debug/lab_04.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/lab_04/cmake-build-debug/lab_04.cbp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,36 +64,30 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1bq6nKyDrMebHLhXbbsZiCFp45L" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../working_directory/programes/cpp/lab_6" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab_06" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
-    <configuration name="lab_04" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab_04" TARGET_NAME="lab_04" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab_04" RUN_TARGET_NAME="lab_04">
+    <configuration name="lab_04" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab_04" TARGET_NAME="lab_04" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab_04" RUN_TARGET_NAME="lab_04">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -65,16 +102,18 @@
       <workItem from="1589347443186" duration="18000" />
       <workItem from="1589349573229" duration="56000" />
       <workItem from="1589349816570" duration="3450000" />
+      <workItem from="1589357094726" duration="623000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1589353963624">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="526" y="202" key="FileChooserDialogImpl" timestamp="1589357716351">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="526" y="202" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1589357716351" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1589353963624" />
     <state width="1876" height="261" key="GridCell.Tab.0.bottom" timestamp="1589349628931">
       <screen x="0" y="0" width="1920" height="1040" />
