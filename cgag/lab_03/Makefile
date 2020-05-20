@@ -112,17 +112,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab_02
+# Target rules for targets named lab_03
 
 # Build rule for target.
-lab_02: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) lab_02
-.PHONY : lab_02
+lab_03: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) lab_03
+.PHONY : lab_03
 
 # fast build rule for target.
-lab_02\fast:
-	$(MAKE) -f CMakeFiles\lab_02.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_02.dir\build
-.PHONY : lab_02\fast
+lab_03\fast:
+	$(MAKE) -f CMakeFiles\lab_03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_03.dir\build
+.PHONY : lab_03\fast
 
 src\main.obj: src\main.cpp.obj
 
@@ -130,7 +130,7 @@ src\main.obj: src\main.cpp.obj
 
 # target to build an object file
 src\main.cpp.obj:
-	$(MAKE) -f CMakeFiles\lab_02.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_02.dir\src\main.cpp.obj
+	$(MAKE) -f CMakeFiles\lab_03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_03.dir\src\main.cpp.obj
 .PHONY : src\main.cpp.obj
 
 src\main.i: src\main.cpp.i
@@ -139,7 +139,7 @@ src\main.i: src\main.cpp.i
 
 # target to preprocess a source file
 src\main.cpp.i:
-	$(MAKE) -f CMakeFiles\lab_02.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_02.dir\src\main.cpp.i
+	$(MAKE) -f CMakeFiles\lab_03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_03.dir\src\main.cpp.i
 .PHONY : src\main.cpp.i
 
 src\main.s: src\main.cpp.s
@@ -148,35 +148,35 @@ src\main.s: src\main.cpp.s
 
 # target to generate assembly for a file
 src\main.cpp.s:
-	$(MAKE) -f CMakeFiles\lab_02.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_02.dir\src\main.cpp.s
+	$(MAKE) -f CMakeFiles\lab_03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_03.dir\src\main.cpp.s
 .PHONY : src\main.cpp.s
 
-src\pnmlib_paint.obj: src\pnmlib_paint.cpp.obj
+src\pnmlib_diz.obj: src\pnmlib_diz.cpp.obj
 
-.PHONY : src\pnmlib_paint.obj
+.PHONY : src\pnmlib_diz.obj
 
 # target to build an object file
-src\pnmlib_paint.cpp.obj:
-	$(MAKE) -f CMakeFiles\lab_02.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_02.dir\src\pnmlib_paint.cpp.obj
-.PHONY : src\pnmlib_paint.cpp.obj
+src\pnmlib_diz.cpp.obj:
+	$(MAKE) -f CMakeFiles\lab_03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_03.dir\src\pnmlib_diz.cpp.obj
+.PHONY : src\pnmlib_diz.cpp.obj
 
-src\pnmlib_paint.i: src\pnmlib_paint.cpp.i
+src\pnmlib_diz.i: src\pnmlib_diz.cpp.i
 
-.PHONY : src\pnmlib_paint.i
+.PHONY : src\pnmlib_diz.i
 
 # target to preprocess a source file
-src\pnmlib_paint.cpp.i:
-	$(MAKE) -f CMakeFiles\lab_02.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_02.dir\src\pnmlib_paint.cpp.i
-.PHONY : src\pnmlib_paint.cpp.i
+src\pnmlib_diz.cpp.i:
+	$(MAKE) -f CMakeFiles\lab_03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_03.dir\src\pnmlib_diz.cpp.i
+.PHONY : src\pnmlib_diz.cpp.i
 
-src\pnmlib_paint.s: src\pnmlib_paint.cpp.s
+src\pnmlib_diz.s: src\pnmlib_diz.cpp.s
 
-.PHONY : src\pnmlib_paint.s
+.PHONY : src\pnmlib_diz.s
 
 # target to generate assembly for a file
-src\pnmlib_paint.cpp.s:
-	$(MAKE) -f CMakeFiles\lab_02.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_02.dir\src\pnmlib_paint.cpp.s
-.PHONY : src\pnmlib_paint.cpp.s
+src\pnmlib_diz.cpp.s:
+	$(MAKE) -f CMakeFiles\lab_03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_03.dir\src\pnmlib_diz.cpp.s
+.PHONY : src\pnmlib_diz.cpp.s
 
 # Help Target
 help:
@@ -184,15 +184,15 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... lab_02
 	@echo ... edit_cache
+	@echo ... lab_03
 	@echo ... rebuild_cache
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... src/pnmlib_paint.obj
-	@echo ... src/pnmlib_paint.i
-	@echo ... src/pnmlib_paint.s
+	@echo ... src/pnmlib_diz.obj
+	@echo ... src/pnmlib_diz.i
+	@echo ... src/pnmlib_diz.s
 .PHONY : help
 
 

@@ -1,25 +1,24 @@
 #include <iostream>
-#include "pnmlib_paint.h"
+#include "pnmlib_diz.h"
 using namespace std;
 
 int main(int argc, char *argv[]) {
     image src_image;
     double gamma = 1;
-    line new_line(atof(argv[5]), atof(argv[6]), atof(argv[7]),
-            atof(argv[8]), atoi(argv[4]),
-            atoi(argv[3]));
-    if (argc < 9) {
-        cerr << "Incorrect input format" << '\n';
+    if (argc != 7) {
+        cerr << "Incorrect input format (7 arguments needed)" << '\n';
         exit(EXIT_FAILURE);
     }
-    if (argc == 10) {
-        gamma = atof(argv[9]);
-    } else {
-        gamma = 100;
-    }
-
+    gamma = atof(argv[6]);
+    int diz_type = atoi(argv[4]);
+    int bit = atoi(argv[5]);
     src_image.read(argv[1], gamma);
+    if (atoi(argv[3]) > 1 || atoi(argv[3]) < 0) {
+        cerr << "Incorrect input format (gradient only 1 || 0)" << '\n';
+        exit(EXIT_FAILURE);
+    }
+    if (atoi(argv[3])) src_image.gradient();
+    src_image.diz_modification_type(diz_type, bit);
     src_image.write(argv[2]);
-
     return 0;
 }

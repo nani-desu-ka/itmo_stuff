@@ -86,6 +86,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/user/Desktop/itmo_stuff/cgag/lab_03/include/diz_matrix.hpp">
+			<Option target="lab_02"/>
+		</Unit>
 		<Unit filename="C:/Users/user/Desktop/itmo_stuff/cgag/lab_03/src/main.cpp">
 			<Option target="lab_02"/>
 		</Unit>
