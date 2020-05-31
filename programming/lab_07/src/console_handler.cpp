@@ -73,7 +73,7 @@ bool commands () {
                 return true;
         }
     } catch (std::bad_alloc) {
-        std::cerr << "Не удалось выделить память под буфер!" << std::endl;
+        std::cerr << "MEMORY ALLOCATION ERROR!" << std::endl;
         exit(EXIT_FAILURE);
     } catch (Exception &exception) {
         std::cerr << exception.what() << std::endl;
