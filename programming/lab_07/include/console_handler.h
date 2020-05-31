@@ -11,6 +11,7 @@ enum comm_2 {
     get_element_f,
     resize_f,
     print_f,
+    sort_f,
 };
 
 bool commands();

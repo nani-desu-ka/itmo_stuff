@@ -11,8 +11,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edb51193-c252-493f-8739-5b897e3adbb6" name="Default Changelist" comment="lab_07 (circle_buff)">
+    <list default="true" id="edb51193-c252-493f-8739-5b897e3adbb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_07.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_07.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_07.dir/src/console_handler.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_07.dir/src/console_handler.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_07.dir/src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_07.dir/src/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_07.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_07.dir/vc140.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab_07.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab_07.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab_07.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab_07.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab_07.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab_07.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/circular_buffer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/circular_buffer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/console_handler.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/console_handler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/console_handler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/console_handler.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +102,7 @@
       <workItem from="1589349231836" duration="340000" />
       <workItem from="1589353967094" duration="1129000" />
       <workItem from="1590924702148" duration="132000" />
-      <workItem from="1590925016963" duration="14449000" />
+      <workItem from="1590925016963" duration="16519000" />
     </task>
     <task id="LOCAL-00001" summary="lab_07 (circle_buff)">
       <created>1590939678446</created>
@@ -101,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590939678446</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="lab_07 (circle_buff)">
+      <created>1590939929338</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590939929338</updated>
+    </task>
+    <task id="LOCAL-00003" summary="lab_07 (circle_buff)">
+      <created>1590940042386</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590940042386</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,34 +144,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590925286694" />
-    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1590939928523">
+    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1590940041735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="583" y="28" key="CommitChangelistDialog2/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590939928523" />
+    <state x="583" y="28" key="CommitChangelistDialog2/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590940041735" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1589349570951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1589349570951" />
-    <state width="1876" height="46" key="GridCell.Tab.0.bottom" timestamp="1590939610868">
+    <state width="1876" height="483" key="GridCell.Tab.0.bottom" timestamp="1590941984028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="46" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590939610868" />
-    <state width="1876" height="46" key="GridCell.Tab.0.center" timestamp="1590939610868">
+    <state width="1876" height="483" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590941984028" />
+    <state width="1876" height="483" key="GridCell.Tab.0.center" timestamp="1590941984028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="46" key="GridCell.Tab.0.center/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590939610868" />
-    <state width="1876" height="46" key="GridCell.Tab.0.left" timestamp="1590939610868">
+    <state width="1876" height="483" key="GridCell.Tab.0.center/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590941984028" />
+    <state width="1876" height="483" key="GridCell.Tab.0.left" timestamp="1590941984028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="46" key="GridCell.Tab.0.left/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590939610868" />
-    <state width="1876" height="46" key="GridCell.Tab.0.right" timestamp="1590939610868">
+    <state width="1876" height="483" key="GridCell.Tab.0.left/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590941984028" />
+    <state width="1876" height="483" key="GridCell.Tab.0.right" timestamp="1590941984028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="46" key="GridCell.Tab.0.right/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590939610868" />
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1590939940824">
+    <state width="1876" height="483" key="GridCell.Tab.0.right/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590941984028" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1590940046775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590939940824" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1590940046775" />
     <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1589347425984">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include "circular_buffer.hpp"
 #include "console_handler.h"
 #include "exception.hpp"
@@ -16,6 +17,7 @@ bool commands () {
     std::cout << "Get_element - 7" << '\n';
     std::cout << "Resize - 8" << '\n';
     std::cout << "Print - 9" << '\n';
+    std::cout << "Sort - 10" << '\n';
     std::cout << "==============================" << '\n';
     std::cout << "Exit - 0" << '\n';
     std::cout << "~> ";
@@ -67,6 +69,9 @@ bool commands () {
                 return true;
             case print_f:
                 int_buf.print();
+                return true;
+            case sort_f:
+                std::sort(int_buf.begin(), int_buf.end());
                 return true;
             default:
                 std::cout << "========UNKNOWN COMMAND========" << '\n';

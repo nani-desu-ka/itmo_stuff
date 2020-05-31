@@ -166,15 +166,15 @@ public:
                 }
                 _capacity = capacity;
                 _size = capacity;
-                _end = &_body[_capacity];
+                _end = &_body[_size];
             } else {
                 for (int i = 0; i < _size; i++) {
                     _body[i] = temp_body[i];
                 }
                 _capacity = capacity;
-                _end = &_body[_capacity];
+                _end = &_body[_size];
             }
-            _begin = &_body[_capacity];
+            _begin = &_body[0];
             delete [] temp_body;
         }
     }
@@ -194,6 +194,8 @@ public:
     void print() {
         std::cout << "Capacity: " << _capacity << '\n';
         std::cout << "Size: " << _size << '\n';
+        std::cout << "_begin: " << _begin << '\n';
+        std::cout << "_end: " << _end << '\n';
         if (_size != 0) {
             for (int i = 0; i < _size; i++) {
                 std::cout << "[" << _body[i] << "] ";
