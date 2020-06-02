@@ -104,7 +104,7 @@ public:
     }
 
     void insert(int position, T temp_value) {
-        if (position % _size >= 0 && position % _size < _size) {
+        if (position % _size >= 0) {
             if (position  % _size == 0) push_front(temp_value);
             else if (position  % _size == _size - 1 || _size == 0) push_back(temp_value);
             else {
