@@ -1,51 +1,45 @@
 #pragma once
 #include <vector>
 
-enum ColorSpaces {
+enum cs {
     RGB,
     HSL,
     HSV,
-    YCbCr601,
-    YCbCr709,
+    YCbCr_601,
+    YCbCr_709,
     YCoCg,
     CMY,
 };
 
-enum Count {
-    oneFile,
-    threeFiles,
+enum files_amount {
+    solid_file,
+    channels,
+};
+
+struct rgb {
+    unsigned char red;
+    unsigned char green;
+    unsigned char blue;
 };
 
 class image {
 public:
-    void read(const std::string&, double);
-    void write(const std::string&);
+    void read(int, const std::string&, const std::string& = "trash", const std::string& = "trash");
+    void write(int, const std::string&, const std::string& = "trash", const std::string& = "trash");
     void body_reader_char();
+    void body_reader_multiple(const std::string&, const std::string&, const std::string&);
     void body_writer_char(const std::string&);
-    void diz_modification_type(int, int);
-    double to_sRGB(double);
-    double from_sRGB(double);
-    double gamma_correct(double);
-    double gamma_uncorrect(double);
-    void ordered_diz_f();
-    void random_diz_f();
-    void floyd_diz_f();
-    void jarvis_diz_f();
-    void sierra_diz_f();
-    void atkinson_diz_f();
-    void halftone_diz_f();
-    void gradient();
-    void error_filler();
+    void body_writer_multiple(const std::string&, const std::string&, const std::string&);
+    void color_space_update(cs);
+    void cs_convert_raw();
+    void cs_convert_final(cs);
     ~image();
 private:
+    cs color_space;
     int image_type;
-    double gamma;
     std::string file_name;
-    int brightness;
-    int bit;
     int row;
     int column;
     int max_color = 255;
-    int **error;
-    unsigned char **body_char = nullptr;
+    rgb **body_char = nullptr;
 };

@@ -27,7 +27,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeDetermineCompilerABI.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeDetermineCompilerId.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake"
+  "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeFindBinUtils.cmake"
+  "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeFindCodeBlocks.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeGenericSystem.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake"
@@ -39,6 +41,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeTestCCompiler.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeTestCXXCompiler.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeTestCompilerCommon.cmake"
+  "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeUnixFindMake.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/Compiler/ADSP-DetermineCompiler.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
@@ -99,6 +102,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/Platform/Linux.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/Platform/UnixPaths.cmake"
+  "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/ProcessorCount.cmake"
   "/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/SelectLibraryConfigurations.cmake"
   )
 

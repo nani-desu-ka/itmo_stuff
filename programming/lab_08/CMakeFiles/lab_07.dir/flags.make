@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/just/itmo_stuff/programming/lab_07/include 
+CXX_INCLUDES = -I/home/just/itmo_stuff/programming/lab_08/include 
 

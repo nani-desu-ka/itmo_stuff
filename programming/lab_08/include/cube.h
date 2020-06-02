@@ -33,11 +33,12 @@ class rubiks_cube {
 public:
     rubiks_cube();
     void draw();
+    void rotation(int);
+    void find_element(colors, el_type);
     ~rubiks_cube();
 private:
     std::vector<element*> elements;
 };
-
 class corner_element : element {
 public:
     void draw() override;
