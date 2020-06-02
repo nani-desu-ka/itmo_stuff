@@ -123,6 +123,33 @@ lab_07/fast:
 	$(MAKE) -f CMakeFiles/lab_07.dir/build.make CMakeFiles/lab_07.dir/build
 .PHONY : lab_07/fast
 
+src/Corner_element.o: src/Corner_element.cpp.o
+
+.PHONY : src/Corner_element.o
+
+# target to build an object file
+src/Corner_element.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_07.dir/build.make CMakeFiles/lab_07.dir/src/Corner_element.cpp.o
+.PHONY : src/Corner_element.cpp.o
+
+src/Corner_element.i: src/Corner_element.cpp.i
+
+.PHONY : src/Corner_element.i
+
+# target to preprocess a source file
+src/Corner_element.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_07.dir/build.make CMakeFiles/lab_07.dir/src/Corner_element.cpp.i
+.PHONY : src/Corner_element.cpp.i
+
+src/Corner_element.s: src/Corner_element.cpp.s
+
+.PHONY : src/Corner_element.s
+
+# target to generate assembly for a file
+src/Corner_element.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_07.dir/build.make CMakeFiles/lab_07.dir/src/Corner_element.cpp.s
+.PHONY : src/Corner_element.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lab_07"
+	@echo "... src/Corner_element.o"
+	@echo "... src/Corner_element.i"
+	@echo "... src/Corner_element.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

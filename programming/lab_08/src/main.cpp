@@ -2,27 +2,39 @@
 #include <GL/freeglut.h>
 #include <GL/gl.h>
 
-void Update() {
+double rotate_y = 0;
+double rotate_x = 0;
+
+void specialKeys( int key, int x, int y ) {
+    if (key == GLUT_KEY_RIGHT) rotate_y += 2;
+    else if (key == GLUT_KEY_LEFT) rotate_y -= 2;
+    else if (key == GLUT_KEY_UP) rotate_x += 2;
+    else if (key == GLUT_KEY_DOWN) rotate_x -= 2;
+    glutPostRedisplay();
+}
+
+void display() {
     glClearColor(0, 0, 0, 0);
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glColor3f(1, 1, 1);
-    glOrtho(-1, 1, -1, 1, -1, 1);
-    glBegin(GL_POLYGON);
-        glVertex2f(-0.5, -0.5);
-        glVertex2f(-0.5, 0.5);
-        glVertex2f(0.5, 0.5);
-        glVertex2f(0.5, -0.5);
-    glEnd();
+    glLoadIdentity();
+    glRotatef( rotate_x, 1.0, 0.0, 0.0 );
+    glRotatef( rotate_y, 0.0, 1.0, 0.0 );
+
     glFlush();
+    glutSwapBuffers();
 }
 
 int main(int argc, char** argv) {
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_SINGLE);
-    glutInitWindowSize(GLUT_INIT_WINDOW_HEIGHT, GLUT_INIT_WINDOW_HEIGHT);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+    glutInitWindowSize(800, 800);
     glutInitWindowPosition(GLUT_INIT_WINDOW_WIDTH / 2, GLUT_INIT_WINDOW_HEIGHT / 2);
     glutCreateWindow("Custom Rubik's Cube");
-    glutDisplayFunc(Update);
+    glEnable(GL_DEPTH_TEST);
+    glDepthFunc(GL_LESS);
+    glutDisplayFunc(display);
+    glutSpecialFunc(specialKeys);
     glutMainLoop();
     std::cout << "==========Shutting down==========\n";
     return 0;
