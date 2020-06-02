@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lab_07"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/just/itmo_stuff/programming/lab_07"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/just/itmo_stuff/programming/lab_07"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/just/itmo_stuff/programming/lab_07"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab_07">
+				<Option output="/home/just/itmo_stuff/programming/lab_07/lab_07" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/just/itmo_stuff/programming/lab_07"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/just/itmo_stuff/programming/lab_07/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 lab_07"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab_07/fast">
+				<Option output="/home/just/itmo_stuff/programming/lab_07/lab_07" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/just/itmo_stuff/programming/lab_07"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/just/itmo_stuff/programming/lab_07/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 lab_07/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/just/itmo_stuff/programming/lab_07/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/just/itmo_stuff/programming/lab_07/include/cube.h">
+			<Option target="lab_07"/>
+		</Unit>
+		<Unit filename="/home/just/itmo_stuff/programming/lab_07/src/main.cpp">
+			<Option target="lab_07"/>
+		</Unit>
+		<Unit filename="/home/just/itmo_stuff/programming/lab_07/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
