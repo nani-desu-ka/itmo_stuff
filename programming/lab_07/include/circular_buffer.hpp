@@ -41,7 +41,7 @@ public:
         delete [] _body;
     }
 
-// 4. „®áâã¯ ¢ ª®­¥æ, ­ ç «®
+// 4. â€žÂ®Ã¡Ã¢Ã£Â¯ Â¢ ÂªÂ®Â­Â¥Ã¦, Â­Â Ã§Â Â«Â®
     T *begin() { return _begin; }
 
     T *end() { return _end; }
@@ -104,14 +104,14 @@ public:
     }
 
     void insert(int position, T temp_value) {
-        if (position >= 0 && position < _size) {
-            if (position == 0) push_front(temp_value);
-            else if (position == _size - 1 || _size == 0) push_back(temp_value);
+        if (position % _size >= 0) {
+            if (position  % _size == 0) push_front(temp_value);
+            else if (position  % _size == _size - 1 || _size == 0) push_back(temp_value);
             else {
                 push_back(temp_value);
                 int temp_1 = _size - 1;
                 int temp_2 = _size - 2;
-                while (temp_1 != position) {
+                while (temp_1 != position  % _size) {
                     std::swap(_body[temp_1], _body[temp_2]);
                     temp_1--;
                     temp_2--;
