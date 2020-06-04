@@ -137,6 +137,11 @@ void element::draw() {
                     temp_y = j.y;
                     temp_z = (j.z) * cos(_angle) + (j.x) * sin(_angle);
                     break;
+                case CLOCK_rot:
+                    temp_x = (j.x) * cos(_angle) - (j.y) * sin(_angle);
+                    temp_y = (j.y) * cos(_angle) + (j.x) * sin(_angle);
+                    temp_z = j.z;
+                    break;
                 default:
                     temp_x = j.x;
                     temp_y = j.y;

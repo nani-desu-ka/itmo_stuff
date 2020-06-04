@@ -155,6 +155,45 @@ void rubiks_cube::LR(std::vector<int> corners, std::vector<int> edges, int cente
     std::swap(*_elements[2][edges[2]], *_elements[2][edges[3]]);
 }
 
+void rubiks_cube::CLOCK(std::vector<int> corners, std::vector<int> edges, int center, double degree) {
+    double a = degree * (M_PI / 180);
+    _elements[1][center]->_rotation = CLOCK_rot;
+    _elements[1][center]->_angle = a;
+    for (int i = 0; i < 90 / std::abs(degree); i++) {
+        for (auto j : corners) {
+            _elements[0][j]->_rotation = CLOCK_rot;
+            double X = _elements[0][j]->_position.x * cos(a) - _elements[0][j]->_position.y * sin(a);
+            double Y = _elements[0][j]->_position.y * cos(a) + _elements[0][j]->_position.x * sin(a);
+            _elements[0][j]->_position.x = X;
+            _elements[0][j]->_position.y = Y;
+            _elements[0][j]->_angle = a;
+        }
+        for (auto j : edges) {
+            _elements[2][j]->_rotation = CLOCK_rot;
+            double X = _elements[2][j]->_position.x * cos(a) - _elements[2][j]->_position.y * sin(a);
+            double Y = _elements[2][j]->_position.y * cos(a) + _elements[2][j]->_position.x * sin(a);
+            _elements[2][j]->_position.x = X;
+            _elements[2][j]->_position.y = Y;
+            _elements[2][j]->_angle = a;
+        }
+        display();
+    }
+    for (auto j : corners) {
+        _elements[0][j]->_angle = 0;
+    }
+    for (auto j : edges) {
+        _elements[2][j]->_angle = 0;
+    }
+    _elements[1][center]->_angle = 0;
+    std::swap(*_elements[0][corners[0]], *_elements[0][corners[1]]);
+    std::swap(*_elements[0][corners[1]], *_elements[0][corners[2]]);
+    std::swap(*_elements[0][corners[2]], *_elements[0][corners[3]]);
+
+    std::swap(*_elements[2][edges[0]], *_elements[2][edges[1]]);
+    std::swap(*_elements[2][edges[1]], *_elements[2][edges[2]]);
+    std::swap(*_elements[2][edges[2]], *_elements[2][edges[3]]);
+}
+
 //-------------------------------
 void rubiks_cube::RIGHT() {
     std::vector<int> mem = {0, 3, 7, 4};
@@ -193,17 +232,37 @@ void rubiks_cube::UP_R() {
 }
 
 void rubiks_cube::DOWN() {
+    std::vector<int> mem = {2, 6, 7, 3};
+    std::vector<int> mem_2 = {2, 6, 10, 7};
+    LR(mem, mem_2, 4, temp_degree);
+}
+
+void rubiks_cube::DOWN_R() {
     std::vector<int> mem = {2, 3, 7, 6};
     std::vector<int> mem_2 = {2, 7, 10, 6};
     LR(mem, mem_2, 4, -temp_degree);
 }
 
-void rubiks_cube::DOWN_R() {
-    std::vector<int> mem = {2, 6, 7, 3};
-    std::vector<int> mem_2 = {2, 6, 10, 7};
-    LR(mem, mem_2, 4, temp_degree);
+void rubiks_cube::CLOCK_R() {
+    std::vector<int> mem = {0, 1, 2, 3};
+    std::vector<int> mem_2 = {0, 1, 2, 3};
+    CLOCK(mem, mem_2, 0, -temp_degree);
+}
+
+void rubiks_cube::CLOCK_L() {
+    std::vector<int> mem = {0, 3, 2, 1};
+    std::vector<int> mem_2 = {0, 3, 2, 1};
+    CLOCK(mem, mem_2, 0, temp_degree);
 }
 //-------------------------------
+void rubiks_cube::pif_paf() {
+    RIGHT();
+    UP();
+    RIGHT_R();
+    UP_R();
+}
+//-------------------------------
+
 rubiks_cube::~rubiks_cube() {
     for (auto & _element : _elements) {
         _element.clear();

@@ -1,3 +1,0 @@
-/home/just/itmo_stuff/programming/lab_08/CMakeFiles/rebuild_cache.dir
-/home/just/itmo_stuff/programming/lab_08/CMakeFiles/edit_cache.dir
-/home/just/itmo_stuff/programming/lab_08/CMakeFiles/lab_07.dir

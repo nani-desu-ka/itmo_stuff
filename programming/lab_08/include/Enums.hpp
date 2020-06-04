@@ -26,4 +26,5 @@ enum rotation {
     no_rotation,
     UD_rot,
     LR_rot,
+    CLOCK_rot,
 };

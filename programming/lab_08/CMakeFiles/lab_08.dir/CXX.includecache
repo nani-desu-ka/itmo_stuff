@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/just/itmo_stuff/programming/lab_08/src/main.cpp
+iostream
+-
+GL/freeglut.h
+-
+GL/gl.h
+-
+Cube.hpp
+/home/just/itmo_stuff/programming/lab_08/src/Cube.hpp
+display.hpp
+/home/just/itmo_stuff/programming/lab_08/src/display.hpp
+
+include/Color_c.hpp
+
+include/Cube.hpp
+vector
+-
+Enums.hpp
+include/Enums.hpp
+Element.hpp
+include/Element.hpp
+
+include/Element.hpp
+vector
+-
+Point.hpp
+include/Point.hpp
+Enums.hpp
+include/Enums.hpp
+Color_c.hpp
+include/Color_c.hpp
+
+include/Enums.hpp
+
+include/Point.hpp
+
+include/display.hpp
+

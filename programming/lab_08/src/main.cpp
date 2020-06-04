@@ -14,10 +14,10 @@ double rotate_x = 0;
 rubiks_cube temp;
 
 void specialKeys( int key, int x, int y ) {
-    if (key == GLUT_KEY_RIGHT) rotate_y += 2;
-    else if (key == GLUT_KEY_LEFT) rotate_y -= 2;
-    else if (key == GLUT_KEY_UP) rotate_x += 2;
-    else if (key == GLUT_KEY_DOWN) rotate_x -= 2;
+    if (key == GLUT_KEY_RIGHT) rotate_y += 4;
+    else if (key == GLUT_KEY_LEFT) rotate_y -= 4;
+    else if (key == GLUT_KEY_UP) rotate_x += 4;
+    else if (key == GLUT_KEY_DOWN) rotate_x -= 4;
     else if (key == GLUT_KEY_F1) temp.RIGHT();
     else if (key == GLUT_KEY_F2) temp.RIGHT_R();
     else if (key == GLUT_KEY_F3) temp.LEFT();
@@ -26,6 +26,9 @@ void specialKeys( int key, int x, int y ) {
     else if (key == GLUT_KEY_F6) temp.UP_R();
     else if (key == GLUT_KEY_F7) temp.DOWN();
     else if (key == GLUT_KEY_F8) temp.DOWN_R();
+    else if (key == GLUT_KEY_F9) temp.CLOCK_R();
+    else if (key == GLUT_KEY_F10) temp.CLOCK_L();
+    else if (key == GLUT_KEY_F11) temp.pif_paf();
     glutPostRedisplay();
 }
 

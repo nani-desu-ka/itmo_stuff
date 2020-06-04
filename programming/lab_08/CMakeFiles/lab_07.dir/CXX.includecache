@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/just/itmo_stuff/programming/lab_08/src/Corner_element.cpp
+Corner_element.hpp
+/home/just/itmo_stuff/programming/lab_08/src/Corner_element.hpp
+GL/freeglut.h
+-
+GL/gl.h
+-
+
+/home/just/itmo_stuff/programming/lab_08/src/main.cpp
+iostream
+-
+GL/freeglut.h
+-
+GL/gl.h
+-
+Corner_element.hpp
+/home/just/itmo_stuff/programming/lab_08/src/Corner_element.hpp
+
+include/Corner_element.hpp
+Interfaces.hpp
+include/Interfaces.hpp
+
+include/Enums.hpp
+
+include/Interfaces.hpp
+vector
+-
+Point.hpp
+include/Point.hpp
+Enums.hpp
+include/Enums.hpp
+
+include/Point.hpp
+
