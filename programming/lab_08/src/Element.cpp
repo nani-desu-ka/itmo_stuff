@@ -37,9 +37,9 @@ color_c element::color_check(colors needed_col) {
             temp_color.blue = 0;
             return temp_color;
         default:
-            temp_color.red = 0;
-            temp_color.green = 0;
-            temp_color.blue = 0;
+            temp_color.red = 0.1;
+            temp_color.green = 0.1;
+            temp_color.blue = 0.1;
             return  temp_color;
     }
 }

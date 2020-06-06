@@ -18,23 +18,24 @@ void specialKeys( int key, int x, int y ) {
     else if (key == GLUT_KEY_LEFT) rotate_y -= 4;
     else if (key == GLUT_KEY_UP) rotate_x += 4;
     else if (key == GLUT_KEY_DOWN) rotate_x -= 4;
-    else if (key == GLUT_KEY_F1) temp.RIGHT();
-    else if (key == GLUT_KEY_F2) temp.RIGHT_R();
-    else if (key == GLUT_KEY_F3) temp.LEFT();
-    else if (key == GLUT_KEY_F4) temp.LEFT_R();
-    else if (key == GLUT_KEY_F5) temp.UP();
-    else if (key == GLUT_KEY_F6) temp.UP_R();
-    else if (key == GLUT_KEY_F7) temp.DOWN();
-    else if (key == GLUT_KEY_F8) temp.DOWN_R();
-    else if (key == GLUT_KEY_F9) temp.CLOCK_R();
+    else if (key == GLUT_KEY_F1) temp.pif_paf();
+    else if (key == GLUT_KEY_F2) temp.RIGHT();
+    else if (key == GLUT_KEY_F3) temp.RIGHT_R();
+    else if (key == GLUT_KEY_F4) temp.LEFT();
+    else if (key == GLUT_KEY_F5) temp.LEFT_R();
+    else if (key == GLUT_KEY_F6) temp.UP();
+    else if (key == GLUT_KEY_F7) temp.UP_R();
+    else if (key == GLUT_KEY_F8) temp.DOWN();
+    else if (key == GLUT_KEY_F9) temp.DOWN_R();
     else if (key == GLUT_KEY_F10) temp.CLOCK_L();
-    else if (key == GLUT_KEY_F11) temp.pif_paf();
+    else if (key == GLUT_KEY_F11) temp.CLOCK_R();
+    else if (key == GLUT_KEY_F12) temp.all_left();
     glutPostRedisplay();
 }
 
 void display() {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glClearColor(0.5, 0.5, 0.5, 1);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
     glRotatef( rotate_x, 1.0, 0.0, 0.0 );
     glRotatef( rotate_y, 0.0, 1.0, 0.0 );

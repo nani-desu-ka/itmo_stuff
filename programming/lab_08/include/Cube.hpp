@@ -11,6 +11,8 @@ public:
     void UD(std::vector<int>, std::vector<int>, int, double);
     void LR(std::vector<int>, std::vector<int>, int, double);
     void CLOCK(std::vector<int>, std::vector<int>, int, double);
+    void CENTER_UD(std::vector<int>, std::vector<int>, double);
+    void CENTER_LR(std::vector<int>, std::vector<int>, double);
     //----------- Possible directions of rotation
     void UP();
     void UP_R();
@@ -22,6 +24,11 @@ public:
     void DOWN_R();
     void CLOCK_R();
     void CLOCK_L();
+    //-------------- Complex rotation helpers
+    void CENTER_UP();
+    void CENTER_DOWN();
+    void CENTER_LEFT();
+    void CENTER_RIGHT();
     //------------- Complex rotations
     void pif_paf();
     void all_left();
