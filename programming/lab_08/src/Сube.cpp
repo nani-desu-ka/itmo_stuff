@@ -297,7 +297,6 @@ void rubiks_cube::CENTER_RIGHT() {
 }
 
 void rubiks_cube::CENTER_LEFT() {
-    std::cout << "HERE БЛЯТЬ";
     std::vector<int> edges = {3, 11, 9, 1};
     std::vector<int> centers = {0, 3, 5, 2};
     CENTER_LR(edges, centers, -temp_degree);
@@ -322,7 +321,42 @@ void rubiks_cube::all_right() {
     DOWN();
 }
 //-------------------------------
-
+void rubiks_cube::desolver() {
+    srand(time(NULL));
+    for (int i = 0; i < 50; i++) {
+        int temp_rotation = rand() % 10 + 0;
+        switch (temp_rotation) {
+            case right_rot:
+                RIGHT();
+                continue;
+            case right_r_rot:
+                RIGHT_R();
+                continue;
+            case left_rot:
+                LEFT();
+                continue;
+            case left_r_rot:
+                LEFT_R();
+                continue;
+            case up_rot:
+                UP();
+                continue;
+            case down_rot:
+                DOWN();
+                continue;
+            case down_r_rot:
+                DOWN_R();
+                continue;
+            case clock_l_rot:
+                CLOCK_L();
+                continue;
+            case clock_r_rot:
+                CLOCK_R();
+                continue;
+        }
+    }
+}
+//-------------------------------
 rubiks_cube::~rubiks_cube() {
     for (auto & _element : _elements) {
         _element.clear();
