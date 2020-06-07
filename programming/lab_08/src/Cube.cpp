@@ -321,7 +321,7 @@ void rubiks_cube::all_right() {
     DOWN();
 }
 //-------------------------------
-void rubiks_cube::desolver() {
+void rubiks_cube::disassembler() {
     srand(time(NULL));
     for (int i = 0; i < 50; i++) {
         int temp_rotation = rand() % 10 + 0;
