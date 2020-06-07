@@ -30,6 +30,8 @@ void specialKeys( int key, int x, int y ) {
     else if (key == GLUT_KEY_F10) temp.CLOCK_L();
     else if (key == GLUT_KEY_F11) temp.CLOCK_R();
     else if (key == GLUT_KEY_F12) temp.all_left();
+    else if (key == GLUT_KEY_ALT_L) temp.desolver();
+    else if (key == GLUT_KEY_SHIFT_L) exit(EXIT_SUCCESS);
     glutPostRedisplay();
 }
 

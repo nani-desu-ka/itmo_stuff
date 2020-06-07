@@ -35,6 +35,8 @@ public:
     void all_right();
     void all_up();
     void all_down();
+    //-------------- Rubiks desolver
+    void desolver();
     //--------------
     void find_element(colors, el_type);
     ~rubiks_cube();
