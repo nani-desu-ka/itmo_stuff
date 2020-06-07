@@ -31,7 +31,10 @@ void specialKeys( int key, int x, int y ) {
     else if (key == GLUT_KEY_F11) temp.CLOCK_R();
     else if (key == GLUT_KEY_F12) temp.all_left();
     else if (key == GLUT_KEY_ALT_L) temp.desolver();
-    else if (key == GLUT_KEY_SHIFT_L) exit(EXIT_SUCCESS);
+    else if (key == GLUT_KEY_SHIFT_L) {
+        std::cout << "==========Shutting down==========\n";
+        exit(EXIT_SUCCESS);
+    }
     glutPostRedisplay();
 }
 
@@ -69,6 +72,5 @@ int main(int argc, char** argv) {
 //    glutIdleFunc(animate);
 //    startTime = glutGet(GLUT_ELAPSED_TIME);
     glutMainLoop();
-    std::cout << "==========Shutting down==========\n";
     return 0;
 }
