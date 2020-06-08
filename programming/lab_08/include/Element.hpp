@@ -15,4 +15,5 @@ public:
     rotation _rotation = no_rotation;
     Point _position;
     double _angle = 0;
+    bool _right_pos = true;
 };

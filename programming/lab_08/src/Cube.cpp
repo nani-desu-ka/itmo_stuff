@@ -3,7 +3,8 @@
 #include <cmath>
 #include "Enums.hpp"
 #include <iostream>
-double temp_degree = 4.5;
+
+double temp_degree = 15;
 /*------CORNERS------*/
 element temp_cor_0(1, 1, -1, red, blue, black, yellow, black, black, straight);
 element temp_cor_1(-1, 1, -1, red, blue, white, black, black, black, straight);
@@ -102,9 +103,59 @@ void rubiks_cube::UD(std::vector<int> corners, std::vector<int> edges, int cente
     }
     for (auto j : corners) {
         _elements[0][j]->_angle = 0;
+        switch (_elements[0][j]->_orientation) {
+            case straight:
+                if (degree > 0) _elements[0][j]->_orientation = back_side;
+                else _elements[0][j]->_orientation = f_side;
+                continue;
+            case l_side:
+                continue;
+            case r_side:
+                continue;
+            case f_side:
+                if (degree > 0) _elements[0][j]->_orientation = straight;
+                else _elements[0][j]->_orientation = bottom_side;
+                continue;
+            case back_side:
+                if (degree > 0) _elements[0][j]->_orientation = bottom_side;
+                else _elements[0][j]->_orientation = straight;
+                continue;
+            case bottom_side:
+                if (degree > 0) _elements[0][j]->_orientation = f_side;
+                else _elements[0][j]->_orientation = back_side;
+                continue;
+            default:
+                std::cerr << "Impossible orientation";
+                exit(EXIT_FAILURE);
+        }
     }
     for (auto j : edges) {
         _elements[2][j]->_angle = 0;
+        switch (_elements[2][j]->_orientation) {
+            case straight:
+                if (degree > 0) _elements[2][j]->_orientation = back_side;
+                else _elements[2][j]->_orientation = f_side;
+                continue;
+            case l_side:
+                continue;
+            case r_side:
+                continue;
+            case f_side:
+                if (degree > 0) _elements[2][j]->_orientation = straight;
+                else _elements[2][j]->_orientation = bottom_side;
+                continue;
+            case back_side:
+                if (degree > 0) _elements[2][j]->_orientation = bottom_side;
+                else _elements[2][j]->_orientation = straight;
+                continue;
+            case bottom_side:
+                if (degree > 0) _elements[2][j]->_orientation = f_side;
+                else _elements[2][j]->_orientation = back_side;
+                continue;
+            default:
+                std::cerr << "Impossible orientation";
+                exit(EXIT_FAILURE);
+        }
     }
     _elements[1][center]->_angle = 0;
     std::swap(*_elements[0][corners[0]], *_elements[0][corners[1]]);
@@ -141,9 +192,59 @@ void rubiks_cube::LR(std::vector<int> corners, std::vector<int> edges, int cente
     }
     for (auto j : corners) {
         _elements[0][j]->_angle = 0;
+        switch (_elements[0][j]->_orientation) {
+            case straight:
+                continue;
+            case l_side:
+                if (degree > 0) _elements[0][j]->_orientation = f_side;
+                else _elements[0][j]->_orientation = back_side;
+                continue;
+            case r_side:
+                if (degree > 0) _elements[0][j]->_orientation = back_side;
+                else _elements[0][j]->_orientation = f_side;
+                continue;
+            case f_side:
+                if (degree > 0) _elements[0][j]->_orientation = r_side;
+                else _elements[0][j]->_orientation = l_side;
+                continue;
+            case back_side:
+                if (degree > 0) _elements[0][j]->_orientation = l_side;
+                else _elements[0][j]->_orientation = r_side;
+                continue;
+            case bottom_side:
+                continue;
+            default:
+                std::cerr << "Impossible orientation";
+                exit(EXIT_FAILURE);
+        }
     }
     for (auto j : edges) {
         _elements[2][j]->_angle = 0;
+        switch (_elements[2][j]->_orientation) {
+            case straight:
+                continue;
+            case l_side:
+                if (degree > 0) _elements[2][j]->_orientation = f_side;
+                else _elements[2][j]->_orientation = back_side;
+                continue;
+            case r_side:
+                if (degree > 0) _elements[2][j]->_orientation = back_side;
+                else _elements[2][j]->_orientation = f_side;
+                continue;
+            case f_side:
+                if (degree > 0) _elements[2][j]->_orientation = r_side;
+                else _elements[2][j]->_orientation = l_side;
+                continue;
+            case back_side:
+                if (degree > 0) _elements[2][j]->_orientation = l_side;
+                else _elements[2][j]->_orientation = r_side;
+                continue;
+            case bottom_side:
+                continue;
+            default:
+                std::cerr << "Impossible orientation";
+                exit(EXIT_FAILURE);
+        }
     }
     _elements[1][center]->_angle = 0;
     std::swap(*_elements[0][corners[0]], *_elements[0][corners[1]]);
@@ -180,9 +281,59 @@ void rubiks_cube::CLOCK(std::vector<int> corners, std::vector<int> edges, int ce
     }
     for (auto j : corners) {
         _elements[0][j]->_angle = 0;
+        switch (_elements[0][j]->_orientation) {
+            case straight:
+                if (degree > 0) _elements[0][j]->_orientation = l_side;
+                else _elements[0][j]->_orientation = r_side;
+                continue;
+            case l_side:
+                if (degree > 0) _elements[0][j]->_orientation = bottom_side;
+                else _elements[0][j]->_orientation = straight;
+                continue;
+            case r_side:
+                if (degree > 0) _elements[0][j]->_orientation = straight;
+                else _elements[0][j]->_orientation = bottom_side;
+                continue;
+            case f_side:
+                continue;
+            case back_side:
+                continue;
+            case bottom_side:
+                if (degree > 0) _elements[0][j]->_orientation = r_side;
+                else _elements[0][j]->_orientation = l_side;
+                continue;
+            default:
+                std::cerr << "Impossible orientation";
+                exit(EXIT_FAILURE);
+        }
     }
     for (auto j : edges) {
         _elements[2][j]->_angle = 0;
+        switch (_elements[2][j]->_orientation) {
+            case straight:
+                if (degree > 0) _elements[2][j]->_orientation = l_side;
+                else _elements[2][j]->_orientation = r_side;
+                continue;
+            case l_side:
+                if (degree > 0) _elements[2][j]->_orientation = bottom_side;
+                else _elements[2][j]->_orientation = straight;
+                continue;
+            case r_side:
+                if (degree > 0) _elements[2][j]->_orientation = straight;
+                else _elements[2][j]->_orientation = bottom_side;
+                continue;
+            case f_side:
+                continue;
+            case back_side:
+                continue;
+            case bottom_side:
+                if (degree > 0) _elements[2][j]->_orientation = r_side;
+                else _elements[2][j]->_orientation = l_side;
+                continue;
+            default:
+                std::cerr << "Impossible orientation";
+                exit(EXIT_FAILURE);
+        }
     }
     _elements[1][center]->_angle = 0;
     std::swap(*_elements[0][corners[0]], *_elements[0][corners[1]]);
@@ -217,6 +368,31 @@ void rubiks_cube::CENTER_LR(std::vector<int> edges, std::vector<int> centers, do
     }
     for (auto j : edges) {
         _elements[2][j]->_angle = 0;
+        switch (_elements[2][j]->_orientation) {
+            case straight:
+                continue;
+            case l_side:
+                if (degree > 0) _elements[2][j]->_orientation = f_side;
+                else _elements[2][j]->_orientation = back_side;
+                continue;
+            case r_side:
+                if (degree > 0) _elements[2][j]->_orientation = back_side;
+                else _elements[2][j]->_orientation = f_side;
+                continue;
+            case f_side:
+                if (degree > 0) _elements[2][j]->_orientation = r_side;
+                else _elements[2][j]->_orientation = l_side;
+                continue;
+            case back_side:
+                if (degree > 0) _elements[2][j]->_orientation = l_side;
+                else _elements[2][j]->_orientation = r_side;
+                continue;
+            case bottom_side:
+                continue;
+            default:
+                std::cerr << "Impossible orientation";
+                exit(EXIT_FAILURE);
+        }
     }
     for (auto j : centers) {
         _elements[1][j]->_angle = 0;
@@ -242,13 +418,13 @@ void rubiks_cube::RIGHT_R() {
     UD(corners, edges, 3, -temp_degree);
 }
 
-void rubiks_cube::LEFT() {
+void rubiks_cube::LEFT_R() {
     std::vector<int> corners = {1, 2, 6, 5};
     std::vector<int> edges = {1, 6, 9, 5};
     UD(corners, edges, 2, temp_degree);
 }
 
-void rubiks_cube::LEFT_R() {
+void rubiks_cube::LEFT() {
     std::vector<int> corners = {1, 5, 6, 2};
     std::vector<int> edges = {1, 5, 9, 6};
     UD(corners, edges, 2, -temp_degree);
@@ -309,6 +485,13 @@ void rubiks_cube::pif_paf() {
     UP_R();
 }
 
+void rubiks_cube::left_pif_paf() {
+    LEFT_R();
+    UP_R();
+    LEFT();
+    UP();
+}
+
 void rubiks_cube::all_left() {
     UP();
     CENTER_LEFT();
@@ -321,6 +504,12 @@ void rubiks_cube::all_right() {
     DOWN();
 }
 //-------------------------------
+void rubiks_cube::assembler() {
+    cross_iteration();
+    lower_corners_itaration();
+//    middle_edges_iteration();
+}
+
 void rubiks_cube::disassembler() {
     srand(time(NULL));
     for (int i = 0; i < 50; i++) {
@@ -355,6 +544,353 @@ void rubiks_cube::disassembler() {
                 continue;
         }
     }
+    for (auto &i : _elements) {
+        for (auto &j : i) {
+            j->_right_pos = false;
+        }
+    }
+}
+//-------------------------------
+void rubiks_cube::cross_iteration() {
+  while (!_elements[2][2]->_right_pos || !_elements[2][7]->_right_pos || !_elements[2][6]->_right_pos ||
+  !_elements[2][10]->_right_pos) {
+      int element_index = find_element(green, edge_);
+      if (element_index == 2 || element_index == 6 || element_index == 7 || element_index == 10) {
+          if (element_index == 6) all_right();
+          else if (element_index == 7) all_left();
+          else if (element_index == 10) {
+              all_left();
+              all_left();
+          }
+          element_index = 2;
+          if (_elements[2][element_index]->_orientation == straight) {
+              bool right_center = false;
+              for (int i = 0; i < 6; i++)
+                  for (int j = 0; j < 6; j++) {
+                      if (_elements[1][0]->poly_color[i] == _elements[2][element_index]->poly_color[j] &&
+                          _elements[1][0]->poly_color[i] != black)
+                          right_center = true;
+                  }
+              if (!right_center) {
+                  CLOCK_L();
+                  CLOCK_L();
+                  continue;
+              } else {
+                  _elements[2][element_index]->_right_pos = true;
+                  continue;
+              }
+          } else {
+              CLOCK_L();
+              pif_paf();
+              UP();
+              CLOCK_L();
+              CLOCK_L();
+              continue;
+          }
+      }
+      if (element_index == 3) {
+          element_index = element_raiser();
+      } else if (element_index == 1) {
+          all_right();
+          element_index = element_raiser();
+      } else if (element_index == 9) {
+          all_right();
+          all_right();
+          element_index = element_raiser();
+      } else if (element_index == 11) {
+          all_left();
+          element_index = element_raiser();
+      }
+      if (element_index == 4) {
+          UP();
+      } else if (element_index == 5) {
+          UP_R();
+      } else if (element_index == 8) {
+          UP();
+          UP();
+      }
+      element_index = 0;
+      bool right_center = false;
+      while (!right_center) {
+          for (int i = 0; i < 6; i++)
+              for (int j = 0; j < 6; j++) {
+                  if (_elements[1][0]->poly_color[i] == _elements[2][element_index]->poly_color[j] &&
+                      _elements[1][0]->poly_color[i] != black)
+                      right_center = true;
+              }
+          if (!right_center) {
+              DOWN();
+              CENTER_RIGHT();
+          }
+      }
+      if (_elements[2][element_index]->_orientation == bottom_side) {
+          CLOCK_L();
+          CLOCK_L();
+      } else {
+          CLOCK_R();
+          CENTER_LEFT();
+          CLOCK_L();
+          CENTER_RIGHT();
+      }
+      _elements[2][2]->_right_pos = true;
+  }
+  std::cout << "CROSS DONE!" << '\n';
+}
+
+void rubiks_cube::lower_corners_itaration() {
+    while (!_elements[0][2]->_right_pos || !_elements[0][3]->_right_pos || !_elements[0][6]->_right_pos ||
+           !_elements[0][7]->_right_pos) {
+        int element_index = find_element(green, corner_);
+        if (element_index == 2 || element_index == 6 || element_index == 7 || element_index == 3) {
+            if (element_index == 2) all_right();
+            else if (element_index == 7) all_left();
+            else if (element_index == 6) {
+                all_left();
+                all_left();
+            }
+            element_index = 3;
+            if (_elements[0][element_index]->_orientation == straight) {
+                bool right_center_1 = false;
+                bool right_center_2 = false;
+                for (int i = 0; i < 6; i++)
+                    for (int j = 0; j < 6; j++) {
+                        if (_elements[1][0]->poly_color[i] == _elements[0][element_index]->poly_color[j] &&
+                            _elements[1][0]->poly_color[i] != black)
+                            right_center_1 = true;
+                    }
+                for (int i = 0; i < 6; i++)
+                    for (int j = 0; j < 6; j++) {
+                        if (_elements[1][3]->poly_color[i] == _elements[0][element_index]->poly_color[j] &&
+                            _elements[1][3]->poly_color[i] != black)
+                            right_center_2 = true;
+                    }
+                if (!right_center_1 || !right_center_2) {
+                    pif_paf();
+                } else {
+                    _elements[0][element_index]->_right_pos = true;
+                }
+            } else {
+                if (element_index == 2) {
+                    all_right();
+                    element_index = 3;
+                } else if (element_index == 6) {
+                    all_right();
+                    all_right();
+                    element_index = 3;
+                } else if (element_index == 7) {
+                    all_left();
+                    element_index = 3;
+                }
+                switch (_elements[0][element_index]->_orientation) {
+                    case back_side:
+                        for (int i = 0; i < 4; i++)
+                            pif_paf();
+                        _elements[0][3]->_right_pos = true;
+                        continue;
+                    case l_side:
+                        for (int i = 0; i < 2; i++)
+                            pif_paf();
+                        _elements[0][3]->_right_pos = true;
+                        continue;
+                    case straight:
+                        _elements[0][3]->_right_pos = true;
+                        continue;
+                }
+            }
+            continue;
+        }
+        if (element_index == 4) {
+            all_left();
+        } else if (element_index == 5) {
+            all_right();
+            all_right();
+        } else if (element_index == 1) {
+            all_right();
+        }
+        element_index = 0;
+        bool right_center_1 = false;
+        bool right_center_2 = false;
+        while (!right_center_2 || !right_center_1) {
+            right_center_1 = false;
+            right_center_2 = false;
+            for (int i = 0; i < 6; i++)
+                for (int j = 0; j < 6; j++) {
+                    if (_elements[1][0]->poly_color[i] == _elements[0][element_index]->poly_color[j] &&
+                        _elements[1][0]->poly_color[i] != black)
+                        right_center_1 = true;
+                }
+            for (int i = 0; i < 6; i++)
+                for (int j = 0; j < 6; j++) {
+                    if (_elements[1][3]->poly_color[i] == _elements[0][element_index]->poly_color[j] &&
+                        _elements[1][3]->poly_color[i] != black)
+                        right_center_2 = true;
+                }
+            if (!right_center_1 || !right_center_2) {
+                DOWN();
+                CENTER_RIGHT();
+            }
+        }
+        switch (_elements[0][0]->_orientation) {
+            case f_side:
+                std::cerr << "FRONT" << '\n';
+                exit(EXIT_FAILURE);
+            case r_side:
+                std::cerr << "R" << '\n';
+                exit(EXIT_FAILURE);
+            case bottom_side:
+                for (int i = 0; i < 3; i++)
+                    pif_paf();
+                _elements[0][3]->_right_pos = true;
+                continue;
+            case straight:
+                std::cerr << "WTF X2?!!" << '\n';
+                exit(EXIT_FAILURE);
+            case l_side:
+                pif_paf();
+                _elements[0][3]->_right_pos = true;
+                continue;
+            case back_side:
+                for (int i = 0; i < 5; i++)
+                    pif_paf();
+                _elements[0][3]->_right_pos = true;
+                continue;
+            default:
+                std::cerr << "WTF?!!!" << '\n';
+                exit(EXIT_FAILURE);
+        }
+    }
+    std::cout << "LOWER CORNERS DONE!" << '\n';
+}
+
+void  rubiks_cube::middle_edges_iteration() {
+    while (!_elements[2][1]->_right_pos || !_elements[2][3]->_right_pos || !_elements[2][9]->_right_pos ||
+           !_elements[2][11]->_right_pos) {
+        if (_elements[2][0]->poly_color[1] == black) {
+            std::cout << "HERE" << '\n';
+            bool right_center = false;
+            while (!right_center) {
+                for (int i = 0; i < 6; i++) {
+                    for (int j = 0; j < 6; j++) {
+                        if (_elements[2][0]->poly_color[i] == _elements[1][0]->poly_color[j] &&
+                        _elements[2][0]->poly_color[i] != black) {
+                            right_center = true;
+                        }
+                    }
+                    if (!right_center) {
+                        DOWN();
+                        CENTER_RIGHT();
+                    }
+                }
+            }
+            bool temp_color = false;
+            switch (_elements[2][0]->_orientation) {
+                case l_side:
+                    for (int i = 0; i < 6; i++) {
+                        for (int j = 0; i < 6; j++) {
+                            if (_elements[2][0]->poly_color[i] == _elements[1][3]->poly_color[i] &&
+                                _elements[2][0]->poly_color[i] != black) {
+                                temp_color = true;
+                            }
+                        }
+                    }
+                    if (!temp_color) {
+                        DOWN();
+                        CENTER_RIGHT();
+                    }
+                    UP();
+                    pif_paf();
+                    all_right();
+                    left_pif_paf();
+                    all_left();
+                    _elements[2][3]->_right_pos = true;
+                    continue;
+                case r_side:
+                    for (int i = 0; i < 6; i++) {
+                        for (int j = 0; i < 6; j++) {
+                            if (_elements[2][0]->poly_color[i] == _elements[1][2]->poly_color[i] &&
+                                _elements[2][0]->poly_color[i] != black) {
+                                temp_color = true;
+                            }
+                        }
+                    }
+                    if (!temp_color) {
+                        DOWN_R();
+                        CENTER_LEFT();
+                    }
+                    UP_R();
+                    left_pif_paf();
+                    all_left();
+                    pif_paf();
+                    all_right();
+                    _elements[2][3]->_right_pos = true;
+                    continue;
+            }
+        } else {
+            std::cout << "HERE_2" << '\n';
+            bool temp_not_blue = false;
+            for (int i = 0; i < 4; i++) {
+                UP();
+                if (_elements[2][0]->poly_color[1] == black) {
+                   temp_not_blue = true;
+                   break;
+                }
+            }
+            if (temp_not_blue) {
+                continue;
+            } else {
+                while (_elements[2][3]->_right_pos) {
+                    DOWN();
+                    CENTER_RIGHT();
+                }
+                pif_paf();
+                all_left();
+                left_pif_paf();
+                all_right();
+            }
+        }
+    }
+    std::cout << "MIDDLE EDGES DONE!" << '\n';
+}
+//-------------------------------
+int rubiks_cube::find_element(colors temp_color, el_type temp_type) {
+    int temp_index = 0;
+    switch (temp_type) {
+       case edge_:
+           temp_index = 2;
+           break;
+       case corner_:
+           temp_index = 0;
+           break;
+       case center_:
+           temp_index = 1;
+           break;
+        default:
+            std::cerr << "Incorrect el_type" << '\n';
+            exit(EXIT_FAILURE);
+    }
+    for (int i = 0; i < _elements[temp_index].size(); i++) {
+        if (!_elements[temp_index][i]->_right_pos && (_elements[temp_index][i]->poly_color[0] == temp_color ||
+                _elements[temp_index][i]->poly_color[1] == temp_color ||
+                _elements[temp_index][i]->poly_color[2] == temp_color ||
+                _elements[temp_index][i]->poly_color[3] == temp_color ||
+                _elements[temp_index][i]->poly_color[4] == temp_color ||
+                _elements[temp_index][i]->poly_color[5] == temp_color)) return i;
+    }
+}
+
+int rubiks_cube::element_raiser() {
+    int turn_amount = 0;
+    if (!_elements[2][2]->_right_pos) {
+        CLOCK_L();
+    } else {
+        while (_elements[2][2]->_right_pos) {
+            DOWN_R();
+            turn_amount++;
+        }
+        CLOCK_L();
+        for (int i = 0; i < turn_amount; i++) DOWN();
+    }
+    return 0;
 }
 //-------------------------------
 rubiks_cube::~rubiks_cube() {

@@ -11,16 +11,20 @@ enum colors {
 };
 
 enum el_type {
-    _corner,
-    _edge,
-    _center,
+    corner_,
+    edge_,
+    center_,
 };
 
 enum orientation {
     straight,
     l_side,
-    r_sight,
+    r_side,
+    f_side,
+    back_side,
+    bottom_side,
 };
+
 
 enum rotation {
     no_rotation,

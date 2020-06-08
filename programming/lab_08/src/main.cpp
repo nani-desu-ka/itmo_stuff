@@ -19,17 +19,7 @@ void specialKeys( int key, int x, int y ) {
     else if (key == GLUT_KEY_UP) rotate_x += 4;
     else if (key == GLUT_KEY_DOWN) rotate_x -= 4;
     else if (key == GLUT_KEY_F1) temp.pif_paf();
-    else if (key == GLUT_KEY_F2) temp.RIGHT();
-    else if (key == GLUT_KEY_F3) temp.RIGHT_R();
-    else if (key == GLUT_KEY_F4) temp.LEFT();
-    else if (key == GLUT_KEY_F5) temp.LEFT_R();
-    else if (key == GLUT_KEY_F6) temp.UP();
-    else if (key == GLUT_KEY_F7) temp.UP_R();
-    else if (key == GLUT_KEY_F8) temp.DOWN();
-    else if (key == GLUT_KEY_F9) temp.DOWN_R();
-    else if (key == GLUT_KEY_F10) temp.CLOCK_L();
-    else if (key == GLUT_KEY_F11) temp.CLOCK_R();
-    else if (key == GLUT_KEY_F12) temp.all_left();
+    else if (key == GLUT_KEY_CTRL_L) temp.assembler();
     else if (key == GLUT_KEY_ALT_L) temp.disassembler();
     else if (key == GLUT_KEY_SHIFT_L) {
         std::cout << "==========Shutting down==========\n";
