@@ -507,7 +507,12 @@ void rubiks_cube::all_right() {
 void rubiks_cube::assembler() {
     cross_iteration();
     lower_corners_itaration();
-//    middle_edges_iteration();
+    middle_edges_iteration();
+    top_figure_solver();
+    std::cout << "TOP CROSS DONE!" << '\n';
+    top_cross_reposition_iteration();
+    top_corners_positioning_iteration();
+    top_corners_orientation_iteration();
 }
 
 void rubiks_cube::disassembler() {
@@ -547,6 +552,7 @@ void rubiks_cube::disassembler() {
     for (auto &i : _elements) {
         for (auto &j : i) {
             j->_right_pos = false;
+            j->_corners_position = false;
         }
     }
 }
@@ -766,7 +772,6 @@ void  rubiks_cube::middle_edges_iteration() {
     while (!_elements[2][1]->_right_pos || !_elements[2][3]->_right_pos || !_elements[2][9]->_right_pos ||
            !_elements[2][11]->_right_pos) {
         if (_elements[2][0]->poly_color[1] == black) {
-            std::cout << "HERE" << '\n';
             bool right_center = false;
             while (!right_center) {
                 for (int i = 0; i < 6; i++) {
@@ -776,21 +781,19 @@ void  rubiks_cube::middle_edges_iteration() {
                             right_center = true;
                         }
                     }
-                    if (!right_center) {
-                        DOWN();
-                        CENTER_RIGHT();
-                    }
+                }
+                if (!right_center) {
+                    DOWN();
+                    CENTER_RIGHT();
                 }
             }
             bool temp_color = false;
             switch (_elements[2][0]->_orientation) {
                 case l_side:
                     for (int i = 0; i < 6; i++) {
-                        for (int j = 0; i < 6; j++) {
-                            if (_elements[2][0]->poly_color[i] == _elements[1][3]->poly_color[i] &&
-                                _elements[2][0]->poly_color[i] != black) {
-                                temp_color = true;
-                            }
+                        if (_elements[2][0]->poly_color[i] == _elements[1][3]->poly_color[i] &&
+                            _elements[2][0]->poly_color[i] != black) {
+                            temp_color = true;
                         }
                     }
                     if (!temp_color) {
@@ -799,18 +802,16 @@ void  rubiks_cube::middle_edges_iteration() {
                     }
                     UP();
                     pif_paf();
-                    all_right();
-                    left_pif_paf();
                     all_left();
+                    left_pif_paf();
+                    all_right();
                     _elements[2][3]->_right_pos = true;
                     continue;
                 case r_side:
                     for (int i = 0; i < 6; i++) {
-                        for (int j = 0; i < 6; j++) {
-                            if (_elements[2][0]->poly_color[i] == _elements[1][2]->poly_color[i] &&
-                                _elements[2][0]->poly_color[i] != black) {
-                                temp_color = true;
-                            }
+                        if (_elements[2][0]->poly_color[i] == _elements[1][2]->poly_color[i] &&
+                            _elements[2][0]->poly_color[i] != black) {
+                            temp_color = true;
                         }
                     }
                     if (!temp_color) {
@@ -819,14 +820,15 @@ void  rubiks_cube::middle_edges_iteration() {
                     }
                     UP_R();
                     left_pif_paf();
-                    all_left();
-                    pif_paf();
                     all_right();
+                    pif_paf();
                     _elements[2][3]->_right_pos = true;
+                    continue;
+                default:
+                    std::cout << "RETARD ALARM" <<'\n';
                     continue;
             }
         } else {
-            std::cout << "HERE_2" << '\n';
             bool temp_not_blue = false;
             for (int i = 0; i < 4; i++) {
                 UP();
@@ -850,6 +852,255 @@ void  rubiks_cube::middle_edges_iteration() {
         }
     }
     std::cout << "MIDDLE EDGES DONE!" << '\n';
+}
+
+void rubiks_cube::top_figure_solver() {
+    while (true) {
+        for (int i = 0; i < 4; i++) {
+            if (_elements[2][5]->_orientation == straight && _elements[2][4]->_orientation == straight) {
+                CLOCK_R();
+                pif_paf();
+                CLOCK_L();
+                return;
+            }
+            UP();
+        }
+        for (int i = 0; i < 4; i++) {
+            if (_elements[2][5]->_orientation == straight && _elements[2][8]->_orientation == straight) {
+                CLOCK_R();
+                pif_paf();
+                pif_paf();
+                CLOCK_L();
+                return;
+            }
+            UP();
+        }
+        CLOCK_R();
+        pif_paf();
+        CLOCK_L();
+    }
+}
+
+void rubiks_cube::top_cross_reposition_iteration() {
+    while (!_elements[2][0]->_right_pos || !_elements[2][4]->_right_pos || !_elements[2][5]->_right_pos ||
+            !_elements[2][8]->_right_pos) {
+        bool first_one = false;
+        bool second_one = false;
+        bool third_one = false;
+        bool fourth_one = false;
+        for (int j = 0; j < 6; j++) {
+            if (_elements[2][4]->poly_color[j] == _elements[1][3]->poly_color[j] &&
+                _elements[2][4]->poly_color[j] != black) {
+                first_one = true;
+            }
+        }
+        for (int j = 0; j < 6; j++) {
+            if (_elements[2][0]->poly_color[j] == _elements[1][0]->poly_color[j] &&
+                _elements[2][0]->poly_color[j] != black) {
+                second_one = true;
+            }
+        }
+        for (int j = 0; j < 6; j++) {
+            if (_elements[2][5]->poly_color[j] == _elements[1][2]->poly_color[j] &&
+                _elements[2][5]->poly_color[j] != black) {
+                third_one = true;
+            }
+        }
+        for (int j = 0; j < 6; j++) {
+            if (_elements[2][8]->poly_color[j] == _elements[1][5]->poly_color[j] &&
+                _elements[2][8]->poly_color[j] != black) {
+                fourth_one = true;
+            }
+        }
+        if (first_one && second_one && third_one && fourth_one) {
+            _elements[2][0]->_right_pos = true;
+            _elements[2][4]->_right_pos = true;
+            _elements[2][5]->_right_pos = true;
+            _elements[2][8]->_right_pos = true;
+            break;
+        }
+        CENTER_RIGHT();
+        DOWN();
+        for (int i = 0; i < 4; i++) {
+            bool first_element = false;
+            bool second_element = false;
+            bool third_element = false;
+            for (int j = 0; j < 6; j++) {
+                if (_elements[2][4]->poly_color[j] == _elements[1][3]->poly_color[j] &&
+                    _elements[2][4]->poly_color[j] != black) {
+                    first_element = true;
+                }
+            }
+            if (!first_element) {
+                UP();
+                continue;
+            }
+            for (int j = 0; j < 6; j++) {
+                if (_elements[2][8]->poly_color[j] == _elements[1][5]->poly_color[j] &&
+                    _elements[2][8]->poly_color[j] != black) {
+                    second_element = true;
+                }
+            }
+            if (second_element) {
+                RIGHT();
+                UP();
+                RIGHT_R();
+                UP();
+                RIGHT();
+                UP();
+                UP();
+                RIGHT_R();
+                UP();
+                break;
+            }
+            for (int j = 0; j < 6; j++) {
+                if (_elements[2][5]->poly_color[j] == _elements[1][2]->poly_color[j] &&
+                    _elements[2][5]->poly_color[j] != black) {
+                    third_element = true;
+                }
+            }
+            if (third_element) {
+                RIGHT();
+                UP();
+                RIGHT_R();
+                UP();
+                RIGHT();
+                UP();
+                UP();
+                RIGHT_R();
+                UP();
+                break;
+            }
+        }
+    }
+    std::cout << "TOP CROSS SET CORRECTLY" << '\n';
+}
+
+void rubiks_cube::top_corners_positioning_iteration() {
+    while (!_elements[0][0]->_corners_position || !_elements[0][4]->_corners_position ||
+    !_elements[0][5]->_corners_position || !_elements[0][1]->_corners_position) {
+        bool first_col = false;
+        bool second_col = false;
+        bool first_corner = false;
+        bool second_corner = false;
+        bool third_corner = false;
+        bool fourth_corner = false;
+        for (int j = 0; j < 6; j++) {
+            if (_elements[0][1]->poly_color[j] == _elements[1][0]->poly_color[j] &&
+                _elements[0][1]->poly_color[j] != black) {
+                first_col = true;
+            }
+        }
+        for (int j = 0; j < 6; j++) {
+            if (_elements[0][1]->poly_color[j] == _elements[1][2]->poly_color[j] &&
+                _elements[0][1]->poly_color[j] != black) {
+                second_col = true;
+            }
+        }
+        if (second_col && first_col) {
+            first_corner = true;
+        }
+        first_col = false;
+        second_col = false;
+        for (int j = 0; j < 6; j++) {
+            if (_elements[0][0]->poly_color[j] == _elements[1][0]->poly_color[j] &&
+                _elements[0][0]->poly_color[j] != black) {
+                first_col = true;
+            }
+        }
+        for (int j = 0; j < 6; j++) {
+            if (_elements[0][0]->poly_color[j] == _elements[1][3]->poly_color[j] &&
+                _elements[0][0]->poly_color[j] != black) {
+                second_col = true;
+            }
+        }
+        if (second_col && first_col) {
+            second_corner = true;
+        }
+        first_col = false;
+        second_col = false;
+        for (int j = 0; j < 6; j++) {
+            if (_elements[0][4]->poly_color[j] == _elements[1][5]->poly_color[j] &&
+                _elements[0][4]->poly_color[j] != black) {
+                first_col = true;
+            }
+        }
+        for (int j = 0; j < 6; j++) {
+            if (_elements[0][4]->poly_color[j] == _elements[1][3]->poly_color[j] &&
+                _elements[0][4]->poly_color[j] != black) {
+                second_col = true;
+            }
+        }
+        if (second_col && first_col) {
+            third_corner = true;
+        }
+        first_col = false;
+        second_col = false;
+        for (int j = 0; j < 6; j++) {
+            if (_elements[0][5]->poly_color[j] == _elements[1][2]->poly_color[j] &&
+                _elements[0][5]->poly_color[j] != black) {
+                first_col = true;
+            }
+        }
+        for (int j = 0; j < 6; j++) {
+            if (_elements[0][5]->poly_color[j] == _elements[1][5]->poly_color[j] &&
+                _elements[0][5]->poly_color[j] != black) {
+                second_col = true;
+            }
+        }
+        if (second_col && first_col) {
+            fourth_corner = true;
+        }
+        if (first_corner && second_corner && third_corner && fourth_corner) {
+            _elements[0][0]->_corners_position = true;
+            _elements[0][4]->_corners_position = true;
+            _elements[0][5]->_corners_position = true;
+            _elements[0][1]->_corners_position = true;
+            std::cout << "TOP CORNERS SET" << '\n';
+            break;
+        }
+        for (int i = 0; i < 4; i++) {
+            bool first_color = false;
+            bool second_color = false;
+            for (int j = 0; j < 6; j++) {
+                if (_elements[0][1]->poly_color[j] == _elements[1][0]->poly_color[j] &&
+                    _elements[0][1]->poly_color[j] != black) {
+                    first_color = true;
+                }
+            }
+            if (!first_color) {
+                all_right();
+                continue;
+            }
+            for (int j = 0; j < 6; j++) {
+                if (_elements[0][1]->poly_color[j] == _elements[1][2]->poly_color[j] &&
+                    _elements[0][1]->poly_color[j] != black) {
+                    second_color = true;
+                }
+            }
+            if (!second_color) {
+                all_right();
+                continue;
+            }
+            break;
+        }
+        RIGHT();
+        UP_R();
+        LEFT_R();
+        UP();
+        RIGHT_R();
+        UP_R();
+        LEFT();
+        UP();
+    }
+}
+
+void rubiks_cube::top_corners_orientation_iteration() {
+    if (_elements[0][0]->_orientation == straight) _elements[0][0]->_right_pos = true;
+    if (_elements[0][4]->_orientation == straight) _elements[0][4]->_right_pos = true;
+    if (_elements[0][5]->_orientation == straight) _elements[0][5]->_right_pos = true;
+    if (_elements[0][1]->_orientation == straight) _elements[0][1]->_right_pos = true;
+    std::cout << "TOP CORNERS ORIENTATION CHECKED" << '\n';
 }
 //-------------------------------
 int rubiks_cube::find_element(colors temp_color, el_type temp_type) {

@@ -48,6 +48,10 @@ public:
     void cross_iteration();
     void lower_corners_itaration();
     void middle_edges_iteration();
+    void top_figure_solver();
+    void top_cross_reposition_iteration();
+    void top_corners_positioning_iteration();
+    void top_corners_orientation_iteration();
     //-------------- Random help functions
     int find_element(colors, el_type);
     void draw();

@@ -16,4 +16,5 @@ public:
     Point _position;
     double _angle = 0;
     bool _right_pos = true;
+    bool _corners_position = true;
 };
