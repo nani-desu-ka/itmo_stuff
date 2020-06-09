@@ -1,11 +1,105 @@
 #pragma once
-#include <vector>
 
 template <class T>
 class circular_buffer {
+    class Iterator : public std::iterator<std::random_access_iterator_tag, T> {
+        T *_pointer = nullptr;
+
+    public:
+        using value_type = typename std::iterator<std::random_access_iterator_tag, T>::value_type;
+
+        explicit Iterator() {}
+        explicit Iterator (T *pointer) : _pointer(pointer) {}
+        Iterator (const Iterator &temp_iter) : _pointer(temp_iter._pointer) {}
+
+        bool operator!=(Iterator &temp_iter) {
+            return _pointer != temp_iter._pointer;
+        }
+        bool operator== (Iterator &temp_iter) {
+            return _pointer == temp_iter._pointer;
+        }
+        bool operator<= (Iterator &temp_iter) {
+            return _pointer <= temp_iter._pointer;
+        }
+        bool operator>= (Iterator &temp_iter) {
+            return _pointer >= temp_iter._pointer;
+        }
+        bool operator<(Iterator &temp_iter) {
+            return _pointer < temp_iter._pointer;
+        }
+        bool operator> (Iterator &temp_iter) {
+            return _pointer > temp_iter._pointer;
+        }
+        T &operator* () {
+            return *_pointer;
+        }
+
+        T *operator-> () {
+            return _pointer;
+        }
+        Iterator operator++ (T) {
+            Iterator temp_iter(*this);
+            ++_pointer;
+            return temp_iter;
+        }
+        Iterator &operator++ () {
+            _pointer++;
+            return *this;
+        }
+        Iterator operator-- (T) {
+            Iterator temp_iter(*this);
+            --_pointer;
+            return temp_iter;
+        }
+        Iterator &operator-- () {
+            _pointer--;
+            return *this;
+        }
+        Iterator &operator+= (Iterator &temp_iter) {
+            _pointer += temp_iter._pointer;
+            return *this;
+        }
+        Iterator &operator-= (Iterator &temp_iter) {
+            _pointer -= temp_iter._pointer;
+            return *this;
+        }
+        Iterator &operator+= (value_type shift) {
+            _pointer += shift;
+            return *this;
+        }
+        Iterator operator+ (value_type shift) {
+            return Iterator(_pointer + shift);
+        }
+        Iterator operator- (value_type shift) {
+            return Iterator(_pointer - shift);
+        }
+
+        Iterator &operator= (Iterator const &temp_iter) {
+            if (_pointer != temp_iter._pointer) {
+                _pointer = temp_iter._pointer;
+            }
+            return *this;
+        }
+
+        Iterator &operator= (T *pointer) {
+            if (_pointer != pointer) {
+                _pointer = pointer;
+            }
+            return *this;
+        }
+        value_type operator+ (Iterator &temp_iter) {
+            return _pointer - temp_iter._pointer;
+        }
+        value_type operator- (Iterator &temp_iter) {
+            return static_cast<int>(_pointer - temp_iter._pointer);
+        }
+        friend std::ostream &operator<< (std::ostream &out, Iterator temp_iter) {
+            out << temp_iter._pointer;
+            return out;
+        }
+    };
 public:
-//    using value_type = typename std::iterator<std::random_access_iterator_tag, T>::value_type;
-    explicit circular_buffer() {circular_buffer(0);}
+    explicit circular_buffer() {circular_buffer(0); _begin = nullptr; _end = nullptr;}
     explicit circular_buffer(int capacity): _capacity(capacity) {
         if (_capacity == 0) {
             return;
@@ -16,7 +110,7 @@ public:
             _end = &_body[0];
             return;
         }
-        throw Exception("Incorrect capacity");
+        std::cerr << "Incorrect capacity" << '\n';
     }
 
     explicit circular_buffer(int capacity, T init_value): _capacity(capacity), _size(capacity) {
@@ -32,7 +126,7 @@ public:
             }
             return;
         }
-        throw Exception("Incorrect capacity");
+        std::cerr << "Incorrect capacity" << '\n';
     }
 
     ~circular_buffer() {
@@ -41,10 +135,10 @@ public:
         delete [] _body;
     }
 
-// 4. „®áâã¯ ¢ ª®­¥æ, ­ ç «®
-    T *begin() { return _begin; }
+// 4. „®áâã¯ ¢ ª®­¥æ, ­ ç «®
+    Iterator begin() { return _begin; }
 
-    T *end() { return _end; }
+    Iterator end() { return _end; }
 
     const T *begin() const { return _begin; }
 
@@ -123,9 +217,9 @@ public:
     }
 
     void erase(int position) {
-        if (position >= 0 && position < _size) {
+        if (position % _size >= 0) {
             if (_size > 0) {
-                if (_size == 1 || position == _size - 1) pop_back();
+                if (_size == 1 || position % _size == _size - 1) pop_back();
                 else {
                     int temp_1 = position;
                     int temp_2 = position + 1;
@@ -184,11 +278,10 @@ public:
     void clear() {
         if (_capacity > 0) {
             _begin = nullptr;
-            _end = _data;
+            _end = nullptr;
             _size = 0;
+            _capacity = 0;
         }
-        _push_front_index = 0;
-        _push_back_index = 0;
     }
 
     void print() {
@@ -211,8 +304,8 @@ public:
         else std::cerr << "Incorrect index. Segfault possibility!\n";
     }
 private:
-    T *_begin = nullptr;
-    T *_end = nullptr;
+    Iterator _begin;
+    Iterator _end;
     T *_body = nullptr;
     int _capacity = 0;
     int _size = 0;

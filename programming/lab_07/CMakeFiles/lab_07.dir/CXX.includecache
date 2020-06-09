@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/just/itmo_stuff/programming/lab_07/src/console_handler.cpp
+iostream
+-
+algorithm
+-
+circular_buffer.hpp
+/home/just/itmo_stuff/programming/lab_07/src/circular_buffer.hpp
+console_handler.h
+/home/just/itmo_stuff/programming/lab_07/src/console_handler.h
+exception.hpp
+/home/just/itmo_stuff/programming/lab_07/src/exception.hpp
+
+include/circular_buffer.hpp
+
+include/console_handler.h
+
+include/exception.hpp
+iostream
+-
+
