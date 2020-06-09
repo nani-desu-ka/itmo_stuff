@@ -52,6 +52,7 @@ public:
     void top_cross_reposition_iteration();
     void top_corners_positioning_iteration();
     void top_corners_orientation_iteration();
+    void top_corners_reorientaion();
     //-------------- Random help functions
     int find_element(colors, el_type);
     void draw();

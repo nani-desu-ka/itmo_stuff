@@ -4,7 +4,7 @@
 #include "Enums.hpp"
 #include <iostream>
 
-double temp_degree = 15;
+double temp_degree = 9;
 /*------CORNERS------*/
 element temp_cor_0(1, 1, -1, red, blue, black, yellow, black, black, straight);
 element temp_cor_1(-1, 1, -1, red, blue, white, black, black, black, straight);
@@ -405,6 +405,67 @@ void rubiks_cube::CENTER_LR(std::vector<int> edges, std::vector<int> centers, do
     std::swap(*_elements[1][centers[1]], *_elements[1][centers[2]]);
     std::swap(*_elements[1][centers[2]], *_elements[1][centers[3]]);
 }
+
+void rubiks_cube::CENTER_UD(std::vector<int> edges, std::vector<int> centers, double degree) {
+    double a = degree * (M_PI / 180);
+    for (int i = 0; i < 90 / std::abs(degree); i++) {
+        for (auto j : edges) {
+            _elements[2][j]->_rotation = UD_rot;
+            double Y = _elements[2][j]->_position.y * cos(a) - _elements[2][j]->_position.z * sin(a);
+            double Z = _elements[2][j]->_position.z * cos(a) + _elements[2][j]->_position.y * sin(a);
+            _elements[2][j]->_position.y = Y;
+            _elements[2][j]->_position.z = Z;
+            _elements[2][j]->_angle = a;
+        }
+        for (auto j : centers) {
+            _elements[1][j]->_rotation = UD_rot;
+            double Y = _elements[1][j]->_position.y * cos(a) - _elements[1][j]->_position.z * sin(a);
+            double Z = _elements[1][j]->_position.z * cos(a) + _elements[1][j]->_position.y * sin(a);
+            _elements[1][j]->_position.y = Y;
+            _elements[1][j]->_position.z = Z;
+            _elements[1][j]->_angle = a;
+        }
+        display();
+    }
+    for (auto j : edges) {
+        _elements[2][j]->_angle = 0;
+        switch (_elements[2][j]->_orientation) {
+            case straight:
+                if (degree > 0) _elements[2][j]->_orientation = back_side;
+                else _elements[2][j]->_orientation = f_side;
+                continue;
+            case l_side:
+                continue;
+            case r_side:
+                continue;
+            case f_side:
+                if (degree > 0) _elements[2][j]->_orientation = straight;
+                else _elements[2][j]->_orientation = bottom_side;
+                continue;
+            case back_side:
+                if (degree > 0) _elements[2][j]->_orientation = bottom_side;
+                else _elements[2][j]->_orientation = straight;
+                continue;
+            case bottom_side:
+                if (degree > 0) _elements[2][j]->_orientation = f_side;
+                else _elements[2][j]->_orientation = back_side;
+                continue;
+            default:
+                std::cerr << "Impossible orientation";
+                exit(EXIT_FAILURE);
+        }
+    }
+    for (auto j : centers) {
+        _elements[1][j]->_angle = 0;
+    }
+    std::swap(*_elements[2][edges[0]], *_elements[2][edges[1]]);
+    std::swap(*_elements[2][edges[1]], *_elements[2][edges[2]]);
+    std::swap(*_elements[2][edges[2]], *_elements[2][edges[3]]);
+
+    std::swap(*_elements[1][centers[0]], *_elements[1][centers[1]]);
+    std::swap(*_elements[1][centers[1]], *_elements[1][centers[2]]);
+    std::swap(*_elements[1][centers[2]], *_elements[1][centers[3]]);
+}
 //-------------------------------
 void rubiks_cube::RIGHT() {
     std::vector<int> corners = {0, 3, 7, 4};
@@ -477,6 +538,18 @@ void rubiks_cube::CENTER_LEFT() {
     std::vector<int> centers = {0, 3, 5, 2};
     CENTER_LR(edges, centers, -temp_degree);
 }
+
+void rubiks_cube::CENTER_UP() {
+    std::vector<int> edges = {0, 2, 10, 8};
+    std::vector<int> centers = {0, 4, 5, 1};
+    CENTER_UD(edges, centers, temp_degree);
+}
+
+void rubiks_cube::CENTER_DOWN() {
+    std::vector<int> edges = {0, 8, 10, 2};
+    std::vector<int> centers = {0, 1, 5, 4};
+    CENTER_UD(edges, centers, -temp_degree);
+}
 //-------------------------------
 void rubiks_cube::pif_paf() {
     RIGHT();
@@ -503,6 +576,12 @@ void rubiks_cube::all_right() {
     CENTER_RIGHT();
     DOWN();
 }
+
+void rubiks_cube::all_up() {
+    LEFT_R();
+    RIGHT();
+    CENTER_UP();
+}
 //-------------------------------
 void rubiks_cube::assembler() {
     cross_iteration();
@@ -513,6 +592,7 @@ void rubiks_cube::assembler() {
     top_cross_reposition_iteration();
     top_corners_positioning_iteration();
     top_corners_orientation_iteration();
+    top_corners_reorientaion();
 }
 
 void rubiks_cube::disassembler() {
@@ -1101,6 +1181,24 @@ void rubiks_cube::top_corners_orientation_iteration() {
     if (_elements[0][5]->_orientation == straight) _elements[0][5]->_right_pos = true;
     if (_elements[0][1]->_orientation == straight) _elements[0][1]->_right_pos = true;
     std::cout << "TOP CORNERS ORIENTATION CHECKED" << '\n';
+}
+
+void rubiks_cube::top_corners_reorientaion() {
+    all_up();
+    all_up();
+    for (int i = 0; i < 4; i++) {
+        while (_elements[0][3]->_orientation != bottom_side) {
+            pif_paf();
+        }
+        DOWN();
+    }
+    _elements[0][2]->_right_pos = true;
+    _elements[0][3]->_right_pos = true;
+    _elements[0][6]->_right_pos = true;
+    _elements[0][7]->_right_pos = true;
+    all_up();
+    all_up();
+    std::cout << "TOP CORNERS REORIENTATED" << '\n';
 }
 //-------------------------------
 int rubiks_cube::find_element(colors temp_color, el_type temp_type) {
