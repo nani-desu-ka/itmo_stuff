@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lab_08.dir/src/main.cpp.o CMakeFiles/lab_08.dir/src/Board.cpp.o CMakeFiles/lab_08.dir/src/Element.cpp.o CMakeFiles/lab_08.dir/src/Figure.cpp.o CMakeFiles/lab_08.dir/src/Player.cpp.o  -o lab_08  /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libGLU.so /usr/lib/x86_64-linux-gnu/libglut.so 

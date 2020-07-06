@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/just/itmo_stuff/programming/Chess/src/Board.cpp
+Board.hpp
+/home/just/itmo_stuff/programming/Chess/src/Board.hpp
+Enums.hpp
+/home/just/itmo_stuff/programming/Chess/src/Enums.hpp
+
+include/Board.hpp
+vector
+-
+Enums.hpp
+include/Enums.hpp
+Element.hpp
+include/Element.hpp
+
+include/Color_c.hpp
+
+include/Element.hpp
+vector
+-
+Point.hpp
+include/Point.hpp
+Enums.hpp
+include/Enums.hpp
+Color_c.hpp
+include/Color_c.hpp
+
+include/Enums.hpp
+
+include/Point.hpp
+

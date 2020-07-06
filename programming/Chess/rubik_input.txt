@@ -1,0 +1,29 @@
+UPPER:
+W W W
+W W W
+W W W
+
+BOTTOM:
+Y Y Y
+Y Y Y
+Y Y Y
+
+FRONT:
+R R R
+R R R
+R R R
+
+BACK:
+O O O
+O O O
+O O O
+
+RIGHT:
+B B B
+B B B
+B B B
+
+LEFT:
+G G G
+G G G
+G G G
