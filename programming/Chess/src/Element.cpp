@@ -46,6 +46,16 @@ color_c element::color_check(colors needed_col) {
             temp_color.green = 1;
             temp_color.blue = 0;
             return temp_color;
+        case purple:
+            temp_color.red = 1;
+            temp_color.green = 0;
+            temp_color.blue = 1;
+            return temp_color;
+        case deep_purple:
+            temp_color.red = 0.37;
+            temp_color.green = 0.01;
+            temp_color.blue = 0.4;
+            return temp_color;
         default:
             temp_color.red = 0.14;
             temp_color.green = 0;
@@ -129,13 +139,14 @@ void element::draw() {
         temp_color = color_check(_colors[i]);
         if (i == 1) {
             if (_figure_on) {
-                temp_color = color_check(positive_green);
+                temp_color = color_check(purple);
             }
             if (_player_predicted) {
                 temp_color = color_check(green);
             }
             if (_player_on) {
                 temp_color = color_check(yellow);
+                if (_figure_on && turn == check_player()) temp_color = color_check(deep_purple);
                 if (_player_predicted) temp_color = color_check(positive_green);
             }
             if (_player_active) {

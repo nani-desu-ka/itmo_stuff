@@ -6,27 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/just/itmo_stuff/programming/Chess/src/Player.cpp
-Player.hpp
-/home/just/itmo_stuff/programming/Chess/src/Player.hpp
-Pawn.hpp
-/home/just/itmo_stuff/programming/Chess/src/Pawn.hpp
-Empty.hpp
-/home/just/itmo_stuff/programming/Chess/src/Empty.hpp
+/home/just/itmo_stuff/programming/Chess/src/Element.cpp
+Element.hpp
+/home/just/itmo_stuff/programming/Chess/src/Element.hpp
+Enums.hpp
+/home/just/itmo_stuff/programming/Chess/src/Enums.hpp
+GL/gl.h
+-
 Turn.hpp
 /home/just/itmo_stuff/programming/Chess/src/Turn.hpp
-iostream
--
-
-include/Board.hpp
-vector
--
-Enums.hpp
-include/Enums.hpp
-Element.hpp
-include/Element.hpp
-Figure.hpp
-include/Figure.hpp
 
 include/Color_c.hpp
 
@@ -40,35 +28,7 @@ include/Enums.hpp
 Color_c.hpp
 include/Color_c.hpp
 
-include/Empty.hpp
-Figure.hpp
-include/Figure.hpp
-Board.hpp
-include/Board.hpp
-
 include/Enums.hpp
-
-include/Figure.hpp
-Point.hpp
-include/Point.hpp
-Enums.hpp
-include/Enums.hpp
-
-include/Pawn.hpp
-Figure.hpp
-include/Figure.hpp
-Board.hpp
-include/Board.hpp
-
-include/Player.hpp
-Enums.hpp
-include/Enums.hpp
-Board.hpp
-include/Board.hpp
-Figure.hpp
-include/Figure.hpp
-vector
-include/vector
 
 include/Point.hpp
 

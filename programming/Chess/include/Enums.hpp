@@ -10,6 +10,8 @@ enum colors {
     red,
     yellow,
     black,
+    purple,
+    deep_purple,
     none,
 };
 
