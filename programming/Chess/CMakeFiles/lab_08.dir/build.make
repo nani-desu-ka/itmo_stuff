@@ -96,22 +96,9 @@ CMakeFiles/lab_08.dir/src/Element.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_08.dir/src/Element.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/just/itmo_stuff/programming/Chess/src/Element.cpp -o CMakeFiles/lab_08.dir/src/Element.cpp.s
 
-CMakeFiles/lab_08.dir/src/Figure.cpp.o: CMakeFiles/lab_08.dir/flags.make
-CMakeFiles/lab_08.dir/src/Figure.cpp.o: src/Figure.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/just/itmo_stuff/programming/Chess/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lab_08.dir/src/Figure.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab_08.dir/src/Figure.cpp.o -c /home/just/itmo_stuff/programming/Chess/src/Figure.cpp
-
-CMakeFiles/lab_08.dir/src/Figure.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_08.dir/src/Figure.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/just/itmo_stuff/programming/Chess/src/Figure.cpp > CMakeFiles/lab_08.dir/src/Figure.cpp.i
-
-CMakeFiles/lab_08.dir/src/Figure.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_08.dir/src/Figure.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/just/itmo_stuff/programming/Chess/src/Figure.cpp -o CMakeFiles/lab_08.dir/src/Figure.cpp.s
-
 CMakeFiles/lab_08.dir/src/Player.cpp.o: CMakeFiles/lab_08.dir/flags.make
 CMakeFiles/lab_08.dir/src/Player.cpp.o: src/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/just/itmo_stuff/programming/Chess/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lab_08.dir/src/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/just/itmo_stuff/programming/Chess/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lab_08.dir/src/Player.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab_08.dir/src/Player.cpp.o -c /home/just/itmo_stuff/programming/Chess/src/Player.cpp
 
 CMakeFiles/lab_08.dir/src/Player.cpp.i: cmake_force
@@ -122,13 +109,40 @@ CMakeFiles/lab_08.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_08.dir/src/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/just/itmo_stuff/programming/Chess/src/Player.cpp -o CMakeFiles/lab_08.dir/src/Player.cpp.s
 
+CMakeFiles/lab_08.dir/src/Pawn.cpp.o: CMakeFiles/lab_08.dir/flags.make
+CMakeFiles/lab_08.dir/src/Pawn.cpp.o: src/Pawn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/just/itmo_stuff/programming/Chess/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lab_08.dir/src/Pawn.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab_08.dir/src/Pawn.cpp.o -c /home/just/itmo_stuff/programming/Chess/src/Pawn.cpp
+
+CMakeFiles/lab_08.dir/src/Pawn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_08.dir/src/Pawn.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/just/itmo_stuff/programming/Chess/src/Pawn.cpp > CMakeFiles/lab_08.dir/src/Pawn.cpp.i
+
+CMakeFiles/lab_08.dir/src/Pawn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_08.dir/src/Pawn.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/just/itmo_stuff/programming/Chess/src/Pawn.cpp -o CMakeFiles/lab_08.dir/src/Pawn.cpp.s
+
+CMakeFiles/lab_08.dir/src/Empty.cpp.o: CMakeFiles/lab_08.dir/flags.make
+CMakeFiles/lab_08.dir/src/Empty.cpp.o: src/Empty.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/just/itmo_stuff/programming/Chess/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lab_08.dir/src/Empty.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab_08.dir/src/Empty.cpp.o -c /home/just/itmo_stuff/programming/Chess/src/Empty.cpp
+
+CMakeFiles/lab_08.dir/src/Empty.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_08.dir/src/Empty.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/just/itmo_stuff/programming/Chess/src/Empty.cpp > CMakeFiles/lab_08.dir/src/Empty.cpp.i
+
+CMakeFiles/lab_08.dir/src/Empty.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_08.dir/src/Empty.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/just/itmo_stuff/programming/Chess/src/Empty.cpp -o CMakeFiles/lab_08.dir/src/Empty.cpp.s
+
 # Object files for target lab_08
 lab_08_OBJECTS = \
 "CMakeFiles/lab_08.dir/src/main.cpp.o" \
 "CMakeFiles/lab_08.dir/src/Board.cpp.o" \
 "CMakeFiles/lab_08.dir/src/Element.cpp.o" \
-"CMakeFiles/lab_08.dir/src/Figure.cpp.o" \
-"CMakeFiles/lab_08.dir/src/Player.cpp.o"
+"CMakeFiles/lab_08.dir/src/Player.cpp.o" \
+"CMakeFiles/lab_08.dir/src/Pawn.cpp.o" \
+"CMakeFiles/lab_08.dir/src/Empty.cpp.o"
 
 # External object files for target lab_08
 lab_08_EXTERNAL_OBJECTS =
@@ -136,15 +150,16 @@ lab_08_EXTERNAL_OBJECTS =
 lab_08: CMakeFiles/lab_08.dir/src/main.cpp.o
 lab_08: CMakeFiles/lab_08.dir/src/Board.cpp.o
 lab_08: CMakeFiles/lab_08.dir/src/Element.cpp.o
-lab_08: CMakeFiles/lab_08.dir/src/Figure.cpp.o
 lab_08: CMakeFiles/lab_08.dir/src/Player.cpp.o
+lab_08: CMakeFiles/lab_08.dir/src/Pawn.cpp.o
+lab_08: CMakeFiles/lab_08.dir/src/Empty.cpp.o
 lab_08: CMakeFiles/lab_08.dir/build.make
 lab_08: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 lab_08: /usr/lib/x86_64-linux-gnu/libGLX.so
 lab_08: /usr/lib/x86_64-linux-gnu/libGLU.so
 lab_08: /usr/lib/x86_64-linux-gnu/libglut.so
 lab_08: CMakeFiles/lab_08.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/just/itmo_stuff/programming/Chess/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable lab_08"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/just/itmo_stuff/programming/Chess/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable lab_08"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab_08.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

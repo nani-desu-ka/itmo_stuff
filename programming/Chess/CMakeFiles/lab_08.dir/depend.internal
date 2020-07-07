@@ -7,6 +7,7 @@ CMakeFiles/lab_08.dir/src/Board.cpp.o
  include/Color_c.hpp
  include/Element.hpp
  include/Enums.hpp
+ include/Figure.hpp
  include/Point.hpp
 CMakeFiles/lab_08.dir/src/Element.cpp.o
  /home/just/itmo_stuff/programming/Chess/src/Element.cpp
@@ -14,18 +15,34 @@ CMakeFiles/lab_08.dir/src/Element.cpp.o
  include/Element.hpp
  include/Enums.hpp
  include/Point.hpp
-CMakeFiles/lab_08.dir/src/Figure.cpp.o
- /home/just/itmo_stuff/programming/Chess/src/Figure.cpp
+CMakeFiles/lab_08.dir/src/Empty.cpp.o
+ /home/just/itmo_stuff/programming/Chess/src/Empty.cpp
+ include/Board.hpp
+ include/Color_c.hpp
+ include/Element.hpp
+ include/Empty.hpp
  include/Enums.hpp
- include/Figure.h
+ include/Figure.hpp
+ include/Point.hpp
+CMakeFiles/lab_08.dir/src/Pawn.cpp.o
+ /home/just/itmo_stuff/programming/Chess/src/Pawn.cpp
+ include/Board.hpp
+ include/Color_c.hpp
+ include/Element.hpp
+ include/Enums.hpp
+ include/Figure.hpp
+ include/Pawn.hpp
  include/Point.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o
  /home/just/itmo_stuff/programming/Chess/src/Player.cpp
  include/Board.hpp
  include/Color_c.hpp
  include/Element.hpp
+ include/Empty.hpp
  include/Enums.hpp
- include/Player.h
+ include/Figure.hpp
+ include/Pawn.hpp
+ include/Player.hpp
  include/Point.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o
  /home/just/itmo_stuff/programming/Chess/src/main.cpp
@@ -33,6 +50,7 @@ CMakeFiles/lab_08.dir/src/main.cpp.o
  include/Color_c.hpp
  include/Element.hpp
  include/Enums.hpp
- include/Player.h
+ include/Figure.hpp
+ include/Player.hpp
  include/Point.hpp
  include/display.hpp

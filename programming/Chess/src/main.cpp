@@ -4,15 +4,16 @@
 #include "Board.hpp"
 #include "display.hpp"
 #include "Enums.hpp"
-#include "Player.h"
+#include "Player.hpp"
+
 double rotate_y = 0;
 double rotate_x = 0;
 
-Board temp;
+Board temp_board;
 
-Player white_player(&temp);
+Player actual_player(&temp_board);
 //Player black_player;
-Player &actual_player = white_player;
+//Player &actual_player = white_player;
 
 void specialKeys(int key, int x, int y) {
     if (key == GLUT_KEY_RIGHT) rotate_y += 4;
@@ -31,6 +32,7 @@ void simpleKeys(unsigned char key, int x, int y) {
     else if (key == 'a' || key == 'A') actual_player.change_pos(left);
     else if (key == 's' || key == 'S') actual_player.change_pos(down);
     else if (key == 'd' || key == 'D') actual_player.change_pos(right);
+    else if (key == ' ') actual_player.pick();
     glutPostRedisplay();
 }
 void display() {
@@ -41,7 +43,7 @@ void display() {
     glRotatef( rotate_x, 1.0, 0.0, 0.0 );
     glRotatef( rotate_y, 0.0, 1.0, 0.0 );
     glScalef(0.2, 0.2, 0.2);
-    temp.draw();
+    temp_board.draw();
     glFlush();
     glutSwapBuffers();
 }

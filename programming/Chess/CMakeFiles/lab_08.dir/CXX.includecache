@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/just/itmo_stuff/programming/Chess/src/Board.cpp
+/home/just/itmo_stuff/programming/Chess/src/Pawn.cpp
+Pawn.hpp
+/home/just/itmo_stuff/programming/Chess/src/Pawn.hpp
 Board.hpp
 /home/just/itmo_stuff/programming/Chess/src/Board.hpp
-Enums.hpp
-/home/just/itmo_stuff/programming/Chess/src/Enums.hpp
 
 include/Board.hpp
 vector
@@ -19,6 +19,8 @@ Enums.hpp
 include/Enums.hpp
 Element.hpp
 include/Element.hpp
+Figure.hpp
+include/Figure.hpp
 
 include/Color_c.hpp
 
@@ -33,6 +35,18 @@ Color_c.hpp
 include/Color_c.hpp
 
 include/Enums.hpp
+
+include/Figure.hpp
+Point.hpp
+include/Point.hpp
+Enums.hpp
+include/Enums.hpp
+
+include/Pawn.hpp
+Figure.hpp
+include/Figure.hpp
+Board.hpp
+include/Board.hpp
 
 include/Point.hpp
 

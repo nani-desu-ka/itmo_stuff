@@ -1,9 +1,5 @@
-// Single cube draw
-
 #include "Element.hpp"
 #include "Enums.hpp"
-#include <cmath>
-#include <GL/freeglut.h>
 #include <GL/gl.h>
 
 color_c element::color_check(colors needed_col) {
@@ -131,8 +127,15 @@ void element::draw() {
     for (auto &_face : _faces) {
         temp_color = color_check(_colors[i]);
         if (i == 1) {
+            if (_player_predicted) {
+                temp_color = color_check(green);
+            }
             if (_player_on) {
                 temp_color = color_check(yellow);
+                if (_player_predicted) temp_color = color_check(positive_green);
+            }
+            if (_player_active) {
+                temp_color = color_check(red);
             }
         }
         glBegin(GL_POLYGON);
@@ -151,4 +154,36 @@ void element::set_player_on() {
 
 void element::set_player_off() {
     _player_on = false;
+}
+
+void element::activate() {
+    _player_active = true;
+}
+
+void element::deactivate() {
+    _player_active = false;
+}
+
+void element::predict() {
+    _player_predicted = true;
+}
+
+bool element::predict_check() {
+    return _player_predicted;
+}
+
+void element::depredict() {
+    _player_predicted = false;
+}
+
+void element::set_figure() {
+    _figure_on = true;
+}
+
+void element::destroy_figure() {
+    _figure_on = false;
+}
+
+bool element::check_figure() {
+    return _figure_on;
 }

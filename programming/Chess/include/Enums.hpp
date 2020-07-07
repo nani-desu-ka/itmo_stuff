@@ -13,20 +13,21 @@ enum colors {
     none,
 };
 
-enum element_state {
-    available,
-    unavailable,
-    active,
-    inactive,
-};
+//enum element_state {
+//    available,
+//    unavailable,
+//    active,
+//    inactive,
+//};
 
 enum figures {
-    king,
-    queen,
-    bishop, // слон
-    knight, // конь
-    castle, // ладья
+//    king,
+//    queen,
+//    bishop, // слон
+//    knight, // конь
+//    castle, // ладья
     pawn, // пешка
+    empty,
 };
 
 enum direction {

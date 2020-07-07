@@ -6,6 +6,7 @@ CMakeFiles/lab_08.dir/src/Board.cpp.o: include/Board.hpp
 CMakeFiles/lab_08.dir/src/Board.cpp.o: include/Color_c.hpp
 CMakeFiles/lab_08.dir/src/Board.cpp.o: include/Element.hpp
 CMakeFiles/lab_08.dir/src/Board.cpp.o: include/Enums.hpp
+CMakeFiles/lab_08.dir/src/Board.cpp.o: include/Figure.hpp
 CMakeFiles/lab_08.dir/src/Board.cpp.o: include/Point.hpp
 
 CMakeFiles/lab_08.dir/src/Element.cpp.o: src/Element.cpp
@@ -14,17 +15,33 @@ CMakeFiles/lab_08.dir/src/Element.cpp.o: include/Element.hpp
 CMakeFiles/lab_08.dir/src/Element.cpp.o: include/Enums.hpp
 CMakeFiles/lab_08.dir/src/Element.cpp.o: include/Point.hpp
 
-CMakeFiles/lab_08.dir/src/Figure.cpp.o: src/Figure.cpp
-CMakeFiles/lab_08.dir/src/Figure.cpp.o: include/Enums.hpp
-CMakeFiles/lab_08.dir/src/Figure.cpp.o: include/Figure.h
-CMakeFiles/lab_08.dir/src/Figure.cpp.o: include/Point.hpp
+CMakeFiles/lab_08.dir/src/Empty.cpp.o: src/Empty.cpp
+CMakeFiles/lab_08.dir/src/Empty.cpp.o: include/Board.hpp
+CMakeFiles/lab_08.dir/src/Empty.cpp.o: include/Color_c.hpp
+CMakeFiles/lab_08.dir/src/Empty.cpp.o: include/Element.hpp
+CMakeFiles/lab_08.dir/src/Empty.cpp.o: include/Empty.hpp
+CMakeFiles/lab_08.dir/src/Empty.cpp.o: include/Enums.hpp
+CMakeFiles/lab_08.dir/src/Empty.cpp.o: include/Figure.hpp
+CMakeFiles/lab_08.dir/src/Empty.cpp.o: include/Point.hpp
+
+CMakeFiles/lab_08.dir/src/Pawn.cpp.o: src/Pawn.cpp
+CMakeFiles/lab_08.dir/src/Pawn.cpp.o: include/Board.hpp
+CMakeFiles/lab_08.dir/src/Pawn.cpp.o: include/Color_c.hpp
+CMakeFiles/lab_08.dir/src/Pawn.cpp.o: include/Element.hpp
+CMakeFiles/lab_08.dir/src/Pawn.cpp.o: include/Enums.hpp
+CMakeFiles/lab_08.dir/src/Pawn.cpp.o: include/Figure.hpp
+CMakeFiles/lab_08.dir/src/Pawn.cpp.o: include/Pawn.hpp
+CMakeFiles/lab_08.dir/src/Pawn.cpp.o: include/Point.hpp
 
 CMakeFiles/lab_08.dir/src/Player.cpp.o: src/Player.cpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Board.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Color_c.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Element.hpp
+CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Empty.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Enums.hpp
-CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Player.h
+CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Figure.hpp
+CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Pawn.hpp
+CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Player.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Point.hpp
 
 CMakeFiles/lab_08.dir/src/main.cpp.o: src/main.cpp
@@ -32,7 +49,8 @@ CMakeFiles/lab_08.dir/src/main.cpp.o: include/Board.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/Color_c.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/Element.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/Enums.hpp
-CMakeFiles/lab_08.dir/src/main.cpp.o: include/Player.h
+CMakeFiles/lab_08.dir/src/main.cpp.o: include/Figure.hpp
+CMakeFiles/lab_08.dir/src/main.cpp.o: include/Player.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/Point.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/display.hpp
 

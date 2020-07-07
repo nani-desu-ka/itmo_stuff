@@ -1,9 +1,8 @@
-// Chess board class (consists of cubes)
-
 #pragma once
 #include <vector>
 #include "Enums.hpp"
 #include "Element.hpp"
+#include "Figure.hpp"
 
 class Board {
 public:

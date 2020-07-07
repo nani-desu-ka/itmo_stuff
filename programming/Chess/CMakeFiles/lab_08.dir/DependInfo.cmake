@@ -6,7 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/just/itmo_stuff/programming/Chess/src/Board.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Board.cpp.o"
   "/home/just/itmo_stuff/programming/Chess/src/Element.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Element.cpp.o"
-  "/home/just/itmo_stuff/programming/Chess/src/Figure.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Figure.cpp.o"
+  "/home/just/itmo_stuff/programming/Chess/src/Empty.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Empty.cpp.o"
+  "/home/just/itmo_stuff/programming/Chess/src/Pawn.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Pawn.cpp.o"
   "/home/just/itmo_stuff/programming/Chess/src/Player.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Player.cpp.o"
   "/home/just/itmo_stuff/programming/Chess/src/main.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/main.cpp.o"
   )

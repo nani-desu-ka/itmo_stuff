@@ -177,32 +177,59 @@ src/Element.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Element.cpp.s
 .PHONY : src/Element.cpp.s
 
-src/Figure.o: src/Figure.cpp.o
+src/Empty.o: src/Empty.cpp.o
 
-.PHONY : src/Figure.o
+.PHONY : src/Empty.o
 
 # target to build an object file
-src/Figure.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Figure.cpp.o
-.PHONY : src/Figure.cpp.o
+src/Empty.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Empty.cpp.o
+.PHONY : src/Empty.cpp.o
 
-src/Figure.i: src/Figure.cpp.i
+src/Empty.i: src/Empty.cpp.i
 
-.PHONY : src/Figure.i
+.PHONY : src/Empty.i
 
 # target to preprocess a source file
-src/Figure.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Figure.cpp.i
-.PHONY : src/Figure.cpp.i
+src/Empty.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Empty.cpp.i
+.PHONY : src/Empty.cpp.i
 
-src/Figure.s: src/Figure.cpp.s
+src/Empty.s: src/Empty.cpp.s
 
-.PHONY : src/Figure.s
+.PHONY : src/Empty.s
 
 # target to generate assembly for a file
-src/Figure.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Figure.cpp.s
-.PHONY : src/Figure.cpp.s
+src/Empty.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Empty.cpp.s
+.PHONY : src/Empty.cpp.s
+
+src/Pawn.o: src/Pawn.cpp.o
+
+.PHONY : src/Pawn.o
+
+# target to build an object file
+src/Pawn.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Pawn.cpp.o
+.PHONY : src/Pawn.cpp.o
+
+src/Pawn.i: src/Pawn.cpp.i
+
+.PHONY : src/Pawn.i
+
+# target to preprocess a source file
+src/Pawn.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Pawn.cpp.i
+.PHONY : src/Pawn.cpp.i
+
+src/Pawn.s: src/Pawn.cpp.s
+
+.PHONY : src/Pawn.s
+
+# target to generate assembly for a file
+src/Pawn.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Pawn.cpp.s
+.PHONY : src/Pawn.cpp.s
 
 src/Player.o: src/Player.cpp.o
 
@@ -273,9 +300,12 @@ help:
 	@echo "... src/Element.o"
 	@echo "... src/Element.i"
 	@echo "... src/Element.s"
-	@echo "... src/Figure.o"
-	@echo "... src/Figure.i"
-	@echo "... src/Figure.s"
+	@echo "... src/Empty.o"
+	@echo "... src/Empty.i"
+	@echo "... src/Empty.s"
+	@echo "... src/Pawn.o"
+	@echo "... src/Pawn.i"
+	@echo "... src/Pawn.s"
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
