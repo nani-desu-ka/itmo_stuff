@@ -25,6 +25,7 @@ public:
 
     int check_player();
     void set_player();
+    void set_another_player();
 
     static color_c color_check(colors);
 private:

@@ -52,9 +52,9 @@ bool Player::path(int index) {
 
 void Player::mirror() {
     for (int i = 0; i < 32; i++) {
-        std::swap(_figures[i], _figures[63 - (7 - i % 8) - 8 * (i / 8)]);
+        std::swap(_figures[i], _figures[63 - i]);
         _figures[i]->set_index(i);
-        _figures[63 - (7 - i % 8) - 8 * (i / 8)]->set_index(63 - (7 - i % 8) - 8 * (i / 8));
+        _figures[63 - i]->set_index(63 - i);
         if (first_mirror) {
             if (_figures[i]->type() != empty) {
                 _src_board->get_element(i).set_figure();
@@ -62,25 +62,26 @@ void Player::mirror() {
             } else {
                 _src_board->get_element(i).destroy_figure();
             }
-            if (_figures[63 - (7 - i % 8) - 8 * (i / 8)]->type() != empty) {
-                _src_board->get_element(63 - (7 - i % 8) - 8 * (i / 8)).set_figure();
-                _src_board->get_element(i).set_player();
+            if (_figures[63 - i]->type() != empty) {
+                _src_board->get_element(63 - i).set_figure();
+                _src_board->get_element(63 - i).set_player();
             } else {
-                _src_board->get_element(63 - (7 - i % 8) - 8 * (i / 8)).destroy_figure();
+                _src_board->get_element(63 - i).destroy_figure();
             }
         } else {
             if (_figures[i]->type() != empty) {
                 _src_board->get_element(i).set_figure();
                 _src_board->get_element(i).set_player();
             }
-            if (_figures[63 - (7 - i % 8) - 8 * (i / 8)]->type() != empty) {
-                _src_board->get_element(63 - (7 - i % 8) - 8 * (i / 8)).set_figure();
-                _src_board->get_element(i).set_player();
+            if (_figures[63 - i]->type() != empty) {
+                _src_board->get_element(63 - i).set_figure();
+                _src_board->get_element(63 - i).set_player();
             }
         }
     }
     if (!first_mirror) {
-        _figures[63 - (7 - prev_player_pos % 8) - 8 * (prev_player_pos / 8)] = new Empty;
+        _figures[63 - prev_player_pos] = new Empty;
+        _src_board->get_element(63 - prev_player_pos).set_another_player();
         _position = prev_player_pos;
         _src_board->get_element(_position).set_player_on();
     }
@@ -98,6 +99,7 @@ void Player::pick() {
             _figures[_prev_position] = new Empty();
             _src_board->get_element(_position).set_figure();
             _src_board->get_element(_prev_position).destroy_figure();
+            _src_board->get_element(_position).set_player();
         }
         mirror();
         prev_player_pos = _position;

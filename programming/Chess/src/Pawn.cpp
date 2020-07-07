@@ -45,7 +45,6 @@ void Pawn::hide_fields() {
 void Pawn::transition(int index) {
     _index = index;
     _first = false;
-    _src_board->get_element(_index).set_player();
 }
 
 void Pawn::set_index(int index) {

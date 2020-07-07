@@ -207,6 +207,10 @@ void element::set_player() {
     _which_player = turn;
 }
 
+void element::set_another_player() {
+    _which_player = (turn + 1) % 2;
+}
+
 int element::check_player() {
     return _which_player;
 }
