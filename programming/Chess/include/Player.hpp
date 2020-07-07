@@ -10,6 +10,7 @@ public:
     void pick();
     void change_pos(direction);
     void mirror();
+    void board_prepare();
     bool path(int);
     ~Player();
 private:

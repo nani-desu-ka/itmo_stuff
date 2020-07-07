@@ -1,13 +1,22 @@
 #include "Player.hpp"
-#include "Pawn.hpp"
-#include "Empty.hpp"
 #include "Turn.hpp"
 
-#include <iostream>
+//Figures
+#include "Pawn.hpp"
+#include "Empty.hpp"
+#include "Knight.hpp"
+#include "Bishop.hpp"
+//
 
 Player::Player(Board *temp_board) {
     _src_board = temp_board;
     for (int i = 0; i < 8; i++) {
+        if (i == 1 || i == 6) {
+            _figures.push_back(new Knight(i, _src_board));
+            _src_board->get_element(i).set_figure();
+            _src_board->get_element(i).set_player();
+            continue;
+        }
         _figures.push_back(new Empty());
     }
     for (int i = 8; i < 16; i++) {
@@ -16,7 +25,19 @@ Player::Player(Board *temp_board) {
         _src_board->get_element(i).set_player();
     }
     for (int i = 16; i < 64; i++) {
+        if (i == 29) {
+            _figures.push_back(new Bishop(i, _src_board));
+            _src_board->get_element(i).set_figure();
+            _src_board->get_element(i).set_player();
+            continue;
+        }
         _figures.push_back(new Empty());
+    }
+}
+
+void Player::board_prepare() {
+    for (int i = 0; i < 64; i++) {
+        if (_figures[i]->type() == empty) _src_board->get_element(i).set_another_player();
     }
 }
 

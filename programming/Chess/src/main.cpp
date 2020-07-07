@@ -57,10 +57,11 @@ void display() {
 
 int main(int argc, char** argv) {
     glutInit(&argc, argv);
+    std::cout << "===========Starting...===========\n";
     actual_player.push_back(&white_player);
     black_player.mirror();
     actual_player.push_back(&black_player);
-    std::cout << first_mirror << '\n';
+    white_player.board_prepare();
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize(800, 800);
     glutInitWindowPosition(GLUT_INIT_WINDOW_WIDTH / 2, GLUT_INIT_WINDOW_HEIGHT / 2);

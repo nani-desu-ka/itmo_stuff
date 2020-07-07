@@ -86,6 +86,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/Bishop.hpp">
+			<Option target="lab_08"/>
+		</Unit>
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/Board.hpp">
 			<Option target="lab_08"/>
 		</Unit>
@@ -104,6 +107,9 @@
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/Figure.hpp">
 			<Option target="lab_08"/>
 		</Unit>
+		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/Knight.hpp">
+			<Option target="lab_08"/>
+		</Unit>
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/Pawn.hpp">
 			<Option target="lab_08"/>
 		</Unit>
@@ -119,6 +125,9 @@
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/display.hpp">
 			<Option target="lab_08"/>
 		</Unit>
+		<Unit filename="/home/just/itmo_stuff/programming/Chess/src/Bishop.cpp">
+			<Option target="lab_08"/>
+		</Unit>
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/src/Board.cpp">
 			<Option target="lab_08"/>
 		</Unit>
@@ -126,6 +135,9 @@
 			<Option target="lab_08"/>
 		</Unit>
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/src/Empty.cpp">
+			<Option target="lab_08"/>
+		</Unit>
+		<Unit filename="/home/just/itmo_stuff/programming/Chess/src/Knight.cpp">
 			<Option target="lab_08"/>
 		</Unit>
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/src/Pawn.cpp">

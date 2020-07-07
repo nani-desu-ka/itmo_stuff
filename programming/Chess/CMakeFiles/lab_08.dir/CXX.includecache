@@ -9,14 +9,22 @@
 /home/just/itmo_stuff/programming/Chess/src/Player.cpp
 Player.hpp
 /home/just/itmo_stuff/programming/Chess/src/Player.hpp
+Turn.hpp
+/home/just/itmo_stuff/programming/Chess/src/Turn.hpp
 Pawn.hpp
 /home/just/itmo_stuff/programming/Chess/src/Pawn.hpp
 Empty.hpp
 /home/just/itmo_stuff/programming/Chess/src/Empty.hpp
-Turn.hpp
-/home/just/itmo_stuff/programming/Chess/src/Turn.hpp
-iostream
--
+Knight.hpp
+/home/just/itmo_stuff/programming/Chess/src/Knight.hpp
+Bishop.hpp
+/home/just/itmo_stuff/programming/Chess/src/Bishop.hpp
+
+include/Bishop.hpp
+Figure.hpp
+include/Figure.hpp
+Board.hpp
+include/Board.hpp
 
 include/Board.hpp
 vector
@@ -53,6 +61,12 @@ Point.hpp
 include/Point.hpp
 Enums.hpp
 include/Enums.hpp
+
+include/Knight.hpp
+Figure.hpp
+include/Figure.hpp
+Board.hpp
+include/Board.hpp
 
 include/Pawn.hpp
 Figure.hpp

@@ -123,6 +123,33 @@ lab_08/fast:
 	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/build
 .PHONY : lab_08/fast
 
+src/Bishop.o: src/Bishop.cpp.o
+
+.PHONY : src/Bishop.o
+
+# target to build an object file
+src/Bishop.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Bishop.cpp.o
+.PHONY : src/Bishop.cpp.o
+
+src/Bishop.i: src/Bishop.cpp.i
+
+.PHONY : src/Bishop.i
+
+# target to preprocess a source file
+src/Bishop.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Bishop.cpp.i
+.PHONY : src/Bishop.cpp.i
+
+src/Bishop.s: src/Bishop.cpp.s
+
+.PHONY : src/Bishop.s
+
+# target to generate assembly for a file
+src/Bishop.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Bishop.cpp.s
+.PHONY : src/Bishop.cpp.s
+
 src/Board.o: src/Board.cpp.o
 
 .PHONY : src/Board.o
@@ -203,6 +230,33 @@ src/Empty.s: src/Empty.cpp.s
 src/Empty.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Empty.cpp.s
 .PHONY : src/Empty.cpp.s
+
+src/Knight.o: src/Knight.cpp.o
+
+.PHONY : src/Knight.o
+
+# target to build an object file
+src/Knight.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Knight.cpp.o
+.PHONY : src/Knight.cpp.o
+
+src/Knight.i: src/Knight.cpp.i
+
+.PHONY : src/Knight.i
+
+# target to preprocess a source file
+src/Knight.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Knight.cpp.i
+.PHONY : src/Knight.cpp.i
+
+src/Knight.s: src/Knight.cpp.s
+
+.PHONY : src/Knight.s
+
+# target to generate assembly for a file
+src/Knight.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Knight.cpp.s
+.PHONY : src/Knight.cpp.s
 
 src/Pawn.o: src/Pawn.cpp.o
 
@@ -321,6 +375,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lab_08"
+	@echo "... src/Bishop.o"
+	@echo "... src/Bishop.i"
+	@echo "... src/Bishop.s"
 	@echo "... src/Board.o"
 	@echo "... src/Board.i"
 	@echo "... src/Board.s"
@@ -330,6 +387,9 @@ help:
 	@echo "... src/Empty.o"
 	@echo "... src/Empty.i"
 	@echo "... src/Empty.s"
+	@echo "... src/Knight.o"
+	@echo "... src/Knight.i"
+	@echo "... src/Knight.s"
 	@echo "... src/Pawn.o"
 	@echo "... src/Pawn.i"
 	@echo "... src/Pawn.s"
