@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/just/itmo_stuff/programming/Chess/src/Pawn.cpp
+/home/just/itmo_stuff/programming/Chess/src/Player.cpp
+Player.hpp
+/home/just/itmo_stuff/programming/Chess/src/Player.hpp
 Pawn.hpp
 /home/just/itmo_stuff/programming/Chess/src/Pawn.hpp
-Board.hpp
-/home/just/itmo_stuff/programming/Chess/src/Board.hpp
+Empty.hpp
+/home/just/itmo_stuff/programming/Chess/src/Empty.hpp
+Turn.hpp
+/home/just/itmo_stuff/programming/Chess/src/Turn.hpp
+iostream
+-
 
 include/Board.hpp
 vector
@@ -34,6 +40,12 @@ include/Enums.hpp
 Color_c.hpp
 include/Color_c.hpp
 
+include/Empty.hpp
+Figure.hpp
+include/Figure.hpp
+Board.hpp
+include/Board.hpp
+
 include/Enums.hpp
 
 include/Figure.hpp
@@ -48,5 +60,17 @@ include/Figure.hpp
 Board.hpp
 include/Board.hpp
 
+include/Player.hpp
+Enums.hpp
+include/Enums.hpp
+Board.hpp
+include/Board.hpp
+Figure.hpp
+include/Figure.hpp
+vector
+include/vector
+
 include/Point.hpp
+
+include/Turn.hpp
 

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/just/itmo_stuff/programming/Chess/src/Empty.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Empty.cpp.o"
   "/home/just/itmo_stuff/programming/Chess/src/Pawn.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Pawn.cpp.o"
   "/home/just/itmo_stuff/programming/Chess/src/Player.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Player.cpp.o"
+  "/home/just/itmo_stuff/programming/Chess/src/Turn.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Turn.cpp.o"
   "/home/just/itmo_stuff/programming/Chess/src/main.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -1,6 +1,7 @@
 #include "Element.hpp"
 #include "Enums.hpp"
 #include <GL/gl.h>
+#include "Turn.hpp"
 
 color_c element::color_check(colors needed_col) {
     color_c temp_color;
@@ -127,6 +128,9 @@ void element::draw() {
     for (auto &_face : _faces) {
         temp_color = color_check(_colors[i]);
         if (i == 1) {
+            if (_figure_on) {
+                temp_color = color_check(positive_green);
+            }
             if (_player_predicted) {
                 temp_color = color_check(green);
             }
@@ -186,4 +190,12 @@ void element::destroy_figure() {
 
 bool element::check_figure() {
     return _figure_on;
+}
+
+void element::set_player() {
+    _which_player = turn;
+}
+
+int element::check_player() {
+    return _which_player;
 }

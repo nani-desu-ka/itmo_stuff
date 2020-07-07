@@ -23,6 +23,9 @@ public:
     void destroy_figure();
     bool check_figure();
 
+    int check_player();
+    void set_player();
+
     static color_c color_check(colors);
 private:
     std::vector<std::vector<Point>> _faces;
@@ -30,6 +33,7 @@ private:
     Point _position;
 //    element_state _state = inactive;
     colors _buffer_color = none;
+    int _which_player;
     bool _player_on = false;
     bool _player_active = false;
     bool _player_predicted = false;

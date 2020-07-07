@@ -14,6 +14,7 @@ CMakeFiles/lab_08.dir/src/Element.cpp.o: include/Color_c.hpp
 CMakeFiles/lab_08.dir/src/Element.cpp.o: include/Element.hpp
 CMakeFiles/lab_08.dir/src/Element.cpp.o: include/Enums.hpp
 CMakeFiles/lab_08.dir/src/Element.cpp.o: include/Point.hpp
+CMakeFiles/lab_08.dir/src/Element.cpp.o: include/Turn.hpp
 
 CMakeFiles/lab_08.dir/src/Empty.cpp.o: src/Empty.cpp
 CMakeFiles/lab_08.dir/src/Empty.cpp.o: include/Board.hpp
@@ -43,6 +44,10 @@ CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Figure.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Pawn.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Player.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Point.hpp
+CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Turn.hpp
+
+CMakeFiles/lab_08.dir/src/Turn.cpp.o: src/Turn.cpp
+CMakeFiles/lab_08.dir/src/Turn.cpp.o: include/Turn.hpp
 
 CMakeFiles/lab_08.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/Board.hpp
@@ -52,5 +57,6 @@ CMakeFiles/lab_08.dir/src/main.cpp.o: include/Enums.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/Figure.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/Player.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/Point.hpp
+CMakeFiles/lab_08.dir/src/main.cpp.o: include/Turn.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/display.hpp
 

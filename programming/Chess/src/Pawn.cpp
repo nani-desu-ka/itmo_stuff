@@ -14,10 +14,14 @@ void Pawn::show_fields() {
         _src_board->get_element(_index + 8 * i).predict();
         i++;
     }
-    if (_index % 8 != 7 && _src_board->get_element(_index + 8 + 1).check_figure()) {
+    if (_index % 8 != 7 && _src_board->get_element(_index + 8 + 1).check_figure() &&
+                           _src_board->get_element(_index + 8 + 1).check_player() !=
+                           _src_board->get_element(_index).check_player()) {
         _src_board->get_element(_index + 8 + 1).predict();
     }
-    if (_index % 8 != 0 && _src_board->get_element(_index + 8 - 1).check_figure()) {
+    if (_index % 8 != 0 && _src_board->get_element(_index + 8 - 1).check_figure() &&
+                           _src_board->get_element(_index + 8 - 1).check_player() !=
+                           _src_board->get_element(_index).check_player()) {
         _src_board->get_element(_index + 8 - 1).predict();
     }
 }
@@ -41,6 +45,11 @@ void Pawn::hide_fields() {
 void Pawn::transition(int index) {
     _index = index;
     _first = false;
+    _src_board->get_element(_index).set_player();
+}
+
+void Pawn::set_index(int index) {
+    _index = index;
 }
 
 figures Pawn::type() {

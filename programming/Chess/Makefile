@@ -258,6 +258,33 @@ src/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/Turn.o: src/Turn.cpp.o
+
+.PHONY : src/Turn.o
+
+# target to build an object file
+src/Turn.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Turn.cpp.o
+.PHONY : src/Turn.cpp.o
+
+src/Turn.i: src/Turn.cpp.i
+
+.PHONY : src/Turn.i
+
+# target to preprocess a source file
+src/Turn.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Turn.cpp.i
+.PHONY : src/Turn.cpp.i
+
+src/Turn.s: src/Turn.cpp.s
+
+.PHONY : src/Turn.s
+
+# target to generate assembly for a file
+src/Turn.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Turn.cpp.s
+.PHONY : src/Turn.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -309,6 +336,9 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/Turn.o"
+	@echo "... src/Turn.i"
+	@echo "... src/Turn.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

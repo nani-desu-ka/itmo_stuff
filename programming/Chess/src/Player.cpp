@@ -1,20 +1,21 @@
 #include "Player.hpp"
 #include "Pawn.hpp"
 #include "Empty.hpp"
+#include "Turn.hpp"
+
+#include <iostream>
 
 Player::Player(Board *temp_board) {
     _src_board = temp_board;
     for (int i = 0; i < 8; i++) {
         _figures.push_back(new Empty());
     }
-    _figures.push_back(new Pawn(8, _src_board));
-    _src_board->get_element(8).set_figure();
-    for (int i = 9; i < 17; i++) {
-        _figures.push_back(new Empty());
+    for (int i = 8; i < 16; i++) {
+        _figures.push_back(new Pawn(i, _src_board));
+        _src_board->get_element(i).set_figure();
+        _src_board->get_element(i).set_player();
     }
-    _figures.push_back(new Pawn(17, _src_board));
-    _src_board->get_element(17).set_figure();
-    for (int i = 18; i < 64; i++) {
+    for (int i = 16; i < 64; i++) {
         _figures.push_back(new Empty());
     }
 }
@@ -49,9 +50,47 @@ bool Player::path(int index) {
     return true;
 }
 
+void Player::mirror() {
+    for (int i = 0; i < 32; i++) {
+        std::swap(_figures[i], _figures[63 - (7 - i % 8) - 8 * (i / 8)]);
+        _figures[i]->set_index(i);
+        _figures[63 - (7 - i % 8) - 8 * (i / 8)]->set_index(63 - (7 - i % 8) - 8 * (i / 8));
+        if (first_mirror) {
+            if (_figures[i]->type() != empty) {
+                _src_board->get_element(i).set_figure();
+                _src_board->get_element(i).set_player();
+            } else {
+                _src_board->get_element(i).destroy_figure();
+            }
+            if (_figures[63 - (7 - i % 8) - 8 * (i / 8)]->type() != empty) {
+                _src_board->get_element(63 - (7 - i % 8) - 8 * (i / 8)).set_figure();
+                _src_board->get_element(i).set_player();
+            } else {
+                _src_board->get_element(63 - (7 - i % 8) - 8 * (i / 8)).destroy_figure();
+            }
+        } else {
+            if (_figures[i]->type() != empty) {
+                _src_board->get_element(i).set_figure();
+                _src_board->get_element(i).set_player();
+            }
+            if (_figures[63 - (7 - i % 8) - 8 * (i / 8)]->type() != empty) {
+                _src_board->get_element(63 - (7 - i % 8) - 8 * (i / 8)).set_figure();
+                _src_board->get_element(i).set_player();
+            }
+        }
+    }
+    if (!first_mirror) {
+        _figures[63 - (7 - prev_player_pos % 8) - 8 * (prev_player_pos / 8)] = new Empty;
+        _position = prev_player_pos;
+        _src_board->get_element(_position).set_player_on();
+    }
+    first_mirror = !first_mirror;
+}
+
 void Player::pick() {
     _src_board->get_element(_prev_position).deactivate();
     if (_src_board->get_element(_position).predict_check()) {
+        _src_board->get_element(_position).set_player_off();
         _figures[_prev_position]->hide_fields();
         _figures[_prev_position]->transition(_position);
         if (_position != _prev_position) {
@@ -60,6 +99,10 @@ void Player::pick() {
             _src_board->get_element(_position).set_figure();
             _src_board->get_element(_prev_position).destroy_figure();
         }
+        mirror();
+        prev_player_pos = _position;
+        turn++;
+        turn %= 2;
         return;
     }
     _figures[_prev_position]->hide_fields();

@@ -8,6 +8,7 @@ public:
     void show_fields() override;
     void hide_fields() override;
     void transition(int) override;
+    void set_index(int) override;
 //    void show() override;
     figures type() override;
 private:

@@ -15,6 +15,7 @@ CMakeFiles/lab_08.dir/src/Element.cpp.o
  include/Element.hpp
  include/Enums.hpp
  include/Point.hpp
+ include/Turn.hpp
 CMakeFiles/lab_08.dir/src/Empty.cpp.o
  /home/just/itmo_stuff/programming/Chess/src/Empty.cpp
  include/Board.hpp
@@ -44,6 +45,10 @@ CMakeFiles/lab_08.dir/src/Player.cpp.o
  include/Pawn.hpp
  include/Player.hpp
  include/Point.hpp
+ include/Turn.hpp
+CMakeFiles/lab_08.dir/src/Turn.cpp.o
+ /home/just/itmo_stuff/programming/Chess/src/Turn.cpp
+ include/Turn.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o
  /home/just/itmo_stuff/programming/Chess/src/main.cpp
  include/Board.hpp
@@ -53,4 +58,5 @@ CMakeFiles/lab_08.dir/src/main.cpp.o
  include/Figure.hpp
  include/Player.hpp
  include/Point.hpp
+ include/Turn.hpp
  include/display.hpp

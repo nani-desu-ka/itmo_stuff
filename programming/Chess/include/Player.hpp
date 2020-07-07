@@ -9,6 +9,7 @@ public:
     explicit Player(Board *);
     void pick();
     void change_pos(direction);
+    void mirror();
     bool path(int);
     ~Player();
 private:
