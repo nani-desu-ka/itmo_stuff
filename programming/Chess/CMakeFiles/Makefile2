@@ -74,12 +74,12 @@ clean: CMakeFiles/lab_08.dir/clean
 CMakeFiles/lab_08.dir/all:
 	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/depend
 	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/just/itmo_stuff/programming/Chess/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target lab_08"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/just/itmo_stuff/programming/Chess/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target lab_08"
 .PHONY : CMakeFiles/lab_08.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab_08.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/just/itmo_stuff/programming/Chess/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/just/itmo_stuff/programming/Chess/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lab_08.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/just/itmo_stuff/programming/Chess/CMakeFiles 0
 .PHONY : CMakeFiles/lab_08.dir/rule

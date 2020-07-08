@@ -18,6 +18,15 @@ CMakeFiles/lab_08.dir/src/Board.cpp.o: include/Enums.hpp
 CMakeFiles/lab_08.dir/src/Board.cpp.o: include/Figure.hpp
 CMakeFiles/lab_08.dir/src/Board.cpp.o: include/Point.hpp
 
+CMakeFiles/lab_08.dir/src/Castle.cpp.o: src/Castle.cpp
+CMakeFiles/lab_08.dir/src/Castle.cpp.o: include/Board.hpp
+CMakeFiles/lab_08.dir/src/Castle.cpp.o: include/Castle.hpp
+CMakeFiles/lab_08.dir/src/Castle.cpp.o: include/Color_c.hpp
+CMakeFiles/lab_08.dir/src/Castle.cpp.o: include/Element.hpp
+CMakeFiles/lab_08.dir/src/Castle.cpp.o: include/Enums.hpp
+CMakeFiles/lab_08.dir/src/Castle.cpp.o: include/Figure.hpp
+CMakeFiles/lab_08.dir/src/Castle.cpp.o: include/Point.hpp
+
 CMakeFiles/lab_08.dir/src/Element.cpp.o: src/Element.cpp
 CMakeFiles/lab_08.dir/src/Element.cpp.o: include/Color_c.hpp
 CMakeFiles/lab_08.dir/src/Element.cpp.o: include/Element.hpp
@@ -55,6 +64,7 @@ CMakeFiles/lab_08.dir/src/Pawn.cpp.o: include/Point.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: src/Player.cpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Bishop.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Board.hpp
+CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Castle.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Color_c.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Element.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Empty.hpp

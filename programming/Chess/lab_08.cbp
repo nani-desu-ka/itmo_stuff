@@ -92,6 +92,9 @@
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/Board.hpp">
 			<Option target="lab_08"/>
 		</Unit>
+		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/Castle.hpp">
+			<Option target="lab_08"/>
+		</Unit>
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/Color_c.hpp">
 			<Option target="lab_08"/>
 		</Unit>
@@ -129,6 +132,9 @@
 			<Option target="lab_08"/>
 		</Unit>
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/src/Board.cpp">
+			<Option target="lab_08"/>
+		</Unit>
+		<Unit filename="/home/just/itmo_stuff/programming/Chess/src/Castle.cpp">
 			<Option target="lab_08"/>
 		</Unit>
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/src/Element.cpp">

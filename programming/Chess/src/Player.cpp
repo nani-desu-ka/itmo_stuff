@@ -6,11 +6,18 @@
 #include "Empty.hpp"
 #include "Knight.hpp"
 #include "Bishop.hpp"
+#include "Castle.hpp"
 //
 
 Player::Player(Board *temp_board) {
     _src_board = temp_board;
     for (int i = 0; i < 8; i++) {
+        if (i == 0 || i == 7) {
+            _figures.push_back(new Castle(i, _src_board));
+            _src_board->get_element(i).set_figure();
+            _src_board->get_element(i).set_player();
+            continue;
+        }
         if (i == 1 || i == 6) {
             _figures.push_back(new Knight(i, _src_board));
             _src_board->get_element(i).set_figure();
@@ -140,6 +147,32 @@ void Player::show() {
     }
 }
 
+void Player::give_figure(figures temp_figure, int index) {
+    switch (temp_figure) {
+        case castle:
+            _figures[index] = new Castle(index, _src_board);
+            _src_board->get_element(index).set_player();
+            _src_board->get_element(index).set_figure();
+            return;
+        case bishop:
+            _figures[index] = new Bishop(index, _src_board);
+            _src_board->get_element(index).set_player();
+            _src_board->get_element(index).set_figure();
+            return;
+        case pawn:
+            _figures[index] = new Pawn(index, _src_board);
+            _src_board->get_element(index).set_player();
+            _src_board->get_element(index).set_figure();
+            return;
+        case knight:
+            _figures[index] = new Knight(index, _src_board);
+            _src_board->get_element(index).set_player();
+            _src_board->get_element(index).set_figure();
+            return;
+        default:
+            _figures[index] = new Empty();
+    }
+}
 Player::~Player() {
     _figures.clear();
 }

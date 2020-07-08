@@ -13,6 +13,7 @@ public:
     void board_prepare();
     bool path(int);
     void show();
+    void give_figure(figures, int);
     ~Player();
 private:
     std::vector<Figure *> _figures;

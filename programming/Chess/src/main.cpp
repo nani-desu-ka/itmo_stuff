@@ -70,6 +70,7 @@ int main(int argc, char** argv) {
     actual_player.push_back(&white_player);
     black_player.mirror();
     actual_player.push_back(&black_player);
+    black_player.give_figure(castle, 63);
     white_player.board_prepare();
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize(800, 800);

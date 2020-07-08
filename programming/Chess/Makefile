@@ -177,6 +177,33 @@ src/Board.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Board.cpp.s
 .PHONY : src/Board.cpp.s
 
+src/Castle.o: src/Castle.cpp.o
+
+.PHONY : src/Castle.o
+
+# target to build an object file
+src/Castle.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Castle.cpp.o
+.PHONY : src/Castle.cpp.o
+
+src/Castle.i: src/Castle.cpp.i
+
+.PHONY : src/Castle.i
+
+# target to preprocess a source file
+src/Castle.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Castle.cpp.i
+.PHONY : src/Castle.cpp.i
+
+src/Castle.s: src/Castle.cpp.s
+
+.PHONY : src/Castle.s
+
+# target to generate assembly for a file
+src/Castle.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Castle.cpp.s
+.PHONY : src/Castle.cpp.s
+
 src/Element.o: src/Element.cpp.o
 
 .PHONY : src/Element.o
@@ -381,6 +408,9 @@ help:
 	@echo "... src/Board.o"
 	@echo "... src/Board.i"
 	@echo "... src/Board.s"
+	@echo "... src/Castle.o"
+	@echo "... src/Castle.i"
+	@echo "... src/Castle.s"
 	@echo "... src/Element.o"
 	@echo "... src/Element.i"
 	@echo "... src/Element.s"

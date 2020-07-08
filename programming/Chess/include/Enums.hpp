@@ -27,7 +27,7 @@ enum figures {
 //    queen,
     bishop, // слон
     knight, // конь
-//    castle, // ладья
+    castle, // ладья
     pawn, // пешка
     empty,
 };
