@@ -41,8 +41,8 @@ void simpleKeys(unsigned char key, int x, int y) {
             rotate_y += 180;
             glRotatef(rotate_y, 0.0, 1.0, 0.0);
             display();
-            for (int i = 0; i < 90; i++) {
-                rotate_y += 2;
+            for (int i = 0; i < 60; i++) {
+                rotate_y += 3;
                 display();
             }
         }
@@ -59,6 +59,7 @@ void display() {
     glScalef(0.2, 0.2, 0.2);
     temp_board.draw();
     white_player.show();
+    black_player.show();
     glFlush();
     glutSwapBuffers();
 }

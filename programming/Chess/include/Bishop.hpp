@@ -15,5 +15,6 @@ public:
 private:
     int _index;
     Board *_src_board;
-    std::vector<float> _shape;
+    std::vector<std::vector<Point>> _shape;
+    std::vector<Point> _line;
 };

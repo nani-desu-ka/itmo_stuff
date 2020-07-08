@@ -138,9 +138,6 @@ void element::draw() {
     for (auto &_face : _faces) {
         temp_color = color_check(_colors[i]);
         if (i == 1) {
-            if (_figure_on) {
-                temp_color = color_check(purple);
-            }
             if (_player_predicted) {
                 temp_color = color_check(green);
             }

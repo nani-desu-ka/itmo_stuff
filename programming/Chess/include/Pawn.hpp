@@ -16,5 +16,6 @@ private:
     bool _first = true;
     int _index;
     Board *_src_board;
-    std::vector<Point> _shape;
+    std::vector<std::vector<Point>> _shape;
+    std::vector<Point> _line;
 };

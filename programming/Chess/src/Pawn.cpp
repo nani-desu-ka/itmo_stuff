@@ -5,43 +5,72 @@
 Pawn::Pawn(int index, Board *src_board) {
     _index = index;
     _src_board = src_board;
-    float y = 0.51;
+    float y = 0.501;
+    _shape.resize(7);
     Point temp_point(-0.4, y, -0.45);
-    _shape.push_back(temp_point);
+    _shape[0].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(-0.4, y, -0.4);
-    _shape.push_back(temp_point);
+    _shape[0].push_back(temp_point);
+    _line.push_back(temp_point);
+    _shape[5].push_back(temp_point);
     temp_point.set(-0.3, y, -0.3);
-    _shape.push_back(temp_point);
+    _shape[1].push_back(temp_point);
+    _shape[5].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(-0.3, y, -0.2);
-    _shape.push_back(temp_point);
+    _shape[1].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(-0.15, y, -0.2);
-    _shape.push_back(temp_point);
+    _shape[2].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(-0.1, y, -0.15);
-    _shape.push_back(temp_point);
+    _shape[2].push_back(temp_point);
+    _shape[3].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(-0.1, y, 0.2);
-    _shape.push_back(temp_point);
+    _shape[3].push_back(temp_point);
+    _shape[6].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(-0.15, y, 0.3);
-    _shape.push_back(temp_point);
+    _shape[4].push_back(temp_point);
+    _shape[6].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(-0.15, y, 0.4);
-    _shape.push_back(temp_point);
+    _shape[4].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(0.15, y, 0.4);
-    _shape.push_back(temp_point);
+    _shape[4].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(0.15, y, 0.3);
-    _shape.push_back(temp_point);
+    _shape[4].push_back(temp_point);
+    _shape[6].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(0.1, y, 0.2);
-    _shape.push_back(temp_point);
+    _shape[3].push_back(temp_point);
+    _shape[6].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(0.1, y, -0.15);
-    _shape.push_back(temp_point);
+    _shape[2].push_back(temp_point);
+    _shape[3].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(0.15, y, -0.2);
-    _shape.push_back(temp_point);
+    _shape[2].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(0.3, y, -0.2);
-    _shape.push_back(temp_point);
+    _shape[1].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(0.3, y, -0.3);
-    _shape.push_back(temp_point);
+    _shape[1].push_back(temp_point);
+    _shape[5].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(0.4, y, -0.4);
-    _shape.push_back(temp_point);
+    _shape[0].push_back(temp_point);
+    _shape[5].push_back(temp_point);
+    _line.push_back(temp_point);
     temp_point.set(0.4, y, -0.45);
-    _shape.push_back(temp_point);
+    _shape[0].push_back(temp_point);
+    _line.push_back(temp_point);
 }
 
 void Pawn::show_fields() {
@@ -94,10 +123,19 @@ figures Pawn::type() {
 }
 
 void Pawn::show() {
+    int player = _src_board->get_element(_index).check_player();
+    for (auto &i : _shape) {
+        glColor3f((player + 1) % 2, (player + 1) % 2, (player + 1) % 2);
+        glBegin(GL_POLYGON);
+        for (auto &j : i) {
+            glVertex3f(j.x + _index % 8 - 3.5, j.y, j.z + _index / 8 - 3.5);
+        }
+        glEnd();
+    }
+    glColor3f(player, player, player);
     glBegin(GL_LINE_LOOP);
-    glColor3f(1, 1, 1);
-    for (auto &j : _shape) {
-        glVertex3f(j.x + _index % 8 - 3.5, j.y, j.z + _index / 8 - 3.5);
+    for (auto &j : _line) {
+        glVertex3f(j.x + _index % 8 - 3.5, j.y + 0.01, j.z + _index / 8 - 3.5);
     }
     glEnd();
 }
