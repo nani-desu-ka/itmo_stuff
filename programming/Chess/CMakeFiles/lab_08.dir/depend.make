@@ -88,5 +88,4 @@ CMakeFiles/lab_08.dir/src/main.cpp.o: include/Figure.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/Player.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/Point.hpp
 CMakeFiles/lab_08.dir/src/main.cpp.o: include/Turn.hpp
-CMakeFiles/lab_08.dir/src/main.cpp.o: include/display.hpp
 

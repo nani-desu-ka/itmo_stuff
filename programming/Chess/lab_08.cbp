@@ -125,9 +125,6 @@
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/Turn.hpp">
 			<Option target="lab_08"/>
 		</Unit>
-		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/display.hpp">
-			<Option target="lab_08"/>
-		</Unit>
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/src/Bishop.cpp">
 			<Option target="lab_08"/>
 		</Unit>

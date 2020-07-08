@@ -89,4 +89,3 @@ CMakeFiles/lab_08.dir/src/main.cpp.o
  include/Player.hpp
  include/Point.hpp
  include/Turn.hpp
- include/display.hpp

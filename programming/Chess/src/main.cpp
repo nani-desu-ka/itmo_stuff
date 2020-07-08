@@ -3,7 +3,6 @@
 #include <GL/freeglut.h>
 #include <GL/gl.h>
 #include "Board.hpp"
-#include "display.hpp"
 #include "Enums.hpp"
 #include "Player.hpp"
 #include "Turn.hpp"
@@ -29,6 +28,21 @@ void specialKeys(int key, int x, int y) {
     glutPostRedisplay();
 }
 
+void display() {
+    glClearColor(0.5, 0.5, 0.5, 1);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glLoadIdentity();
+    glScalef(0.7, 0.7, 0.7);
+    glRotatef(rotate_x, 1.0, 0.0, 0.0);
+    glRotatef(rotate_y, 0.0, 1.0, 0.0);
+    glScalef(0.2, 0.2, 0.2);
+    temp_board.draw();
+    white_player.show();
+    black_player.show();
+    glFlush();
+    glutSwapBuffers();
+}
+
 void simpleKeys(unsigned char key, int x, int y) {
     if (key == 'w' || key == 'W') actual_player[turn]->change_pos(up);
     else if (key == 'a' || key == 'A') actual_player[turn]->change_pos(left);
@@ -48,20 +62,6 @@ void simpleKeys(unsigned char key, int x, int y) {
         }
     }
     glutPostRedisplay();
-}
-void display() {
-    glClearColor(0.5, 0.5, 0.5, 1);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    glLoadIdentity();
-    glScalef(0.7, 0.7, 0.7);
-    glRotatef(rotate_x, 1.0, 0.0, 0.0);
-    glRotatef(rotate_y, 0.0, 1.0, 0.0);
-    glScalef(0.2, 0.2, 0.2);
-    temp_board.draw();
-    white_player.show();
-    black_player.show();
-    glFlush();
-    glutSwapBuffers();
 }
 
 int main(int argc, char** argv) {
