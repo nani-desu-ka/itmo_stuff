@@ -38,6 +38,13 @@ void simpleKeys(unsigned char key, int x, int y) {
         actual_player[turn]->pick();
         if (!first_mirror) {
             actual_player[turn]->mirror();
+            rotate_y += 180;
+            glRotatef(rotate_y, 0.0, 1.0, 0.0);
+            display();
+            for (int i = 0; i < 90; i++) {
+                rotate_y += 2;
+                display();
+            }
         }
     }
     glutPostRedisplay();

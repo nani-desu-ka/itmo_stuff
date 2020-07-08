@@ -17,6 +17,12 @@ Player::Player(Board *temp_board) {
             _src_board->get_element(i).set_player();
             continue;
         }
+        if (i == 2 || i == 5) {
+            _figures.push_back(new Bishop(i, _src_board));
+            _src_board->get_element(i).set_figure();
+            _src_board->get_element(i).set_player();
+            continue;
+        }
         _figures.push_back(new Empty());
     }
     for (int i = 8; i < 16; i++) {
@@ -25,12 +31,6 @@ Player::Player(Board *temp_board) {
         _src_board->get_element(i).set_player();
     }
     for (int i = 16; i < 64; i++) {
-        if (i == 29) {
-            _figures.push_back(new Bishop(i, _src_board));
-            _src_board->get_element(i).set_figure();
-            _src_board->get_element(i).set_player();
-            continue;
-        }
         _figures.push_back(new Empty());
     }
 }

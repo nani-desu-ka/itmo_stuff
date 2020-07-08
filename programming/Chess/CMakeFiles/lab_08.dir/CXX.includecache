@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/just/itmo_stuff/programming/Chess/src/Player.cpp
+/home/just/itmo_stuff/programming/Chess/src/main.cpp
+iostream
+-
+vector
+-
+GL/freeglut.h
+-
+GL/gl.h
+-
+Board.hpp
+/home/just/itmo_stuff/programming/Chess/src/Board.hpp
+display.hpp
+/home/just/itmo_stuff/programming/Chess/src/display.hpp
+Enums.hpp
+/home/just/itmo_stuff/programming/Chess/src/Enums.hpp
 Player.hpp
 /home/just/itmo_stuff/programming/Chess/src/Player.hpp
 Turn.hpp
 /home/just/itmo_stuff/programming/Chess/src/Turn.hpp
-Pawn.hpp
-/home/just/itmo_stuff/programming/Chess/src/Pawn.hpp
-Empty.hpp
-/home/just/itmo_stuff/programming/Chess/src/Empty.hpp
-Knight.hpp
-/home/just/itmo_stuff/programming/Chess/src/Knight.hpp
-Bishop.hpp
-/home/just/itmo_stuff/programming/Chess/src/Bishop.hpp
-
-include/Bishop.hpp
-Figure.hpp
-include/Figure.hpp
-Board.hpp
-include/Board.hpp
 
 include/Board.hpp
 vector
@@ -48,12 +48,6 @@ include/Enums.hpp
 Color_c.hpp
 include/Color_c.hpp
 
-include/Empty.hpp
-Figure.hpp
-include/Figure.hpp
-Board.hpp
-include/Board.hpp
-
 include/Enums.hpp
 
 include/Figure.hpp
@@ -61,18 +55,6 @@ Point.hpp
 include/Point.hpp
 Enums.hpp
 include/Enums.hpp
-
-include/Knight.hpp
-Figure.hpp
-include/Figure.hpp
-Board.hpp
-include/Board.hpp
-
-include/Pawn.hpp
-Figure.hpp
-include/Figure.hpp
-Board.hpp
-include/Board.hpp
 
 include/Player.hpp
 Enums.hpp
@@ -87,4 +69,6 @@ include/vector
 include/Point.hpp
 
 include/Turn.hpp
+
+include/display.hpp
 
