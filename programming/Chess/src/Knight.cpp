@@ -127,3 +127,5 @@ void Knight::set_index(int index) {
 figures Knight::type() {
     return knight;
 }
+
+void Knight::show() {}

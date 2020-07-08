@@ -58,6 +58,7 @@ void display() {
     glRotatef(rotate_y, 0.0, 1.0, 0.0);
     glScalef(0.2, 0.2, 0.2);
     temp_board.draw();
+    white_player.show();
     glFlush();
     glutSwapBuffers();
 }

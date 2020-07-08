@@ -12,6 +12,7 @@ public:
     void mirror();
     void board_prepare();
     bool path(int);
+    void show();
     ~Player();
 private:
     std::vector<Figure *> _figures;

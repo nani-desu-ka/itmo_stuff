@@ -111,3 +111,5 @@ void Bishop::set_index(int index) {
 figures Bishop::type() {
     return bishop;
 }
+
+void Bishop::show() {}

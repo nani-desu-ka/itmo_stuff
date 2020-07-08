@@ -1,9 +1,47 @@
 #include "Pawn.hpp"
 #include "Board.hpp"
+#include <GL/gl.h>
 
 Pawn::Pawn(int index, Board *src_board) {
     _index = index;
     _src_board = src_board;
+    float y = 0.51;
+    Point temp_point(-0.4, y, -0.45);
+    _shape.push_back(temp_point);
+    temp_point.set(-0.4, y, -0.4);
+    _shape.push_back(temp_point);
+    temp_point.set(-0.3, y, -0.3);
+    _shape.push_back(temp_point);
+    temp_point.set(-0.3, y, -0.2);
+    _shape.push_back(temp_point);
+    temp_point.set(-0.15, y, -0.2);
+    _shape.push_back(temp_point);
+    temp_point.set(-0.1, y, -0.15);
+    _shape.push_back(temp_point);
+    temp_point.set(-0.1, y, 0.2);
+    _shape.push_back(temp_point);
+    temp_point.set(-0.15, y, 0.3);
+    _shape.push_back(temp_point);
+    temp_point.set(-0.15, y, 0.4);
+    _shape.push_back(temp_point);
+    temp_point.set(0.15, y, 0.4);
+    _shape.push_back(temp_point);
+    temp_point.set(0.15, y, 0.3);
+    _shape.push_back(temp_point);
+    temp_point.set(0.1, y, 0.2);
+    _shape.push_back(temp_point);
+    temp_point.set(0.1, y, -0.15);
+    _shape.push_back(temp_point);
+    temp_point.set(0.15, y, -0.2);
+    _shape.push_back(temp_point);
+    temp_point.set(0.3, y, -0.2);
+    _shape.push_back(temp_point);
+    temp_point.set(0.3, y, -0.3);
+    _shape.push_back(temp_point);
+    temp_point.set(0.4, y, -0.4);
+    _shape.push_back(temp_point);
+    temp_point.set(0.4, y, -0.45);
+    _shape.push_back(temp_point);
 }
 
 void Pawn::show_fields() {
@@ -53,4 +91,13 @@ void Pawn::set_index(int index) {
 
 figures Pawn::type() {
     return pawn;
+}
+
+void Pawn::show() {
+    glBegin(GL_LINE_LOOP);
+    glColor3f(1, 1, 1);
+    for (auto &j : _shape) {
+        glVertex3f(j.x + _index % 8 - 3.5, j.y, j.z + _index / 8 - 3.5);
+    }
+    glEnd();
 }

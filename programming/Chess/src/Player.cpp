@@ -134,6 +134,12 @@ void Player::pick() {
     _src_board->get_element(_position).activate();
 }
 
+void Player::show() {
+    for (auto j : _figures) {
+        j->show();
+    }
+}
+
 Player::~Player() {
     _figures.clear();
 }
