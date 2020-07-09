@@ -122,6 +122,9 @@
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/Point.hpp">
 			<Option target="lab_08"/>
 		</Unit>
+		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/Queen.hpp">
+			<Option target="lab_08"/>
+		</Unit>
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/include/Turn.hpp">
 			<Option target="lab_08"/>
 		</Unit>
@@ -147,6 +150,9 @@
 			<Option target="lab_08"/>
 		</Unit>
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/src/Player.cpp">
+			<Option target="lab_08"/>
+		</Unit>
+		<Unit filename="/home/just/itmo_stuff/programming/Chess/src/Queen.cpp">
 			<Option target="lab_08"/>
 		</Unit>
 		<Unit filename="/home/just/itmo_stuff/programming/Chess/src/Turn.cpp">

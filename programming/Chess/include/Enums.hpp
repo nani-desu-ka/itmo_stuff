@@ -24,7 +24,7 @@ enum colors {
 
 enum figures {
 //    king,
-//    queen,
+    queen,
     bishop, // слон
     knight, // конь
     castle, // ладья

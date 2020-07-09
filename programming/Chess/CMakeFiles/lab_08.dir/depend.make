@@ -74,7 +74,17 @@ CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Knight.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Pawn.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Player.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Point.hpp
+CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Queen.hpp
 CMakeFiles/lab_08.dir/src/Player.cpp.o: include/Turn.hpp
+
+CMakeFiles/lab_08.dir/src/Queen.cpp.o: src/Queen.cpp
+CMakeFiles/lab_08.dir/src/Queen.cpp.o: include/Board.hpp
+CMakeFiles/lab_08.dir/src/Queen.cpp.o: include/Color_c.hpp
+CMakeFiles/lab_08.dir/src/Queen.cpp.o: include/Element.hpp
+CMakeFiles/lab_08.dir/src/Queen.cpp.o: include/Enums.hpp
+CMakeFiles/lab_08.dir/src/Queen.cpp.o: include/Figure.hpp
+CMakeFiles/lab_08.dir/src/Queen.cpp.o: include/Point.hpp
+CMakeFiles/lab_08.dir/src/Queen.cpp.o: include/Queen.hpp
 
 CMakeFiles/lab_08.dir/src/Turn.cpp.o: src/Turn.cpp
 CMakeFiles/lab_08.dir/src/Turn.cpp.o: include/Turn.hpp

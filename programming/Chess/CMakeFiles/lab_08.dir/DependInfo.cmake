@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/just/itmo_stuff/programming/Chess/src/Knight.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Knight.cpp.o"
   "/home/just/itmo_stuff/programming/Chess/src/Pawn.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Pawn.cpp.o"
   "/home/just/itmo_stuff/programming/Chess/src/Player.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Player.cpp.o"
+  "/home/just/itmo_stuff/programming/Chess/src/Queen.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Queen.cpp.o"
   "/home/just/itmo_stuff/programming/Chess/src/Turn.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/Turn.cpp.o"
   "/home/just/itmo_stuff/programming/Chess/src/main.cpp" "/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir/src/main.cpp.o"
   )

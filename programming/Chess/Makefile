@@ -339,6 +339,33 @@ src/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/Queen.o: src/Queen.cpp.o
+
+.PHONY : src/Queen.o
+
+# target to build an object file
+src/Queen.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Queen.cpp.o
+.PHONY : src/Queen.cpp.o
+
+src/Queen.i: src/Queen.cpp.i
+
+.PHONY : src/Queen.i
+
+# target to preprocess a source file
+src/Queen.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Queen.cpp.i
+.PHONY : src/Queen.cpp.i
+
+src/Queen.s: src/Queen.cpp.s
+
+.PHONY : src/Queen.s
+
+# target to generate assembly for a file
+src/Queen.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Queen.cpp.s
+.PHONY : src/Queen.cpp.s
+
 src/Turn.o: src/Turn.cpp.o
 
 .PHONY : src/Turn.o
@@ -426,6 +453,9 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/Queen.o"
+	@echo "... src/Queen.i"
+	@echo "... src/Queen.s"
 	@echo "... src/Turn.o"
 	@echo "... src/Turn.i"
 	@echo "... src/Turn.s"

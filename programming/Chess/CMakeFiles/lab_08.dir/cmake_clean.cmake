@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lab_08.dir/src/Knight.cpp.o"
   "CMakeFiles/lab_08.dir/src/Pawn.cpp.o"
   "CMakeFiles/lab_08.dir/src/Player.cpp.o"
+  "CMakeFiles/lab_08.dir/src/Queen.cpp.o"
   "CMakeFiles/lab_08.dir/src/Turn.cpp.o"
   "CMakeFiles/lab_08.dir/src/main.cpp.o"
   "lab_08"

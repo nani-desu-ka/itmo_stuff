@@ -7,6 +7,7 @@
 #include "Knight.hpp"
 #include "Bishop.hpp"
 #include "Castle.hpp"
+#include "Queen.hpp"
 //
 
 Player::Player(Board *temp_board) {
@@ -166,6 +167,11 @@ void Player::give_figure(figures temp_figure, int index) {
             return;
         case knight:
             _figures[index] = new Knight(index, _src_board);
+            _src_board->get_element(index).set_player();
+            _src_board->get_element(index).set_figure();
+            return;
+        case queen:
+            _figures[index] = new Queen(index, _src_board);
             _src_board->get_element(index).set_player();
             _src_board->get_element(index).set_figure();
             return;

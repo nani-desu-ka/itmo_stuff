@@ -6,23 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/just/itmo_stuff/programming/Chess/src/main.cpp
-iostream
--
-vector
--
-GL/freeglut.h
--
-GL/gl.h
--
+/home/just/itmo_stuff/programming/Chess/src/Queen.cpp
+Queen.hpp
+/home/just/itmo_stuff/programming/Chess/src/Queen.hpp
 Board.hpp
 /home/just/itmo_stuff/programming/Chess/src/Board.hpp
-Enums.hpp
-/home/just/itmo_stuff/programming/Chess/src/Enums.hpp
-Player.hpp
-/home/just/itmo_stuff/programming/Chess/src/Player.hpp
-Turn.hpp
-/home/just/itmo_stuff/programming/Chess/src/Turn.hpp
+GL/gl.h
+-
 
 include/Board.hpp
 vector
@@ -54,17 +44,13 @@ include/Point.hpp
 Enums.hpp
 include/Enums.hpp
 
-include/Player.hpp
-Enums.hpp
-include/Enums.hpp
-Board.hpp
-include/Board.hpp
-Figure.hpp
-include/Figure.hpp
-vector
-include/vector
-
 include/Point.hpp
 
-include/Turn.hpp
+include/Queen.hpp
+Figure.hpp
+include/Figure.hpp
+Board.hpp
+include/Board.hpp
+vector
+-
 
