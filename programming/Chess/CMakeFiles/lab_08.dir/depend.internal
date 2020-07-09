@@ -43,6 +43,15 @@ CMakeFiles/lab_08.dir/src/Empty.cpp.o
  include/Enums.hpp
  include/Figure.hpp
  include/Point.hpp
+CMakeFiles/lab_08.dir/src/King.cpp.o
+ /home/just/itmo_stuff/programming/Chess/src/King.cpp
+ include/Board.hpp
+ include/Color_c.hpp
+ include/Element.hpp
+ include/Enums.hpp
+ include/Figure.hpp
+ include/King.hpp
+ include/Point.hpp
 CMakeFiles/lab_08.dir/src/Knight.cpp.o
  /home/just/itmo_stuff/programming/Chess/src/Knight.cpp
  include/Board.hpp
@@ -71,6 +80,7 @@ CMakeFiles/lab_08.dir/src/Player.cpp.o
  include/Empty.hpp
  include/Enums.hpp
  include/Figure.hpp
+ include/King.hpp
  include/Knight.hpp
  include/Pawn.hpp
  include/Player.hpp

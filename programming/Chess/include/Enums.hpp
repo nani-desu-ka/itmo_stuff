@@ -23,8 +23,8 @@ enum colors {
 //};
 
 enum figures {
-//    king,
-    queen,
+    hideo_kojima, // король
+    queen, // королева
     bishop, // слон
     knight, // конь
     castle, // ладья

@@ -258,6 +258,33 @@ src/Empty.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/Empty.cpp.s
 .PHONY : src/Empty.cpp.s
 
+src/King.o: src/King.cpp.o
+
+.PHONY : src/King.o
+
+# target to build an object file
+src/King.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/King.cpp.o
+.PHONY : src/King.cpp.o
+
+src/King.i: src/King.cpp.i
+
+.PHONY : src/King.i
+
+# target to preprocess a source file
+src/King.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/King.cpp.i
+.PHONY : src/King.cpp.i
+
+src/King.s: src/King.cpp.s
+
+.PHONY : src/King.s
+
+# target to generate assembly for a file
+src/King.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_08.dir/build.make CMakeFiles/lab_08.dir/src/King.cpp.s
+.PHONY : src/King.cpp.s
+
 src/Knight.o: src/Knight.cpp.o
 
 .PHONY : src/Knight.o
@@ -444,6 +471,9 @@ help:
 	@echo "... src/Empty.o"
 	@echo "... src/Empty.i"
 	@echo "... src/Empty.s"
+	@echo "... src/King.o"
+	@echo "... src/King.i"
+	@echo "... src/King.s"
 	@echo "... src/Knight.o"
 	@echo "... src/Knight.i"
 	@echo "... src/Knight.s"

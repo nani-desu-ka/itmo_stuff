@@ -73,6 +73,8 @@ int main(int argc, char** argv) {
     black_player.give_figure(castle, 63);
     black_player.give_figure(queen, 59);
     white_player.give_figure(queen, 3);
+    black_player.give_figure(hideo_kojima, 60);
+    white_player.give_figure(hideo_kojima, 4);
     white_player.board_prepare();
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize(800, 800);

@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/just/itmo_stuff/programming/Chess/src/Queen.cpp
-Queen.hpp
-/home/just/itmo_stuff/programming/Chess/src/Queen.hpp
+/home/just/itmo_stuff/programming/Chess/src/King.cpp
+King.hpp
+/home/just/itmo_stuff/programming/Chess/src/King.hpp
 Board.hpp
 /home/just/itmo_stuff/programming/Chess/src/Board.hpp
 GL/gl.h
@@ -44,13 +44,13 @@ include/Point.hpp
 Enums.hpp
 include/Enums.hpp
 
-include/Point.hpp
-
-include/Queen.hpp
+include/King.hpp
 Figure.hpp
 include/Figure.hpp
 Board.hpp
 include/Board.hpp
 vector
 -
+
+include/Point.hpp
 
