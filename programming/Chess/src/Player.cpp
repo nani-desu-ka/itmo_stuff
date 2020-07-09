@@ -110,6 +110,9 @@ void Player::mirror() {
         }
     }
     if (!first_mirror) {
+        if (_figures[63 - prev_player_pos]->type() == hideo_kojima) {
+            end_game = true;
+        }
         _figures[63 - prev_player_pos] = new Empty;
         _src_board->get_element(63 - prev_player_pos).set_another_player();
         _position = prev_player_pos;

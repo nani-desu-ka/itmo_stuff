@@ -6,23 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/just/itmo_stuff/programming/Chess/src/King.cpp
-King.hpp
-/home/just/itmo_stuff/programming/Chess/src/King.hpp
-Board.hpp
-/home/just/itmo_stuff/programming/Chess/src/Board.hpp
+/home/just/itmo_stuff/programming/Chess/src/Element.cpp
+Element.hpp
+/home/just/itmo_stuff/programming/Chess/src/Element.hpp
+Enums.hpp
+/home/just/itmo_stuff/programming/Chess/src/Enums.hpp
 GL/gl.h
 -
-
-include/Board.hpp
-vector
--
-Enums.hpp
-include/Enums.hpp
-Element.hpp
-include/Element.hpp
-Figure.hpp
-include/Figure.hpp
+Turn.hpp
+/home/just/itmo_stuff/programming/Chess/src/Turn.hpp
 
 include/Color_c.hpp
 
@@ -38,19 +30,7 @@ include/Color_c.hpp
 
 include/Enums.hpp
 
-include/Figure.hpp
-Point.hpp
 include/Point.hpp
-Enums.hpp
-include/Enums.hpp
 
-include/King.hpp
-Figure.hpp
-include/Figure.hpp
-Board.hpp
-include/Board.hpp
-vector
--
-
-include/Point.hpp
+include/Turn.hpp
 

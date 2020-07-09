@@ -149,6 +149,12 @@ void element::draw() {
             if (_player_active) {
                 temp_color = color_check(red);
             }
+            if (end_game) {
+                if (turn == 0)
+                    temp_color = color_check(black);
+                else
+                    temp_color = color_check(white);
+            }
         }
         glBegin(GL_POLYGON);
         glColor3f(temp_color.red, temp_color.green, temp_color.blue);

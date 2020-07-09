@@ -44,20 +44,22 @@ void display() {
 }
 
 void simpleKeys(unsigned char key, int x, int y) {
-    if (key == 'w' || key == 'W') actual_player[turn]->change_pos(up);
-    else if (key == 'a' || key == 'A') actual_player[turn]->change_pos(left);
-    else if (key == 's' || key == 'S') actual_player[turn]->change_pos(down);
-    else if (key == 'd' || key == 'D') actual_player[turn]->change_pos(right);
-    else if (key == ' ') {
-        actual_player[turn]->pick();
-        if (!first_mirror) {
-            actual_player[turn]->mirror();
-            rotate_y += 180;
-            glRotatef(rotate_y, 0.0, 1.0, 0.0);
-            display();
-            for (int i = 0; i < 60; i++) {
-                rotate_y += 3;
+    if (!end_game) {
+        if (key == 'w' || key == 'W') actual_player[turn]->change_pos(up);
+        else if (key == 'a' || key == 'A') actual_player[turn]->change_pos(left);
+        else if (key == 's' || key == 'S') actual_player[turn]->change_pos(down);
+        else if (key == 'd' || key == 'D') actual_player[turn]->change_pos(right);
+        else if (key == ' ') {
+            actual_player[turn]->pick();
+            if (!first_mirror) {
+                actual_player[turn]->mirror();
+                rotate_y += 180;
+                glRotatef(rotate_y, 0.0, 1.0, 0.0);
                 display();
+                for (int i = 0; i < 60; i++) {
+                    rotate_y += 3;
+                    display();
+                }
             }
         }
     }

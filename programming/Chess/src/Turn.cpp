@@ -3,4 +3,5 @@
 int turn = 0;
 bool first_mirror = false;
 int prev_player_pos = 0;
+bool end_game = false;
 
