@@ -55,6 +55,9 @@ void simpleKeys(unsigned char key, int x, int y) {
                 actual_player[turn]->mirror();
                 rotate_y += 180;
                 glRotatef(rotate_y, 0.0, 1.0, 0.0);
+                if (end_game) {
+                    temp_board.finisher();
+                }
                 display();
                 for (int i = 0; i < 60; i++) {
                     rotate_y += 3;

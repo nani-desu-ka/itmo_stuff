@@ -64,64 +64,65 @@ color_c element::color_check(colors needed_col) {
     }
 }
 
-element::element(float position_x, float position_y, float position_z, colors temp_color_1) {
-    Point temp_position(position_x, position_y, position_z);
+element::element(float position_x, float position_y, float position_z, float multiplier, float offset,
+        colors temp_color_1) {
+    Point temp_position(position_x, position_y + offset, position_z);
     _position = temp_position;
     _buffer_color = temp_color_1;
     _faces.resize(6);
 
-    Point temp_point(0.5, -0.5, -0.5);
+    Point temp_point(0.5, -0.5f * multiplier, -0.5);
     _faces[0].push_back(temp_point);
-    temp_point.set(0.5, 0.5, -0.5);
+    temp_point.set(0.5, 0.5f * multiplier, -0.5);
     _faces[0].push_back(temp_point);
-    temp_point.set(-0.5, 0.5, -0.5);
+    temp_point.set(-0.5, 0.5f * multiplier, -0.5);
     _faces[0].push_back(temp_point);
-    temp_point.set(-0.5, -0.5, -0.5);
+    temp_point.set(-0.5, -0.5f * multiplier, -0.5);
     _faces[0].push_back(temp_point);
 
-    temp_point.set(0.5, 0.5, 0.5);
+    temp_point.set(0.5, 0.5f * multiplier, 0.5);
     _faces[1].push_back(temp_point);
-    temp_point.set(0.5, 0.5, -0.5);
+    temp_point.set(0.5, 0.5f * multiplier, -0.5);
     _faces[1].push_back(temp_point);
-    temp_point.set(-0.5, 0.5, -0.5);
+    temp_point.set(-0.5, 0.5f * multiplier, -0.5);
     _faces[1].push_back(temp_point);
-    temp_point.set(-0.5, 0.5, 0.5);
+    temp_point.set(-0.5, 0.5f * multiplier, 0.5);
     _faces[1].push_back(temp_point);
 
-    temp_point.set(-0.5, -0.5, 0.5);
+    temp_point.set(-0.5, -0.5f * multiplier, 0.5);
     _faces[2].push_back(temp_point);
-    temp_point.set(-0.5, 0.5, 0.5);
+    temp_point.set(-0.5, 0.5f * multiplier, 0.5);
     _faces[2].push_back(temp_point);
-    temp_point.set(-0.5, 0.5, -0.5);
+    temp_point.set(-0.5, 0.5f * multiplier, -0.5);
     _faces[2].push_back(temp_point);
-    temp_point.set(-0.5, -0.5, -0.5);
+    temp_point.set(-0.5, -0.5f * multiplier, -0.5);
     _faces[2].push_back(temp_point);
 
-    temp_point.set(0.5, -0.5, -0.5);
+    temp_point.set(0.5, -0.5f * multiplier, -0.5);
     _faces[3].push_back(temp_point);
-    temp_point.set(0.5, 0.5, -0.5);
+    temp_point.set(0.5, 0.5f * multiplier, -0.5);
     _faces[3].push_back(temp_point);
-    temp_point.set(0.5, 0.5, 0.5);
+    temp_point.set(0.5, 0.5f * multiplier, 0.5);
     _faces[3].push_back(temp_point);
-    temp_point.set(0.5, -0.5, 0.5);
+    temp_point.set(0.5, -0.5f * multiplier, 0.5);
     _faces[3].push_back(temp_point);
 
-    temp_point.set(0.5, -0.5, -0.5);
+    temp_point.set(0.5, -0.5f * multiplier, -0.5);
     _faces[4].push_back(temp_point);
-    temp_point.set(0.5, -0.5, 0.5);
+    temp_point.set(0.5, -0.5f * multiplier, 0.5);
     _faces[4].push_back(temp_point);
-    temp_point.set(-0.5, -0.5, 0.5);
+    temp_point.set(-0.5, -0.5f * multiplier, 0.5);
     _faces[4].push_back(temp_point);
-    temp_point.set(-0.5, -0.5, -0.5);
+    temp_point.set(-0.5, -0.5f * multiplier, -0.5);
     _faces[4].push_back(temp_point);
 
-    temp_point.set(0.5, -0.5, 0.5);
+    temp_point.set(0.5, -0.5f * multiplier, 0.5);
     _faces[5].push_back(temp_point);
-    temp_point.set(0.5, 0.5, 0.5);
+    temp_point.set(0.5, 0.5f * multiplier, 0.5);
     _faces[5].push_back(temp_point);
-    temp_point.set(-0.5, 0.5, 0.5);
+    temp_point.set(-0.5, 0.5f * multiplier, 0.5);
     _faces[5].push_back(temp_point);
-    temp_point.set(-0.5, -0.5, 0.5);
+    temp_point.set(-0.5, -0.5f * multiplier, 0.5);
     _faces[5].push_back(temp_point);
 
     _colors.push_back(black);
@@ -149,7 +150,7 @@ void element::draw() {
             if (_player_active) {
                 temp_color = color_check(red);
             }
-            if (end_game) {
+            if (_end_game) {
                 if (turn == 0)
                     temp_color = color_check(black);
                 else
@@ -186,7 +187,7 @@ void element::predict() {
     _player_predicted = true;
 }
 
-bool element::predict_check() {
+bool element::predict_check() const {
     return _player_predicted;
 }
 
@@ -214,6 +215,10 @@ void element::set_another_player() {
     _which_player = (turn + 1) % 2;
 }
 
-int element::check_player() {
+int element::check_player() const {
     return _which_player;
+}
+
+void element::finish() {
+    _end_game = true;
 }

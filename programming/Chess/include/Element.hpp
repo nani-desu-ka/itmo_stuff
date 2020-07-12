@@ -6,7 +6,7 @@
 
 class element {
 public:
-    element(float, float, float, colors);
+    element(float, float, float, float, float, colors);
     void draw();
 
     void set_player_on();
@@ -16,17 +16,18 @@ public:
     void deactivate();
 
     void predict();
-    bool predict_check();
+    [[nodiscard]] bool predict_check() const;
     void depredict();
 
     void set_figure();
     void destroy_figure();
     bool check_figure();
 
-    int check_player();
+    [[nodiscard]] int check_player() const;
     void set_player();
     void set_another_player();
 
+    void finish();
     static color_c color_check(colors);
 private:
     std::vector<std::vector<Point>> _faces;
@@ -34,9 +35,10 @@ private:
     Point _position;
 //    element_state _state = inactive;
     colors _buffer_color = none;
-    int _which_player;
+    int _which_player{};
     bool _player_on = false;
     bool _player_active = false;
     bool _player_predicted = false;
     bool _figure_on = false;
+    bool _end_game = false;
 };

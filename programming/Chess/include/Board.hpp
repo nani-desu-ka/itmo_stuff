@@ -9,6 +9,7 @@ public:
     Board();
     void draw();
     element &get_element(int);
+    void finisher();
     ~Board();
 private:
     std::vector<element> _elements;
