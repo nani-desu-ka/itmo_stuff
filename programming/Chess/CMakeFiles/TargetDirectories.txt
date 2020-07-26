@@ -1,3 +1,0 @@
-/home/just/itmo_stuff/programming/Chess/CMakeFiles/rebuild_cache.dir
-/home/just/itmo_stuff/programming/Chess/CMakeFiles/edit_cache.dir
-/home/just/itmo_stuff/programming/Chess/CMakeFiles/lab_08.dir
