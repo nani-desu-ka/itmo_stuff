@@ -1,2 +1,2 @@
 # itmo_stuff
-Labs, contests, homeworks
+Labs, contests, homeworks (test)
