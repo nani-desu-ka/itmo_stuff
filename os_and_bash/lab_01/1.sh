@@ -1,14 +1,12 @@
-read first_number
-read second_number
-read third_number
+read max
 
-if (( $first_number > $second_number ))
-then max=$first_number
-else max=$second_number
-fi
-
-if (( $third_number > $max ))
-then max=$third_number
-fi
+for ((i=0; $i<2; i++))
+do
+	read input
+	if (( $input > $max ))
+	then
+		max=$input
+	fi
+done
 
 echo $max
