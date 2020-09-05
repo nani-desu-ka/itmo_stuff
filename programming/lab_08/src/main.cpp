@@ -6,11 +6,6 @@
 
 double rotate_y = 0;
 double rotate_x = 0;
-//float win_witdh = 800;
-//float win_height = 800;
-//int startTime;
-//static GLfloat rot = 0.0f;
-//static GLfloat rotRate = 45.0f;
 rubiks_cube temp;
 
 void specialKeys( int key, int x, int y ) {
@@ -34,19 +29,11 @@ void display() {
     glLoadIdentity();
     glRotatef( rotate_x, 1.0, 0.0, 0.0 );
     glRotatef( rotate_y, 0.0, 1.0, 0.0 );
-//    glRotatef(rot, 0.0, 1.0, 0);
     glScalef(0.2, 0.2, 0.2);
     temp.draw();
     glFlush();
     glutSwapBuffers();
 }
-
-//void animate() {
-//    int currTime = glutGet(GLUT_ELAPSED_TIME);
-//    int elapsedTime = currTime - startTime;
-//    rot = (rotRate / 1000) * elapsedTime;
-//    glutPostRedisplay();
-//}
 
 int main(int argc, char** argv) {
     glutInit(&argc, argv);
@@ -59,8 +46,6 @@ int main(int argc, char** argv) {
     glDepthFunc(GL_LESS);
     glutDisplayFunc(display);
     glutSpecialFunc(specialKeys);
-//    glutIdleFunc(animate);
-//    startTime = glutGet(GLUT_ELAPSED_TIME);
     glutMainLoop();
     return 0;
 }

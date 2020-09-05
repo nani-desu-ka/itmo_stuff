@@ -471,84 +471,102 @@ void rubiks_cube::RIGHT() {
     std::vector<int> corners = {0, 3, 7, 4};
     std::vector<int> edges = {3, 7, 11, 4};
     UD(corners, edges, 3, temp_degree);
+    std::cout << "R ";
 }
 
 void rubiks_cube::RIGHT_R() {
     std::vector<int> corners = {0, 4, 7, 3};
     std::vector<int> edges = {3, 4, 11, 7};
     UD(corners, edges, 3, -temp_degree);
+    std::cout << "R' ";
 }
 
 void rubiks_cube::LEFT_R() {
     std::vector<int> corners = {1, 2, 6, 5};
     std::vector<int> edges = {1, 6, 9, 5};
     UD(corners, edges, 2, temp_degree);
+    std::cout << "L' ";
 }
 
 void rubiks_cube::LEFT() {
     std::vector<int> corners = {1, 5, 6, 2};
     std::vector<int> edges = {1, 5, 9, 6};
     UD(corners, edges, 2, -temp_degree);
+    std::cout << "L ";
 }
 
 void rubiks_cube::UP() {
     std::vector<int> corners = {0, 4, 5, 1};
     std::vector<int> edges = {0, 4, 8, 5};
     LR(corners, edges, 1, -temp_degree);
+    std::cout << "U ";
 }
 
 void rubiks_cube::UP_R() {
     std::vector<int> corners = {0, 1, 5, 4};
     std::vector<int> edges = {0, 5, 8, 4};
     LR(corners, edges, 1, temp_degree);
+    std::cout << "U' ";
 }
 
 void rubiks_cube::DOWN() {
     std::vector<int> corners = {2, 6, 7, 3};
     std::vector<int> edges = {2, 6, 10, 7};
     LR(corners, edges, 4, temp_degree);
+    std::cout << "D ";
 }
 
 void rubiks_cube::DOWN_R() {
     std::vector<int> corners = {2, 3, 7, 6};
     std::vector<int> edges = {2, 7, 10, 6};
     LR(corners, edges, 4, -temp_degree);
+    std::cout << "D' ";
 }
 
 void rubiks_cube::CLOCK_R() {
     std::vector<int> corners = {0, 1, 2, 3};
     std::vector<int> edges = {0, 1, 2, 3};
     CLOCK(corners, edges, 0, -temp_degree);
+    std::cout << "F ";
 }
 
 void rubiks_cube::CLOCK_L() {
     std::vector<int> corners = {0, 3, 2, 1};
     std::vector<int> edges = {0, 3, 2, 1};
     CLOCK(corners, edges, 0, temp_degree);
+    std::cout << "F' ";
 }
 //-------------------------------
 void rubiks_cube::CENTER_RIGHT() {
     std::vector<int> edges = {3, 1, 9, 11};
     std::vector<int> centers = {0, 2, 5, 3};
     CENTER_LR(edges, centers, temp_degree);
+    std::cout << "U ";
+    std::cout << "D' ";
 }
 
 void rubiks_cube::CENTER_LEFT() {
     std::vector<int> edges = {3, 11, 9, 1};
     std::vector<int> centers = {0, 3, 5, 2};
     CENTER_LR(edges, centers, -temp_degree);
+    std::cout << "U' ";
+    std::cout << "D ";
 }
 
 void rubiks_cube::CENTER_UP() {
     std::vector<int> edges = {0, 2, 10, 8};
     std::vector<int> centers = {0, 4, 5, 1};
     CENTER_UD(edges, centers, temp_degree);
+    std::cout << "L ";
+    std::cout << "R' ";
 }
 
 void rubiks_cube::CENTER_DOWN() {
     std::vector<int> edges = {0, 8, 10, 2};
     std::vector<int> centers = {0, 1, 5, 4};
     CENTER_UD(edges, centers, -temp_degree);
+    std::cout << "L' ";
+    std::cout << "R ";
 }
 //-------------------------------
 void rubiks_cube::pif_paf() {
@@ -584,11 +602,11 @@ void rubiks_cube::all_up() {
 }
 //-------------------------------
 void rubiks_cube::assembler() {
+    std::cout << "\nRotations: ";
     cross_iteration();
     lower_corners_itaration();
     middle_edges_iteration();
     top_figure_solver();
-    std::cout << "TOP CROSS DONE!" << '\n';
     top_cross_reposition_iteration();
     top_corners_positioning_iteration();
     top_corners_orientation_iteration();
@@ -596,6 +614,7 @@ void rubiks_cube::assembler() {
 }
 
 void rubiks_cube::disassembler() {
+    std::cout << "\nRotations: ";
     srand(time(NULL));
     for (int i = 0; i < 50; i++) {
         int temp_rotation = rand() % 10 + 0;
@@ -720,7 +739,6 @@ void rubiks_cube::cross_iteration() {
       }
       _elements[2][2]->_right_pos = true;
   }
-  std::cout << "CROSS DONE!" << '\n';
 }
 
 void rubiks_cube::lower_corners_itaration() {
@@ -845,7 +863,6 @@ void rubiks_cube::lower_corners_itaration() {
                 exit(EXIT_FAILURE);
         }
     }
-    std::cout << "LOWER CORNERS DONE!" << '\n';
 }
 
 void  rubiks_cube::middle_edges_iteration() {
@@ -931,7 +948,6 @@ void  rubiks_cube::middle_edges_iteration() {
             }
         }
     }
-    std::cout << "MIDDLE EDGES DONE!" << '\n';
 }
 
 void rubiks_cube::top_figure_solver() {
@@ -1053,7 +1069,6 @@ void rubiks_cube::top_cross_reposition_iteration() {
             }
         }
     }
-    std::cout << "TOP CROSS SET CORRECTLY" << '\n';
 }
 
 void rubiks_cube::top_corners_positioning_iteration() {
@@ -1180,7 +1195,6 @@ void rubiks_cube::top_corners_orientation_iteration() {
     if (_elements[0][4]->_orientation == straight) _elements[0][4]->_right_pos = true;
     if (_elements[0][5]->_orientation == straight) _elements[0][5]->_right_pos = true;
     if (_elements[0][1]->_orientation == straight) _elements[0][1]->_right_pos = true;
-    std::cout << "TOP CORNERS ORIENTATION CHECKED" << '\n';
 }
 
 void rubiks_cube::top_corners_reorientaion() {
@@ -1198,7 +1212,6 @@ void rubiks_cube::top_corners_reorientaion() {
     _elements[0][7]->_right_pos = true;
     all_up();
     all_up();
-    std::cout << "TOP CORNERS REORIENTATED" << '\n';
 }
 //-------------------------------
 int rubiks_cube::find_element(colors temp_color, el_type temp_type) {
