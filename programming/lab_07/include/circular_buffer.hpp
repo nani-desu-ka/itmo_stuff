@@ -3,100 +3,100 @@
 template <class T>
 class circular_buffer {
     class Iterator : public std::iterator<std::random_access_iterator_tag, T> {
-        T *_pointer = nullptr;
-
     public:
         using value_type = typename std::iterator<std::random_access_iterator_tag, T>::value_type;
 
         explicit Iterator() {}
-        explicit Iterator (T *pointer) : _pointer(pointer) {}
-        Iterator (const Iterator &temp_iter) : _pointer(temp_iter._pointer) {}
+        explicit Iterator (T *pointer) : _iterator(pointer) {}
+        Iterator (const Iterator &temp_iter) : _iterator(temp_iter._iterator) {}
 
         bool operator!=(Iterator &temp_iter) {
-            return _pointer != temp_iter._pointer;
+            return _iterator != temp_iter._iterator;
         }
         bool operator== (Iterator &temp_iter) {
-            return _pointer == temp_iter._pointer;
+            return _iterator == temp_iter._iterator;
         }
         bool operator<= (Iterator &temp_iter) {
-            return _pointer <= temp_iter._pointer;
+            return _iterator <= temp_iter._iterator;
         }
         bool operator>= (Iterator &temp_iter) {
-            return _pointer >= temp_iter._pointer;
+            return _iterator >= temp_iter._iterator;
         }
         bool operator<(Iterator &temp_iter) {
-            return _pointer < temp_iter._pointer;
+            return _iterator < temp_iter._iterator;
         }
         bool operator> (Iterator &temp_iter) {
-            return _pointer > temp_iter._pointer;
+            return _iterator > temp_iter._iterator;
         }
         T &operator* () {
-            return *_pointer;
+            return *_iterator;
         }
 
         T *operator-> () {
-            return _pointer;
+            return _iterator;
         }
         Iterator operator++ (T) {
             Iterator temp_iter(*this);
-            ++_pointer;
+            ++_iterator;
             return temp_iter;
         }
         Iterator &operator++ () {
-            _pointer++;
+            _iterator++;
             return *this;
         }
         Iterator operator-- (T) {
             Iterator temp_iter(*this);
-            --_pointer;
+            --_iterator;
             return temp_iter;
         }
         Iterator &operator-- () {
-            _pointer--;
+            _iterator--;
             return *this;
         }
         Iterator &operator+= (Iterator &temp_iter) {
-            _pointer += temp_iter._pointer;
+            _iterator += temp_iter._iterator;
             return *this;
         }
         Iterator &operator-= (Iterator &temp_iter) {
-            _pointer -= temp_iter._pointer;
+            _iterator -= temp_iter._iterator;
             return *this;
         }
         Iterator &operator+= (value_type shift) {
-            _pointer += shift;
+            _iterator += shift;
             return *this;
         }
         Iterator operator+ (value_type shift) {
-            return Iterator(_pointer + shift);
+            return Iterator(_iterator + shift);
         }
         Iterator operator- (value_type shift) {
-            return Iterator(_pointer - shift);
+            return Iterator(_iterator - shift);
         }
 
         Iterator &operator= (Iterator const &temp_iter) {
-            if (_pointer != temp_iter._pointer) {
-                _pointer = temp_iter._pointer;
+            if (_iterator != temp_iter._iterator) {
+                _iterator = temp_iter._iterator;
             }
             return *this;
         }
 
         Iterator &operator= (T *pointer) {
-            if (_pointer != pointer) {
-                _pointer = pointer;
+            if (_iterator != pointer) {
+                _iterator = pointer;
             }
             return *this;
         }
         value_type operator+ (Iterator &temp_iter) {
-            return _pointer - temp_iter._pointer;
+            return _iterator - temp_iter._iterator;
         }
         value_type operator- (Iterator &temp_iter) {
-            return static_cast<int>(_pointer - temp_iter._pointer);
+            return static_cast<int>(_iterator - temp_iter._iterator);
         }
         friend std::ostream &operator<< (std::ostream &out, Iterator temp_iter) {
-            out << temp_iter._pointer;
+            out << temp_iter._iterator;
             return out;
         }
+    private:
+        T *_iterator = nullptr;
     };
 public:
     explicit circular_buffer() {circular_buffer(0); _begin = nullptr; _end = nullptr;}

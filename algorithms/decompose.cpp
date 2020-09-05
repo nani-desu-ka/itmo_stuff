@@ -1,91 +1,101 @@
 #include <iostream>
-#include <vector>
 #include <algorithm>
+#include <queue>
+#include <climits>
 
 using namespace std;
 
-bool used[501];
-vector<vector<pair<int, int>>> vertex(501);
-int end_v = 0;
-int end_v_sat = 0;
-
-class edge {
-public:
-    edge (int from, int to, int capacity, int index) : from(from), to(to), capacity(capacity), saturation(0), index(index) {};
-    int from;
-    int to;
-    int capacity;
-    int saturation;
-    int index;
+struct Edge {
+    int to, capacity, saturation, index;
 };
 
-vector<edge> edges;
-vector<edge> temp_edges;
+vector<int> temp_edges;
 
 class path {
 public:
-    path(vector<edge> temp, int saturation) : one_by_one(temp), saturation(saturation){}
-    vector<edge> one_by_one;
-    int saturation;
+    path(vector<int> temp, long long saturation) : one_by_one(std::move(temp)), saturation(saturation){}
+    vector<int> one_by_one;
+    long long saturation;
 };
 
 vector <path> path_info;
 
-int dfs_1(int from, int temp_min) {
-    if (from == end_v || temp_min == 0) return temp_min;
-    used[from] = true;
-    for (auto v : vertex[from]) {
-        if (used[v.first]) continue;
-        if (edges[v.second].capacity > edges[v.second].saturation) {
-            int new_sat = dfs_1(v.first, min(temp_min, edges[v.second].capacity - edges[v.second].saturation));
-            if (new_sat > 0) {
-                edges[v.second].saturation += new_sat;
-                edges[v.second ^ 1].saturation -= new_sat;
-                temp_edges.push_back(edges[v.second]);
+vector<vector<int>> vertex;
+vector<int> ptr;
+vector<Edge> edges;
+vector<int> level;
+
+int n = 0, m = 0, sink = 0;
+
+int dfs(int from = 0, int temp_saturation = INT_MAX) {
+    if (!temp_saturation)
+        return 0;
+    if (from == sink)
+        return temp_saturation;
+    while (ptr[from] < vertex[from].size()) {
+        int edge = vertex[from][ptr[from]];
+        if (level[from] + 1 == level[edges[edge].to]){
+            int new_sat = dfs(edges[edge].to, min(temp_saturation, edges[edge].capacity - edges[edge].saturation));
+            if (new_sat) {
+                edges[edge].saturation += new_sat;
+                edges[edge ^ 1].saturation -= new_sat;
+                temp_edges.push_back(edges[edge].index);
                 return new_sat;
             }
         }
+        ptr[from]++;
     }
     return 0;
 }
 
-void t_income() {
-    while (true) {
-        for (int i = 0; i < 501; i++) used[i] = false;
-        int new_path_sat = dfs_1(0,  1000000000);
-        if (new_path_sat == 0) return;
-        path temp_path(temp_edges, new_path_sat);
-        temp_edges.clear();
-        path_info.push_back(temp_path);
-        end_v_sat += new_path_sat;
+bool bfs() {
+    level.assign(n, 0);
+    queue<int> q;
+    q.push(0);
+    level[0] = 1;
+    while (!q.empty() && !level[sink]) {
+        int from = q.front();
+        q.pop();
+        for (auto &edge : vertex[from]) {
+            if (!level[edges[edge].to] && edges[edge].capacity > edges[edge].saturation) {
+                q.push(edges[edge].to);
+                level[edges[edge].to] = level[from] + 1;
+            }
+        }
     }
+    return level[sink];
 }
 
-int main () {
-    for (int i = 0; i < 501; i++) {
-        used[i] = false;
-    }
-    int m;
-    cin >> end_v >> m;
-    end_v--;
+int main() {
+    cin >> n >> m;
+    vertex.resize(n);
+    ptr.resize(n, 0);
     for (int i = 0; i < m; i++) {
-        int temp_1, temp_2, temp_3;
-        cin >> temp_1 >> temp_2 >> temp_3;
-        vertex[temp_1 - 1].push_back(make_pair(temp_2 - 1, edges.size()));
-        edge new_one(temp_1 - 1, temp_2 - 1, temp_3, i + 1);
-        edges.push_back(new_one);
-        vertex[temp_2 - 1].push_back(make_pair(temp_1 - 1, edges.size()));
-        edge new_one_2(temp_2 - 1, temp_1 - 1, 0, i + 1);
-        edges.push_back(new_one_2);
+        int from, to, capacity;
+        cin >> from >> to >> capacity;
+        vertex[from - 1].push_back(edges.size());
+        edges.push_back(Edge{to - 1, capacity, 0, i + 1});
+        vertex[to - 1].push_back(edges.size());
+        edges.push_back(Edge{from - 1, 0, 0, i + 1});
     }
-    t_income();
+    sink = n - 1;
+    while (bfs()) {
+        while (true) {
+            long long new_path_sat = dfs();
+            if (new_path_sat <= 0) break;
+            path temp_path(temp_edges, new_path_sat);
+            temp_edges.clear();
+            path_info.push_back(temp_path);
+        }
+        ptr.assign(n, 0);
+    }
     cout << path_info.size() << '\n';
     for (auto i : path_info) {
         cout << i.saturation << ' ';
         cout << i.one_by_one.size() << ' ';
         reverse(i.one_by_one.begin(), i.one_by_one.end());
         for(auto j : i.one_by_one) {
-            cout << j.index << ' ';
+            cout << j << ' ';
         }
         cout << '\n';
     }
