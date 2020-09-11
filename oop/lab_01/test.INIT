@@ -1,0 +1,6 @@
+[COMMON]
+StatisterTimeMs = 500
+LogNCMD = 1
+LogXML = 0
+DiskCachePath = /sata/panorama
+OpenMPThreadsCount = 2
