@@ -1,1 +1,1 @@
-Lab_01: :white_check_mark:
+Lab_01: :ballot_box_with_check:
