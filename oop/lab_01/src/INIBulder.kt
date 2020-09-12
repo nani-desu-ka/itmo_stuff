@@ -60,30 +60,29 @@ class INIBuilder(fileName: String) {
                     if (it.sectionName == sectionName) {
                         return it.getField<Int>(fieldName, type) as T
                     }
-                    throw ArrayIndexOutOfBoundsException("Section not found")
                 }
+                throw ArrayIndexOutOfBoundsException("Section not found")
             }
             Type.Cfloat -> {
                 _sections.forEach {
                     if (it.sectionName == sectionName) {
                         return it.getField<Float>(fieldName, type) as T
                     }
-                    throw ArrayIndexOutOfBoundsException("Section not found")
                 }
+                throw ArrayIndexOutOfBoundsException("Section not found")
             }
             Type.Cstring -> {
                 _sections.forEach {
                     if (it.sectionName == sectionName) {
                         return it.getField<String>(fieldName, type) as T
                     }
-                    throw ArrayIndexOutOfBoundsException("Section not found")
                 }
+                throw ArrayIndexOutOfBoundsException("Section not found")
             }
         }
-        throw  NoSuchFieldError("Type not found")
     }
 
-    //Вложенный класс для секции
+    //Вложенный приватный класс для хранения секции
     private class Section(var sectionName: String, fields: List<String>) {
         private var _fields: MutableMap<String, String> = mutableMapOf()
 
@@ -100,8 +99,18 @@ class INIBuilder(fileName: String) {
             } else {
                 return when (type) {
                     Type.Cint -> {
-                        if (_fields[fieldName]!!.toIntOrNull() != null) _fields[fieldName]?.toInt() as T
-                        else throw TypeCastException("Impossible type cast")
+                        when {
+                            _fields[fieldName]!!.toIntOrNull() != null -> _fields[fieldName]?.toInt() as T
+                            _fields[fieldName]!!.toFloatOrNull() != null -> {
+                                val tempFieldValue = _fields[fieldName]?.toFloat()
+                                if (tempFieldValue?.toInt()?.toFloat() == tempFieldValue) {
+                                    tempFieldValue?.toInt() as T
+                                } else {
+                                    throw TypeCastException("Impossible type cast")
+                                }
+                            }
+                            else -> throw TypeCastException("Impossible type cast")
+                        }
                     }
                     Type.Cfloat -> {
                         if (_fields[fieldName]!!.toFloatOrNull() != null) _fields[fieldName]?.toFloat() as T
