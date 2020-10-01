@@ -1,5 +1,6 @@
 import java.io.File
 import java.io.FileNotFoundException
+import kotlin.reflect.typeOf
 
 enum class Type {
     Cint,
@@ -116,33 +117,7 @@ class INIBuilder(fileName: String) {
         }
 
         fun <T>getField(fieldName: String, type: Type): T {
-            if (!_fields.containsKey(fieldName)) {
-                throw NoSuchFieldError("Field not found\n$fieldName")
-            } else {
-                return when (type) {
-                    Type.Cint -> {
-                        when {
-                            _fields[fieldName]!!.toIntOrNull() != null -> _fields[fieldName]?.toInt() as T
-                            _fields[fieldName]!!.toFloatOrNull() != null -> {
-                                val tempFieldValue = _fields[fieldName]?.toFloat()
-                                if (tempFieldValue?.toInt()?.toFloat() == tempFieldValue) {
-                                    tempFieldValue?.toInt() as T
-                                } else {
-                                    throw TypeCastException("Impossible type cast\n$type")
-                                }
-                            }
-                            else -> throw TypeCastException("Impossible type cast\n$type")
-                        }
-                    }
-                    Type.Cfloat -> {
-                        if (_fields[fieldName]!!.toFloatOrNull() != null) _fields[fieldName]?.toFloat() as T
-                        else throw TypeCastException("Impossible type cast\n$type")
-                    }
-                    Type.Cstring -> {
-                        _fields[fieldName] as T
-                    }
-                }
-            }
+            
         }
     }
 }
