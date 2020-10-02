@@ -49,10 +49,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\user\Desktop\working_directory\itmo_stuff\programming\1_half\lab_05
+CMAKE_SOURCE_DIR = C:\Users\user\Desktop\working_directory\itmo_stuff\programming\1_half\untitled
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\user\Desktop\working_directory\itmo_stuff\programming\1_half\lab_05\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\user\Desktop\working_directory\itmo_stuff\programming\1_half\untitled\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -81,9 +81,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\working_directory\itmo_stuff\programming\1_half\lab_05\cmake-build-debug\CMakeFiles C:\Users\user\Desktop\working_directory\itmo_stuff\programming\1_half\lab_05\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\working_directory\itmo_stuff\programming\1_half\untitled\cmake-build-debug\CMakeFiles C:\Users\user\Desktop\working_directory\itmo_stuff\programming\1_half\untitled\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\working_directory\itmo_stuff\programming\1_half\lab_05\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\working_directory\itmo_stuff\programming\1_half\untitled\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -112,17 +112,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab_05
+# Target rules for targets named untitled
 
 # Build rule for target.
-lab_05: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) lab_05
-.PHONY : lab_05
+untitled: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) untitled
+.PHONY : untitled
 
 # fast build rule for target.
-lab_05\fast:
-	$(MAKE) -f CMakeFiles\lab_05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_05.dir\build
-.PHONY : lab_05\fast
+untitled\fast:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\build
+.PHONY : untitled\fast
 
 main.obj: main.c.obj
 
@@ -130,7 +130,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles\lab_05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_05.dir\main.c.obj
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -139,7 +139,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles\lab_05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_05.dir\main.c.i
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -148,7 +148,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles\lab_05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lab_05.dir\main.c.s
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -157,8 +157,8 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... lab_05
 	@echo ... edit_cache
+	@echo ... untitled
 	@echo ... rebuild_cache
 	@echo ... main.obj
 	@echo ... main.i
