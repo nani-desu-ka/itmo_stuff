@@ -17,5 +17,6 @@ int main() {
     for (int i = 0; i < 4; i++) {
         printf("%c ", second_matrix[i]);
     }
+    free(second_matrix);
     return 0;
 }
