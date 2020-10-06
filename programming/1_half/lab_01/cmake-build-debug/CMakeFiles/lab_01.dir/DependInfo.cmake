@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/user/Desktop/working_directory/itmo_stuff/programming/1_half/lab_01/main.c" "C:/Users/user/Desktop/working_directory/itmo_stuff/programming/1_half/lab_01/cmake-build-debug/CMakeFiles/lab_01.dir/main.c.obj"
+  "C:/Users/user/Documents/GitHub/itmo_stuff/programming/1_half/lab_01/main.c" "C:/Users/user/Documents/GitHub/itmo_stuff/programming/1_half/lab_01/cmake-build-debug/CMakeFiles/lab_01.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "MSVC")
 

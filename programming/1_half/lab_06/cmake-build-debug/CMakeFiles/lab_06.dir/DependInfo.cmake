@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/just/git_stuff/itmo_stuff/programming/1_half/lab_06/main.c" "/home/just/git_stuff/itmo_stuff/programming/1_half/lab_06/cmake-build-debug/CMakeFiles/lab_06.dir/main.c.o"
+  "C:/Users/user/Documents/GitHub/itmo_stuff/programming/1_half/lab_06/main.c" "C:/Users/user/Documents/GitHub/itmo_stuff/programming/1_half/lab_06/cmake-build-debug/CMakeFiles/lab_06.dir/main.c.obj"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
