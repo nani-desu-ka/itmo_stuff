@@ -13,7 +13,6 @@ fun main() {
         println(e)
         return
     }
-
     var active = true
     while (active) {
         print("Enter section name: ")
@@ -32,15 +31,15 @@ fun main() {
         try {
             when (readLine()) {
                 "int" -> {
-                    val output = test.get<Int>(sectionName, fieldName, Type.Cint)
+                    val output = test.getInt(sectionName, fieldName)
                     println("$output\n")
                 }
                 "float" -> {
-                    val output = test.get<Float>(sectionName, fieldName, Type.Cfloat)
+                    val output = test.getFloat(sectionName, fieldName)
                     println("$output\n")
                 }
                 "string" -> {
-                    val output = test.get<String>(sectionName, fieldName, Type.Cstring)
+                    val output = test.getString(sectionName, fieldName)
                     println("$output\n")
                 }
                 else -> {

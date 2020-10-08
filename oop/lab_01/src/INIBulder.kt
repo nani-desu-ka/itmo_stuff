@@ -1,12 +1,5 @@
 import java.io.File
 import java.io.FileNotFoundException
-import kotlin.reflect.typeOf
-
-enum class Type {
-    Cint,
-    Cfloat,
-    Cstring,
-}
 
 @Suppress("UNCHECKED_CAST")
 class INIBuilder(fileName: String) {
@@ -16,7 +9,7 @@ class INIBuilder(fileName: String) {
         if (!_inputFile.exists()) {
             throw FileNotFoundException("File not found")
         }
-        if (_inputFile.extension != "INI") {
+        if (_inputFile.extension.toLowerCase() != "ini") {
             throw FileNotFoundException("Incorrect file extension")
         }
         val inputStream = _inputFile.inputStream()
@@ -24,10 +17,11 @@ class INIBuilder(fileName: String) {
         var sectionName = ""
         val sectionInfo = ArrayList<String>()
         for (line in text) {
-            if (line.replace(Regex("[^\\[=\\];]+"), "").isNotEmpty()) {
-                when (line.replace(Regex("[^\\[=\\];]+"), "")[0]) {
+            val specialSymbols = line.replace(Regex("[^\\[=\\];]+"), "")
+            if (specialSymbols.isNotEmpty()) {
+                when (specialSymbols[0]) {
                     '[' -> {
-                        if (line[0] != '[') throw IllegalArgumentException("Incorrect section line format\n" +
+                        if (line[0] != '[') throw IllegalLineFormat("Incorrect section line format\n" +
                                 line)
                         if (sectionName.isNotEmpty()) {
                             _sections.add(Section(sectionName, sectionInfo))
@@ -46,29 +40,33 @@ class INIBuilder(fileName: String) {
                         sectionInfo.clear()
                     }
                     '=' -> {
-                        if (sectionName.isEmpty()) throw IllegalArgumentException("Incorrect field line format " +
+                        val formattedLine = line.replace(" ", "")
+                        if (sectionName.isEmpty()) throw IllegalLineFormat("Incorrect field line format " +
                                 "(blank section name)")
-                        if (line.split(' ').size < 2 || line.split(' ')[1] != "=" ||
-                                line.split(' ').size < 3 || line.split(' ')[2][0] == ';') {
-                            throw IllegalArgumentException("Incorrect field line format\n$line")
+                        var tempFieldName = ""
+                        var tempFieldValue = ""
+                        var iter = 0
+                        while (formattedLine[iter] != '=') {
+                            tempFieldName += formattedLine[iter++]
                         }
-                        if (line.split(' ').size > 3 && line.split(' ')[3] != ";") {
-                            throw IllegalArgumentException("Incorrect field line format\n$line")
+                        if (iter == 0) throw IllegalLineFormat("Incorrect field name format")
+                        while (++iter != formattedLine.length && formattedLine[iter] != ';') {
+                            tempFieldValue += formattedLine[iter]
                         }
-                        sectionInfo.add(line.split(' ')[0] + ' ' + line.split(' ')[2])
+                        sectionInfo.add("$tempFieldName $tempFieldValue")
                     }
                     ';' -> {
-                        if (line[0] != ';') throw IllegalArgumentException("Incorrect comment line format\n" +
+                        if (line[0] != ';') throw IllegalLineFormat("Incorrect comment line format\n" +
                                 line)
                         continue
                     }
                     else -> {
-                        throw IllegalArgumentException("Incorrect line format\n$line")
+                        throw IllegalLineFormat("Incorrect line format\n$line")
                     }
                 }
             } else {
                 if (line.isNotEmpty() && line[0] != ';') {
-                    throw IllegalArgumentException("Incorrect section line format\n$line")
+                    throw IllegalLineFormat("Incorrect section line format\n$line")
                 }
             }
         }
@@ -76,34 +74,31 @@ class INIBuilder(fileName: String) {
             _sections.add(Section(sectionName, sectionInfo))
         }
     }
-    fun <T> get(sectionName: String, fieldName: String, type: Type): T {
-        when (type) {
-            Type.Cint -> {
-                _sections.forEach {
-                    if (it.sectionName == sectionName) {
-                        return it.getField<Int>(fieldName, type) as T
-                    }
-                }
-                throw ArrayIndexOutOfBoundsException("Section not found\n$sectionName")
-            }
-            Type.Cfloat -> {
-                _sections.forEach {
-                    if (it.sectionName == sectionName) {
-                        return it.getField<Float>(fieldName, type) as T
-                    }
-                }
-                throw ArrayIndexOutOfBoundsException("Section not found\n$sectionName")
-            }
-            Type.Cstring -> {
-                _sections.forEach {
-                    if (it.sectionName == sectionName) {
-                        return it.getField<String>(fieldName, type) as T
-                    }
-                }
-                throw ArrayIndexOutOfBoundsException("Section not found\n$sectionName")
+
+    fun getInt(sectionName: String, fieldName: String): Int {
+        _sections.forEach {
+            if (it.sectionName == sectionName) {
+                return it.getIntField(fieldName)
             }
         }
+        throw ArrayIndexOutOfBoundsException("Section not found\n$sectionName")
     }
+    fun getFloat(sectionName: String, fieldName: String): Float {
+            _sections.forEach {
+                if (it.sectionName == sectionName) {
+                    return it.getFloatField(fieldName)
+                }
+            }
+            throw ArrayIndexOutOfBoundsException("Section not found\n$sectionName")
+        }
+    fun getString(sectionName: String, fieldName: String): String {
+            _sections.forEach {
+                if (it.sectionName == sectionName) {
+                    return it.getStringField(fieldName)
+                }
+            }
+            throw ArrayIndexOutOfBoundsException("Section not found\n$sectionName")
+        }
 
     //Вложенный приватный класс для хранения секции
     private class Section(var sectionName: String, fields: List<String>) {
@@ -115,9 +110,32 @@ class INIBuilder(fileName: String) {
                 _fields[parsedField[0]] = parsedField[1]
             }
         }
-
-        fun <T>getField(fieldName: String, type: Type): T {
-            
+        fun getIntField(fieldName: String): Int {
+            if (!_fields.containsKey(fieldName)) throw NoFieldExceptionError(fieldName)
+            return when {
+                _fields[fieldName]!!.toIntOrNull() != null -> _fields[fieldName]!!.toInt()
+                _fields[fieldName]!!.toFloatOrNull() != null -> {
+                    val tempFieldValue = _fields[fieldName]?.toFloat()
+                    if (tempFieldValue?.toInt()?.toFloat() == tempFieldValue) {
+                        tempFieldValue!!.toInt()
+                    } else {
+                        throw UncastableFieldError(fieldName, "Float")
+                    }
+                }
+                else -> throw UncastableFieldError(fieldName, "Float")
+            }
+        }
+        fun getFloatField(fieldName: String): Float {
+            if (!_fields.containsKey(fieldName)) throw NoFieldExceptionError(fieldName)
+            if (_fields[fieldName]!!.toFloatOrNull() != null) {
+                return _fields[fieldName]!!.toFloat()
+            } else {
+                throw UncastableFieldError(fieldName, "Float")
+            }
+        }
+        fun getStringField(fieldName: String): String {
+            if (!_fields.containsKey(fieldName)) throw NoFieldExceptionError(fieldName)
+            return _fields[fieldName]!!
         }
     }
 }
