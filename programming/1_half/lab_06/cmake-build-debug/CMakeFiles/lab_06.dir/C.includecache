@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/just/git_stuff/itmo_stuff/programming/1_half/lab_06/main.c
+C:/Users/user/Documents/GitHub/itmo_stuff/programming/1_half/lab_06/main.c
 stdio.h
 -
 malloc.h

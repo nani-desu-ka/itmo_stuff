@@ -1,3 +1,3 @@
-/home/just/itmo_stuff/programming/lab_06/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/just/itmo_stuff/programming/lab_06/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/just/itmo_stuff/programming/lab_06/cmake-build-debug/CMakeFiles/lab_06.dir
+C:/Users/user/Documents/GitHub/itmo_stuff/programming/lab_06/cmake-build-debug/CMakeFiles/lab_06.dir
+C:/Users/user/Documents/GitHub/itmo_stuff/programming/lab_06/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/user/Documents/GitHub/itmo_stuff/programming/lab_06/cmake-build-debug/CMakeFiles/rebuild_cache.dir
