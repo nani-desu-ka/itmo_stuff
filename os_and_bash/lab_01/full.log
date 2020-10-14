@@ -1,0 +1,269 @@
+[  5575.565] Warning: PRLVIDEL(0): Unable to estimate virtual size
+[  5575.577] Warning: PRLVIDEL(0): Option "NoMTRR" is not used
+[  5575.702] Warning: evdev: Parallels Virtual Mouse: touchpads, tablets and touchscreens ignore relative axes.
+[  5575.180] Information: The server relies on udev to provide the list of input devices.
+[  5575.180] Information: Loader magic: 0x564b4a9f1020
+[  5575.180] Information: Module ABI versions:
+[  5575.183] Information: LoadModule: "glx"
+[  5575.192] Information: Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[  5575.198] Information: Module glx: vendor="X.Org Foundation"
+[  5575.198] Information: Exporting typical set of GLX visuals
+[  5575.198] Information: LoadModule: "prlvideo"
+[  5575.198] Information: Loading /usr/lib64/xorg/modules/drivers/prlvideo_drv.so
+[  5575.199] Information: PRLVIDEO: Search in '/usr/lib64/xorg/modules'
+[  5575.199] Information: PRLVIDEO: Load module '/usr/lib64/xorg/modules/drivers/prlvidel_drv.so'...
+[  5575.200] Information: Module prlvideo: vendor="Parallels Inc."
+[  5575.564] Information: PRLVIDEL: Sharing 0 entity with other screens
+[  5575.564] Information: PRLVIDEL: Frame buffer struct was created
+[  5575.564] Information: PRLCONTROL: /proc/driver/prl_vtg opened
+[  5575.564] Information: PRLVIDEL: VESA PCI probe for Screen 0 finished successfully.
+[  5575.565] Information: PRLVIDEL: PRE initializing VESA Screen 0 . . .
+[  5575.565] Information: PRLVIDEL(0): Configuring display modes for display Parallels Monitor . . .
+[  5575.565] Information: Loading sub module "ramdac"
+[  5575.565] Information: LoadModule: "ramdac"
+[  5575.565] Information: Module "ramdac" already built-in
+[  5575.565] Information: PRLVIDEL(0): Total Memory: 1024 64KB banks (65536kB)
+[  5575.565] Information: PRLVIDEL(0): Searching for matching VESA mode(s):
+[  5575.565] Information: PRLVIDEL(0): Validating VESA modes (maxWidth=2560, maxHeight=1440, mapSize=65536Kb) . . .
+[  5575.565] Information: PRLVIDEL(0): Parallels Monitor: Using default hsync range of 31.50-48.00 kHz
+[  5575.565] Information: PRLVIDEL(0): Parallels Monitor: Using default vrefresh range of 50.00-70.00 Hz
+[  5575.565] Information: PRLVIDEL(0): Parallels Monitor: Using default maximum pixel clock of 65.00 MHz
+[  5575.565] Information: PRLVIDEL(0): Found 12 valid VESA modes
+[  5575.565] Information: PRLVIDEL(0): Parallels Monitor: Using hsync range of 31.50-48.00 kHz
+[  5575.565] Information: PRLVIDEL(0): Parallels Monitor: Using vrefresh range of 50.00-70.00 Hz
+[  5575.565] Information: PRLVIDEL(0): Parallels Monitor: Using maximum pixel clock of 65.00 MHz
+[  5575.565] Information: PRLVIDEL(0): Not using built-in mode "2560x1440" (width too large for virtual size)
+[  5575.565] Information: PRLVIDEL(0): Not using built-in mode "1920x1200" (width too large for virtual size)
+[  5575.565] Information: PRLVIDEL(0): Not using built-in mode "1600x1200" (width too large for virtual size)
+[  5575.565] Information: PRLVIDEL(0): Not using built-in mode "1680x1050" (width too large for virtual size)
+[  5575.565] Information: PRLVIDEL(0): Not using built-in mode "1400x1050" (width too large for virtual size)
+[  5575.565] Information: PRLVIDEL(0): Not using built-in mode "1280x1024" (width too large for virtual size)
+[  5575.565] Information: PRLVIDEL(0): Not using built-in mode "1440x900" (width too large for virtual size)
+[  5575.565] Information: PRLVIDEL(0): Not using built-in mode "1280x960" (width too large for virtual size)
+[  5575.565] Information: PRLVIDEL(0): Not using built-in mode "1280x800" (width too large for virtual size)
+[  5575.565] Information: PRLVIDEL(0): Found 3 valid VESA modes
+[  5575.565] Information: PRLVIDEL: Added initial display mode 1024x768
+[  5575.565] Information: PRLVIDEL: Added initial display mode 800x600
+[  5575.565] Information: PRLVIDEL: Added initial display mode 640x480
+[  5575.565] Information: PRLVIDEL(0): Modeline "1024x768"x59.9   64.20  1024 1077 1183 1342  768 771 775 798 -hsync +vsync (47.8 kHz zPb)
+[  5575.565] Information: PRLVIDEL(0): Modeline "800x600"x60.0   38.31  800 832 912 1024  600 603 607 624 -hsync +vsync (37.4 kHz zb)
+[  5575.565] Information: PRLVIDEL(0): Modeline "640x480"x59.9   23.98  640 657 720 800  480 483 487 500 -hsync +vsync (30.0 kHz zb)
+[  5575.565] Information: PRLVIDEL(0): VESA modes validation success
+[  5575.566] Information: PRLVIDEL(0): Set VESA default refresh to FALSE.
+[  5575.566] Information: Loading sub module "fb"
+[  5575.566] Information: LoadModule: "fb"
+[  5575.567] Information: Loading /usr/lib64/xorg/modules/libfb.so
+[  5575.571] Information: Module fb: vendor="X.Org Foundation"
+[  5575.571] Information: PRLVIDEL: Initializing Crtcs...
+[  5575.571] Information: PRLVIDEL: Screen size Min {0x0}, Max {8192x8192}.
+[  5575.571] Information: PRLVIDEL: Crtcs initialized.
+[  5575.571] Information: PRLVIDEL: Initializing Outputs...
+[  5575.571] Information: PRLVIDEL(0): Output Virtual1 using monitor section Parallels Monitor
+[  5575.571] Information: PRLVIDEL(0): Output Virtual2 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual3 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual4 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual5 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual6 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual7 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual8 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual9 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual10 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual11 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual12 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual13 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual14 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual15 has no monitor section
+[  5575.571] Information: PRLVIDEL(0): Output Virtual16 has no monitor section
+[  5575.571] Information: PRLVIDEL: Outputs initialized.
+[  5575.571] Information: PRLVIDEL: Initializing Crtc/Output configuration...
+[  5575.571] Information: PRLVIDEL(0): Printing probed modes for output Virtual1
+[  5575.571] Information: PRLVIDEL(0): Modeline "1024x768"x59.9   64.20  1024 1077 1183 1342  768 771 775 798 -hsync +vsync (47.8 kHz UP)
+[  5575.571] Information: PRLVIDEL(0): Modeline "800x600"x60.0   38.31  800 832 912 1024  600 603 607 624 -hsync +vsync (37.4 kHz)
+[  5575.571] Information: PRLVIDEL(0): Modeline "640x480"x59.9   23.98  640 657 720 800  480 483 487 500 -hsync +vsync (30.0 kHz)
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual2
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual3
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual4
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual5
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual6
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual7
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual8
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual9
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual10
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual11
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual12
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual13
+[  5575.571] Information: PRLVIDEL(0): EDID for output Virtual14
+[  5575.575] Information: PRLVIDEL(0): EDID for output Virtual15
+[  5575.575] Information: PRLVIDEL(0): EDID for output Virtual16
+[  5575.575] Information: PRLVIDEL(0): Output Virtual1 connected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual2 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual3 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual4 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual5 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual6 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual7 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual8 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual9 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual10 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual11 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual12 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual13 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual14 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual15 disconnected
+[  5575.575] Information: PRLVIDEL(0): Output Virtual16 disconnected
+[  5575.575] Information: PRLVIDEL(0): Using user preference for initial modes
+[  5575.575] Information: PRLVIDEL(0): Output Virtual1 using initial mode 1024x768 +0+0
+[  5575.575] Information: PRLVIDEL: VESA Screen 0 was PRE initialized.
+[  5575.575] Information: PRLVIDEL: Initializing VESA Screen 0 . . .
+[  5575.575] Information: PRLVIDEL: Mapping frame buffer . . .
+[  5575.577] Information: PRLVIDEL: Framebuffer (/proc/driver/prl_vtg) successfully mapped by Screen 0 at:
+[  5575.577] Information: PRLVIDEL: DGA initialized for Screen 0
+[  5575.577] Information: PRLVIDEL(0): RandR 1.2 enabled, ignore the following RandR disabled message.
+[  5575.577] Information: PRLCONTROL: Compiled for 1.19.0 XServer
+[  5575.577] Information: PRLCONTROL: /proc/driver/prl_tg opened
+[  5575.577] Information: PRLCONTROL: ParallelsControl version 1.0 initalized
+[  5575.584] Information: PRLCONTROL: OpenGL supported
+[  5575.584] Information: PRLCONTROL: This message is only for compiz starter script:
+[  5575.584] Information: PRLCONTROL: Compositing supported
+[  5575.584] Information: PRLCONTROL: Video RAM: 65536 kByte
+[  5575.584] Information: PRLCONTROL: Multiheads supported
+[  5575.584] Information: PRLCONTROL: Randr's private data available
+[  5575.584] Information: PRLCOHERENCE: Coherence initialized
+[  5575.584] Information: PRLXINERAMA: Parallels Xinerama initialized
+[  5575.584] Information: PRLVIDEL: VESA link to Open Tools Gate was opened.
+[  5575.587] Information: PRLVIDEL: Cursor initialized.
+[  5575.587] Information: PRLVIDEL: VESA Screen 0 was initialized.
+[  5575.593] Information: SELinux: Disabled by boolean
+[  5575.593] Information: GLX: GlxExtensionInit: Compiled for 1.19.0 XServer
+[  5575.594] Information: GLX: PrlGLXScreenInit: Allowed 2 X visuals
+[  5575.594] Information: GLX: PrlGLXScreenInit:  vid=0x21 class=0x4
+[  5575.594] Information: GLX: PrlGLXScreenInit:  vid=0x64 class=0x4
+[  5575.594] Information: GLX: PrlGLXScreenInit: Allowed 2 X depths
+[  5575.595] Information: GLX: PrlGLXScreenInit:  depth=24 vid=0x21
+[  5575.595] Information: GLX: PrlGLXScreenInit:  depth=32 vid=0x64
+[  5575.595] Information: GLX: PrlGLXScreenInit: GLX Parallels screen 0 initialized
+[  5575.595] Information: GLX: GlxExtensionInit: Extension GLX added
+[  5575.595] Information: GLX: GlxExtensionInit: Extension alias SGI-GLX added
+[  5575.595] Information: GLX: GlxExtensionInit: Extension alias PRL-GLX added
+[  5575.595] Information: GLX: GlxExtensionInit: Extension alias AIGLX added
+[  5575.595] Information: GLX: PrlGLXPrintAvailableFBConfigs: Available 2 GLX visuals:
+[  5575.595] Information: GLX: PrlGLXPrintAvailableFBConfigs:  0) visualID=0x21(33), fbconfigID=0x66(102), db=1, rgb=24, depth=24, stencil=8, visType=8002 texTgt=6
+[  5575.595] Information: GLX: PrlGLXPrintAvailableFBConfigs:  1) visualID=0x64(100), fbconfigID=0x65(101), db=1, rgb=32, depth=24, stencil=8, visType=8002 texTgt=6
+[  5575.595] Information: GLX: PrlGLXPrintAvailableFBConfigs: Available 4 GLX fbconfigs:
+[  5575.595] Information: GLX: PrlGLXPrintAvailableFBConfigs:  0) fbconfigID=0x65(101), visualID=0x64(100), db=1, rgb=32, depth=24, stencil=8, visType=8002 texTgt=6
+[  5575.595] Information: GLX: PrlGLXPrintAvailableFBConfigs:  1) fbconfigID=0x66(102), visualID=0x21(33), db=1, rgb=24, depth=24, stencil=8, visType=8002 texTgt=6
+[  5575.595] Information: GLX: PrlGLXPrintAvailableFBConfigs:  2) fbconfigID=0x67(103), visualID=0x64(100), db=0, rgb=32, depth=24, stencil=8, visType=8002 texTgt=6
+[  5575.595] Information: GLX: PrlGLXPrintAvailableFBConfigs:  3) fbconfigID=0x68(104), visualID=0x21(33), db=0, rgb=24, depth=24, stencil=8, visType=8002 texTgt=6
+[  5575.595] Information: PRLVIDEL: Reset VESA video mode...
+[  5575.595] Information: PRLVIDEL: Set Crtc 0 video mode (1024x768, x=0, y=0)...
+[  5575.595] Information: PRLVIDEL: Mode: 1024x768
+[  5575.595] Information: PRLCONTROL: Heads configuration (max=3, connected=00000001)
+[  5575.598] Information: PRLVIDEL: Set Head 0 mode 1024x768
+[  5575.598] Information: PRLVIDEL: VESA mode were restored.
+[  5575.598] Information: PRLCONTROL: Share states thread started
+[  5575.598] Information: PRLVIDEL: Entered into VT.
+[  5575.598] Information: PRLVIDEL: RMode: 1024x768, dw 1024, bpp: 32, depth: 24, head=0, base=0x7efcca198000
+[  5575.599] Information: PRLXINERAMA: Xinerama Virtual Screen 0 (1024x768, x=0, y=0)
+[  5575.599] Information: PRLVIDEL(0): Setting screen physical size to 270 x 203
+[  5575.649] Information: config/udev: Adding input device Power Button (/dev/input/event0)
+[  5575.649] Information: LoadModule: "evdev"
+[  5575.649] Information: Loading /usr/lib64/xorg/modules/input/evdev_drv.so
+[  5575.650] Information: Module evdev: vendor="X.Org Foundation"
+[  5575.650] Information: Using input driver 'evdev' for 'Power Button'
+[  5575.650] Information: evdev: Power Button: Configuring as keyboard
+[  5575.650] Information: XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  5575.650] Information: config/udev: Adding input device Sleep Button (/dev/input/event1)
+[  5575.650] Information: Using input driver 'evdev' for 'Sleep Button'
+[  5575.650] Information: evdev: Sleep Button: Configuring as keyboard
+[  5575.650] Information: XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 7)
+[  5575.651] Information: config/udev: Adding input device Parallels Virtual Mouse (/dev/input/event3)
+[  5575.651] Information: Using input driver 'evdev' for 'Parallels Virtual Mouse'
+[  5575.702] Information: evdev: Parallels Virtual Mouse: Configuring as touchscreen
+[  5575.702] Information: evdev: Parallels Virtual Mouse: Adding scrollwheel support
+[  5575.702] Information: XINPUT: Adding extended input device "Parallels Virtual Mouse" (type: TOUCHSCREEN, id 8)
+[  5575.702] Information: evdev: Parallels Virtual Mouse: initialized for absolute axes.
+[  5575.703] Information: config/udev: Adding input device Parallels Virtual Mouse (/dev/input/js0)
+[  5575.703] Information: No input driver specified, ignoring this device.
+[  5575.703] Information: This device may have been added with another device file.
+[  5575.703] Information: config/udev: Adding input device Parallels Virtual Mouse (/dev/input/mouse0)
+[  5575.703] Information: No input driver specified, ignoring this device.
+[  5575.703] Information: This device may have been added with another device file.
+[  5575.703] Information: config/udev: Adding input device Parallels Virtual Mouse (/dev/input/event4)
+[  5575.703] Information: Using input driver 'evdev' for 'Parallels Virtual Mouse'
+[  5575.755] Information: evdev: Parallels Virtual Mouse: Configuring as mouse
+[  5575.755] Information: evdev: Parallels Virtual Mouse: Adding scrollwheel support
+[  5575.755] Information: XINPUT: Adding extended input device "Parallels Virtual Mouse" (type: MOUSE, id 9)
+[  5575.755] Information: evdev: Parallels Virtual Mouse: initialized for relative axes.
+[  5575.757] Information: config/udev: Adding input device Parallels Virtual Mouse (/dev/input/mouse1)
+[  5575.757] Information: No input driver specified, ignoring this device.
+[  5575.757] Information: This device may have been added with another device file.
+[  5575.758] Information: config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+[  5575.758] Information: Using input driver 'evdev' for 'AT Translated Set 2 keyboard'
+[  5575.758] Information: evdev: AT Translated Set 2 keyboard: Configuring as keyboard
+[  5575.758] Information: XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 10)
+[  5575.759] Information: config/udev: Adding input device ImExPS/2 Generic Explorer Mouse (/dev/input/event5)
+[  5575.759] Information: LoadModule: "prlmouse"
+[  5575.760] Information: Loading /usr/lib64/xorg/modules/input/prlmouse_drv.so
+[  5575.760] Information: Module prlmouse: vendor="Parallels Inc."
+[  5575.760] Information: Parallels Mouse: Module was plugged
+[  5575.760] Information: Using input driver 'prlmouse' for 'ImExPS/2 Generic Explorer Mouse'
+[  5575.760] Information: Parallels Mouse: Initializing (flags=4 (server_fd=0) fd=-1)...
+[  5575.760] Information: Parallels Mouse: Link to Open Tools Gate was opened
+[  5575.772] Information: Parallels Mouse: Module common options were read
+[  5575.772] Information: Parallels Mouse: Module was initialized
+[  5575.772] Information: XINPUT: Adding extended input device "ImExPS/2 Generic Explorer Mouse" (type: MOUSE, id 11)
+[  5575.772] Information: Parallels Mouse: Device was initialized
+[  5575.773] Information: Parallels Mouse: Mouse protocol detected: Evdev
+[  5575.773] Information: Parallels Mouse: Sliding Mouse enabling code:0 proto:1
+[  5575.773] Information: Parallels Mouse: Device was switched on
+[  5575.773] Information: config/udev: Adding input device ImExPS/2 Generic Explorer Mouse (/dev/input/mouse2)
+[  5575.773] Information: No input driver specified, ignoring this device.
+[  5575.773] Information: This device may have been added with another device file.
+[  5575.774] Information: config/udev: Adding input device PC Speaker (/dev/input/event6)
+[  5575.774] Information: No input driver specified, ignoring this device.
+[  5575.774] Information: This device may have been added with another device file.
+[  5575.885] Information: PRLCONTROL: Read gdm (/sbin/nologin) settings from /var/lib/gdm ...
+[  5575.885] Information: PRLCONTROL: Config '/var/lib/gdm/.config/monitors.xml' parsed with result 0
+[  5576.018] Information: PRLCONTROL: +GLPBuffer(0x564b4bad8ce0, hpbuf=0x5f5f20c9, pid=5221, SB, GLXDraw=(0x564b4bad8b70, id=10485764(0xa00004)), Draw=(0x564b4bad89f0, id=10485763(0xa00003), redirect=0, sz=(1x1)), Pix=(0x564b4b8447d0, sz=(1024x768)), tgt=0x20dd, fmt=0x20d9) created
+[  5576.026] Information: PRLCONTROL: -GLPBuffer(0x564b4bad8ce0, GlxDraw=0x564b4bad8b70, hpbuf=0x5f5f20c9, tgt=20DD) destroyed (0)
+[  5576.137] Information: PRLCONTROL: +GLPBuffer(0x564b4ba8ddb0, hpbuf=0x5f5f20c9, pid=5242, SB, GLXDraw=(0x564b4ba7f8b0, id=8388612(0x800004)), Draw=(0x564b4ba7ebc0, id=8388611(0x800003), redirect=0, sz=(1x1)), Pix=(0x564b4b8447d0, sz=(1024x768)), tgt=0x20dd, fmt=0x20d9) created
+[  5576.144] Information: PRLCONTROL: -GLPBuffer(0x564b4ba8ddb0, GlxDraw=0x564b4ba7f8b0, hpbuf=0x5f5f20c9, tgt=20DD) destroyed (0)
+[  5576.171] Information: PRLCONTROL: +GLPBuffer(0x564b4ba7fac0, hpbuf=0x5f5f20c9, pid=5242, SB, GLXDraw=(0x564b4ba7f8b0, id=8388617(0x800009)), Draw=(0x564b4ba7ebc0, id=8388616(0x800008), redirect=0, sz=(1x1)), Pix=(0x564b4b8447d0, sz=(1024x768)), tgt=0x20dd, fmt=0x20d9) created
+[  5576.393] Information: PRLCONTROL: Window manager detected
+[  5576.393] Information: PRLCONTROL: Composite overlay window (DrawPtr=0x564b4bb3c6e0 (id=99)) detected
+[  5576.394] Information: PRLVIDEL: Use HardWare cursor.
+[  5577.937] Information: PRLCONTROL: +GLPBuffer(0x564b4bb608b0, hpbuf=0x5f5f20ca, pid=5242, SB, GLXDraw=(0x564b4ba93090, id=8388621(0x80000d)), Draw=(0x564b4ba7ed60, id=8388620(0x80000c), redirect=0, sz=(1024x768)), Pix=(0x564b4b8447d0, sz=(1024x768)), tgt=0x20dd, fmt=0x20d9) created
+[  5577.937] Information: PRLCONTROL: OpenGL Composite overlay detected (Draw=(0x564b4ba7ed60, id=8388620(0x80000c)), GLXDraw=(0x564b4ba93090, id=8388621(0x80000d))).
+[  5577.937] Information: PRLCONTROL: OpenGL Compositing enabled.
+[  5689.897] Information: PRLCONTROL: -GLPBuffer(0x564b4ba7fac0, GlxDraw=0x564b4ba7f8b0, hpbuf=0x5f5f20c9, tgt=20DD) destroyed (0)
+[  5689.897] Information: PRLCONTROL: OpenGL Composite overlay lost (Draw=(0x564b4ba7ed60, id=8388620(0x80000c)), GLXDraw=(0x564b4ba93090, id=8388621(0x80000d))).
+[  5689.897] Information: PRLCONTROL: OpenGL Compositing disabled.
+[  5689.899] Information: PRLCONTROL: -GLPBuffer(0x564b4bb608b0, GlxDraw=0x564b4ba93090, hpbuf=0x5f5f20ca, tgt=20DD) destroyed (0)
+[  5689.900] Information: PRLCONTROL: Composite overlay window lost
+[  5689.948] Information: Parallels Mouse: Sliding Mouse disabling [0]
+[  5690.259] Information: Parallels Mouse: Device was switched off
+[  5690.561] Information: Parallels Mouse: Device was closed
+[  5690.562] Information: Parallels Mouse: Link to Open Tools Gate was closed
+[  5690.562] Information: UnloadModule: "prlmouse"
+[  5690.562] Information: Parallels Mouse: Module was deinitialized
+[  5690.562] Information: evdev: AT Translated Set 2 keyboard: Close
+[  5690.562] Information: UnloadModule: "evdev"
+[  5690.562] Information: evdev: Parallels Virtual Mouse: Close
+[  5690.562] Information: UnloadModule: "evdev"
+[  5690.562] Information: evdev: Parallels Virtual Mouse: Close
+[  5690.562] Information: UnloadModule: "evdev"
+[  5690.562] Information: evdev: Sleep Button: Close
+[  5690.562] Information: UnloadModule: "evdev"
+[  5690.562] Information: evdev: Power Button: Close
+[  5690.562] Information: UnloadModule: "evdev"
+[  5690.562] Information: GLX: _PrlGLXScreenDeinit: GLX Parallels screen 0 deinitialized
+[  5690.562] Information: PRLVIDEL: Reset VGA text mode...
+[  5690.563] Information: PRLVIDEL: Text mode activated.
+[  5690.563] Information: PRLVIDEL: Frame buffer was successfully unmapped
+[  5690.563] Information: PRLVIDEL: Cursor deinitialized.
+[  5690.563] Information: PRLCOHERENCE: Coherence deinitialized
+[  5690.563] Information: PRLCONTROL: /proc/driver/prl_tg closed
+[  5690.566] Information: PRLCONTROL: Share states thread stopped
+[  5690.567] Information: PRLVIDEL: VESA link to Open Tools Gate was closed.
+[  5690.567] Information: PRLVIDEL: VESA Screen 0 closed
+[  5690.570] Information: Server terminated successfully (0). Closing log file.
