@@ -1,0 +1,536 @@
+[  5575.169] 
+X.Org X Server 1.19.5
+Release Date: 2017-10-12
+[  5575.170] X Protocol Version 11, Revision 0
+[  5575.170] Build Operating System:  3.10.0-693.17.1.el7.x86_64 
+[  5575.170] Current Operating System: Linux centos-7.shared 3.10.0-862.11.6.el7.x86_64 #1 SMP Tue Aug 14 21:49:04 UTC 2018 x86_64
+[  5575.170] Kernel command line: BOOT_IMAGE=/vmlinuz-3.10.0-862.11.6.el7.x86_64 root=/dev/mapper/cl-root ro crashkernel=auto rd.lvm.lv=cl/root rd.lvm.lv=cl/swap rhgb quiet LANG=en_US.UTF-8
+[  5575.170] Build Date: 11 April 2018  04:40:54PM
+[  5575.170] Build ID: xorg-x11-server 1.19.5-5.el7 
+[  5575.170] Current version of pixman: 0.34.0
+[  5575.170] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  5575.170] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  5575.170] (==) Log file: "/var/log/Xorg.1.log", Time: Mon Sep 14 11:04:47 2020
+[  5575.175] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[  5575.175] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  5575.179] (==) ServerLayout "DefaultLayout"
+[  5575.180] (**) |-->Screen "Parallels Screen" (0)
+[  5575.180] (**) |   |-->Monitor "Parallels Monitor"
+[  5575.180] (**) |   |-->Device "Parallels Video"
+[  5575.180] (**) Option "AutoAddDevices" "yes"
+[  5575.180] (**) Automatically adding devices
+[  5575.180] (==) Automatically enabling devices
+[  5575.180] (==) Automatically adding GPU devices
+[  5575.180] (==) Automatically binding GPU devices
+[  5575.180] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  5575.180] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[  5575.180] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[  5575.180] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  5575.180] (II) Loader magic: 0x564b4a9f1020
+[  5575.180] (II) Module ABI versions:
+[  5575.180] 	X.Org ANSI C Emulation: 0.4
+[  5575.180] 	X.Org Video Driver: 23.0
+[  5575.180] 	X.Org XInput driver : 24.1
+[  5575.180] 	X.Org Server Extension : 10.0
+[  5575.182] (--) PCI:*(0:1:0:0) 1ab8:4005:1ab8:0400 rev 0, Mem @ 0xb0000000/67108864, I/O @ 0x00006000/32, BIOS @ 0x????????/65536
+[  5575.183] (II) LoadModule: "glx"
+[  5575.192] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[  5575.198] (II) Module glx: vendor="X.Org Foundation"
+[  5575.198] 	compiled for 1.19.0, module version = 1.0.0
+[  5575.198] 	ABI class: X.Org Server Extension, version 10.0
+[  5575.198] (II) Exporting typical set of GLX visuals
+[  5575.198] (II) LoadModule: "prlvideo"
+[  5575.198] (II) Loading /usr/lib64/xorg/modules/drivers/prlvideo_drv.so
+[  5575.199] (II) PRLVIDEO: Search in '/usr/lib64/xorg/modules'
+[  5575.199] (II) PRLVIDEO: Load module '/usr/lib64/xorg/modules/drivers/prlvidel_drv.so'...
+[  5575.200] (II) Module prlvideo: vendor="Parallels Inc."
+[  5575.200] 	compiled for 1.19.0, module version = 2.0.0
+[  5575.200] 	Module class: X.Org Video Driver
+[  5575.200] 	ABI class: X.Org Video Driver, version 23.0
+[  5575.200] (--) using VT number 2
+
+[  5575.564] (II) PRLVIDEL: Sharing 0 entity with other screens
+[  5575.564] (II) PRLVIDEL: Frame buffer struct was created
+[  5575.564] (II) PRLCONTROL: /proc/driver/prl_vtg opened
+[  5575.564] (II) PRLVIDEL: VESA PCI probe for Screen 0 finished successfully.
+[  5575.565] (II) PRLVIDEL: PRE initializing VESA Screen 0 . . .
+[  5575.565] (EE) PRLVIDEL: Not using VBE.
+[  5575.565] (II) PRLVIDEL(0): Configuring display modes for display Parallels Monitor . . .
+[  5575.565] (II) Loading sub module "ramdac"
+[  5575.565] (II) LoadModule: "ramdac"
+[  5575.565] (II) Module "ramdac" already built-in
+[  5575.565] (==) PRLVIDEL(0): Depth 24, (--) framebuffer bpp 32
+[  5575.565] (==) PRLVIDEL(0): RGB weight 888
+[  5575.565] (==) PRLVIDEL(0): Default visual is TrueColor
+[  5575.565] (==) PRLVIDEL(0): Using gamma correction (1.0, 1.0, 1.0)
+[  5575.565] (II) PRLVIDEL(0): Total Memory: 1024 64KB banks (65536kB)
+[  5575.565] (II) PRLVIDEL(0): Searching for matching VESA mode(s):
+[  5575.565] (II) PRLVIDEL(0): Validating VESA modes (maxWidth=2560, maxHeight=1440, mapSize=65536Kb) . . .
+[  5575.565] (II) PRLVIDEL(0): Parallels Monitor: Using default hsync range of 31.50-48.00 kHz
+[  5575.565] (II) PRLVIDEL(0): Parallels Monitor: Using default vrefresh range of 50.00-70.00 Hz
+[  5575.565] (II) PRLVIDEL(0): Parallels Monitor: Using default maximum pixel clock of 65.00 MHz
+[  5575.565] (WW) PRLVIDEL(0): Unable to estimate virtual size
+[  5575.565] (II) PRLVIDEL(0): Found 12 valid VESA modes
+[  5575.565] (II) PRLVIDEL(0): Parallels Monitor: Using hsync range of 31.50-48.00 kHz
+[  5575.565] (II) PRLVIDEL(0): Parallels Monitor: Using vrefresh range of 50.00-70.00 Hz
+[  5575.565] (II) PRLVIDEL(0): Parallels Monitor: Using maximum pixel clock of 65.00 MHz
+[  5575.565] (II) PRLVIDEL(0): Not using built-in mode "2560x1440" (width too large for virtual size)
+[  5575.565] (II) PRLVIDEL(0): Not using built-in mode "1920x1200" (width too large for virtual size)
+[  5575.565] (II) PRLVIDEL(0): Not using built-in mode "1600x1200" (width too large for virtual size)
+[  5575.565] (II) PRLVIDEL(0): Not using built-in mode "1680x1050" (width too large for virtual size)
+[  5575.565] (II) PRLVIDEL(0): Not using built-in mode "1400x1050" (width too large for virtual size)
+[  5575.565] (II) PRLVIDEL(0): Not using built-in mode "1280x1024" (width too large for virtual size)
+[  5575.565] (II) PRLVIDEL(0): Not using built-in mode "1440x900" (width too large for virtual size)
+[  5575.565] (II) PRLVIDEL(0): Not using built-in mode "1280x960" (width too large for virtual size)
+[  5575.565] (II) PRLVIDEL(0): Not using built-in mode "1280x800" (width too large for virtual size)
+[  5575.565] (II) PRLVIDEL(0): Found 3 valid VESA modes
+[  5575.565] (II) PRLVIDEL: Added initial display mode 1024x768
+[  5575.565] (II) PRLVIDEL: Added initial display mode 800x600
+[  5575.565] (II) PRLVIDEL: Added initial display mode 640x480
+[  5575.565] (--) PRLVIDEL(0): Virtual size is 1024x768 (pitch 1024)
+[  5575.565] (**) PRLVIDEL(0): *Built-in mode "1024x768": 64.2 MHz (scaled from 0.0 MHz), 47.8 kHz, 59.9 Hz
+[  5575.565] (II) PRLVIDEL(0): Modeline "1024x768"x59.9   64.20  1024 1077 1183 1342  768 771 775 798 -hsync +vsync (47.8 kHz zPb)
+[  5575.565] (**) PRLVIDEL(0): *Built-in mode "800x600": 38.3 MHz (scaled from 0.0 MHz), 37.4 kHz, 60.0 Hz
+[  5575.565] (II) PRLVIDEL(0): Modeline "800x600"x60.0   38.31  800 832 912 1024  600 603 607 624 -hsync +vsync (37.4 kHz zb)
+[  5575.565] (**) PRLVIDEL(0): *Built-in mode "640x480": 24.0 MHz (scaled from 0.0 MHz), 30.0 kHz, 59.9 Hz
+[  5575.565] (II) PRLVIDEL(0): Modeline "640x480"x59.9   23.98  640 657 720 800  480 483 487 500 -hsync +vsync (30.0 kHz zb)
+[  5575.565] (II) PRLVIDEL(0): VESA modes validation success
+[  5575.565] (==) PRLVIDEL(0): DPI set to (96, 96)
+[  5575.566] (II) PRLVIDEL(0): Set VESA default refresh to FALSE.
+[  5575.566] (II) Loading sub module "fb"
+[  5575.566] (II) LoadModule: "fb"
+[  5575.567] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[  5575.571] (II) Module fb: vendor="X.Org Foundation"
+[  5575.571] 	compiled for 1.19.5, module version = 1.0.0
+[  5575.571] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  5575.571] (II) PRLVIDEL: Initializing Crtcs...
+[  5575.571] (II) PRLVIDEL: Screen size Min {0x0}, Max {8192x8192}.
+[  5575.571] (II) PRLVIDEL: Crtcs initialized.
+[  5575.571] (II) PRLVIDEL: Initializing Outputs...
+[  5575.571] (II) PRLVIDEL(0): Output Virtual1 using monitor section Parallels Monitor
+[  5575.571] (II) PRLVIDEL(0): Output Virtual2 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual3 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual4 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual5 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual6 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual7 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual8 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual9 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual10 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual11 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual12 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual13 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual14 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual15 has no monitor section
+[  5575.571] (II) PRLVIDEL(0): Output Virtual16 has no monitor section
+[  5575.571] (II) PRLVIDEL: Outputs initialized.
+[  5575.571] (II) PRLVIDEL: Initializing Crtc/Output configuration...
+[  5575.571] (II) PRLVIDEL(0): Printing probed modes for output Virtual1
+[  5575.571] (II) PRLVIDEL(0): Modeline "1024x768"x59.9   64.20  1024 1077 1183 1342  768 771 775 798 -hsync +vsync (47.8 kHz UP)
+[  5575.571] (II) PRLVIDEL(0): Modeline "800x600"x60.0   38.31  800 832 912 1024  600 603 607 624 -hsync +vsync (37.4 kHz)
+[  5575.571] (II) PRLVIDEL(0): Modeline "640x480"x59.9   23.98  640 657 720 800  480 483 487 500 -hsync +vsync (30.0 kHz)
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual2
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual3
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual4
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual5
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual6
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual7
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual8
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual9
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual10
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual11
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual12
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual13
+[  5575.571] (II) PRLVIDEL(0): EDID for output Virtual14
+[  5575.575] (II) PRLVIDEL(0): EDID for output Virtual15
+[  5575.575] (II) PRLVIDEL(0): EDID for output Virtual16
+[  5575.575] (II) PRLVIDEL(0): Output Virtual1 connected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual2 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual3 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual4 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual5 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual6 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual7 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual8 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual9 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual10 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual11 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual12 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual13 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual14 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual15 disconnected
+[  5575.575] (II) PRLVIDEL(0): Output Virtual16 disconnected
+[  5575.575] (II) PRLVIDEL(0): Using user preference for initial modes
+[  5575.575] (II) PRLVIDEL(0): Output Virtual1 using initial mode 1024x768 +0+0
+[  5575.575] (II) PRLVIDEL: VESA Screen 0 was PRE initialized.
+[  5575.575] (==) Depth 24 pixmap format is 32 bpp
+[  5575.575] (II) PRLVIDEL: Initializing VESA Screen 0 . . .
+[  5575.575] (II) PRLVIDEL: Mapping frame buffer . . .
+[  5575.577] (II) PRLVIDEL: Framebuffer (/proc/driver/prl_vtg) successfully mapped by Screen 0 at:
+	base=0x7efcca198000 VGAbase=0x7efcd421c000 phys=0 size=67108864
+[  5575.577] (==) PRLVIDEL(0): Default visual is TrueColor
+[  5575.577] (II) PRLVIDEL: DGA initialized for Screen 0
+[  5575.577] (==) PRLVIDEL(0): Backing store enabled
+[  5575.577] (II) PRLVIDEL(0): RandR 1.2 enabled, ignore the following RandR disabled message.
+[  5575.577] (==) PRLVIDEL(0): DPMS enabled
+[  5575.577] (WW) PRLVIDEL(0): Option "NoMTRR" is not used
+[  5575.577] (II) PRLCONTROL: Compiled for 1.19.0 XServer
+[  5575.577] (II) PRLCONTROL: /proc/driver/prl_tg opened
+[  5575.577] (II) PRLCONTROL: ParallelsControl version 1.0 initalized
+[  5575.584] (II) PRLCONTROL: OpenGL supported
+[  5575.584] (II) PRLCONTROL: This message is only for compiz starter script:
+	'Loading /usr/lib/xorg/modules/drivers/nvidia_drv.so'
+	Maybe later compiz team include our driver in whitelist
+[  5575.584] (II) PRLCONTROL: Compositing supported
+[  5575.584] (II) PRLCONTROL: Video RAM: 65536 kByte
+[  5575.584] (II) PRLCONTROL: Multiheads supported
+[  5575.584] (II) PRLCONTROL: Randr's private data available
+[  5575.584] (II) PRLCOHERENCE: Coherence initialized
+[  5575.584] (II) PRLXINERAMA: Parallels Xinerama initialized
+[  5575.584] (II) PRLVIDEL: VESA link to Open Tools Gate was opened.
+[  5575.587] (II) PRLVIDEL: Cursor initialized.
+[  5575.587] (II) PRLVIDEL: VESA Screen 0 was initialized.
+[  5575.587] (--) RandR disabled
+[  5575.593] (II) SELinux: Disabled by boolean
+[  5575.593] (II) GLX: GlxExtensionInit: Compiled for 1.19.0 XServer
+[  5575.594] (II) GLX: PrlGLXScreenInit: Allowed 2 X visuals
+[  5575.594] (II) GLX: PrlGLXScreenInit:  vid=0x21 class=0x4
+[  5575.594] (II) GLX: PrlGLXScreenInit:  vid=0x64 class=0x4
+[  5575.594] (II) GLX: PrlGLXScreenInit: Allowed 2 X depths
+[  5575.595] (II) GLX: PrlGLXScreenInit:  depth=24 vid=0x21
+[  5575.595] (II) GLX: PrlGLXScreenInit:  depth=32 vid=0x64
+[  5575.595] (II) GLX: PrlGLXScreenInit: GLX Parallels screen 0 initialized
+[  5575.595] (II) GLX: GlxExtensionInit: Extension GLX added
+[  5575.595] (II) GLX: GlxExtensionInit: Extension alias SGI-GLX added
+[  5575.595] (II) GLX: GlxExtensionInit: Extension alias PRL-GLX added
+[  5575.595] (II) GLX: GlxExtensionInit: Extension alias AIGLX added
+[  5575.595] (II) GLX: PrlGLXPrintAvailableFBConfigs: Available 2 GLX visuals:
+[  5575.595] (II) GLX: PrlGLXPrintAvailableFBConfigs:  0) visualID=0x21(33), fbconfigID=0x66(102), db=1, rgb=24, depth=24, stencil=8, visType=8002 texTgt=6
+[  5575.595] (II) GLX: PrlGLXPrintAvailableFBConfigs:  1) visualID=0x64(100), fbconfigID=0x65(101), db=1, rgb=32, depth=24, stencil=8, visType=8002 texTgt=6
+[  5575.595] (II) GLX: PrlGLXPrintAvailableFBConfigs: Available 4 GLX fbconfigs:
+[  5575.595] (II) GLX: PrlGLXPrintAvailableFBConfigs:  0) fbconfigID=0x65(101), visualID=0x64(100), db=1, rgb=32, depth=24, stencil=8, visType=8002 texTgt=6
+[  5575.595] (II) GLX: PrlGLXPrintAvailableFBConfigs:  1) fbconfigID=0x66(102), visualID=0x21(33), db=1, rgb=24, depth=24, stencil=8, visType=8002 texTgt=6
+[  5575.595] (II) GLX: PrlGLXPrintAvailableFBConfigs:  2) fbconfigID=0x67(103), visualID=0x64(100), db=0, rgb=32, depth=24, stencil=8, visType=8002 texTgt=6
+[  5575.595] (II) GLX: PrlGLXPrintAvailableFBConfigs:  3) fbconfigID=0x68(104), visualID=0x21(33), db=0, rgb=24, depth=24, stencil=8, visType=8002 texTgt=6
+[  5575.595] (II) PRLVIDEL: Reset VESA video mode...
+[  5575.595] (II) PRLVIDEL: Set Crtc 0 video mode (1024x768, x=0, y=0)...
+[  5575.595] (II) PRLVIDEL: Mode: 1024x768
+[  5575.595] (II) PRLCONTROL: Heads configuration (max=3, connected=00000001)
+[  5575.598] (II) PRLVIDEL: Set Head 0 mode 1024x768
+[  5575.598] (II) PRLVIDEL: VESA mode were restored.
+[  5575.598] (II) PRLCONTROL: Share states thread started
+[  5575.598] (II) PRLVIDEL: Entered into VT.
+[  5575.598] (II) PRLVIDEL: RMode: 1024x768, dw 1024, bpp: 32, depth: 24, head=0, base=0x7efcca198000
+[  5575.599] (II) PRLXINERAMA: Xinerama Virtual Screen 0 (1024x768, x=0, y=0)
+[  5575.599] (II) PRLVIDEL(0): Setting screen physical size to 270 x 203
+[  5575.649] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[  5575.649] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[  5575.649] (**) Power Button: Applying InputClass "system-keyboard"
+[  5575.649] (II) LoadModule: "evdev"
+[  5575.649] (II) Loading /usr/lib64/xorg/modules/input/evdev_drv.so
+[  5575.650] (II) Module evdev: vendor="X.Org Foundation"
+[  5575.650] 	compiled for 1.19.3, module version = 2.10.5
+[  5575.650] 	Module class: X.Org XInput Driver
+[  5575.650] 	ABI class: X.Org XInput driver, version 24.1
+[  5575.650] (II) Using input driver 'evdev' for 'Power Button'
+[  5575.650] (**) Power Button: always reports core events
+[  5575.650] (**) evdev: Power Button: Device: "/dev/input/event0"
+[  5575.650] (--) evdev: Power Button: Vendor 0 Product 0x1
+[  5575.650] (--) evdev: Power Button: Found keys
+[  5575.650] (II) evdev: Power Button: Configuring as keyboard
+[  5575.650] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input0/event0"
+[  5575.650] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  5575.650] (**) Option "xkb_rules" "evdev"
+[  5575.650] (**) Option "xkb_layout" "us"
+[  5575.650] (II) config/udev: Adding input device Sleep Button (/dev/input/event1)
+[  5575.650] (**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+[  5575.650] (**) Sleep Button: Applying InputClass "system-keyboard"
+[  5575.650] (II) Using input driver 'evdev' for 'Sleep Button'
+[  5575.650] (**) Sleep Button: always reports core events
+[  5575.650] (**) evdev: Sleep Button: Device: "/dev/input/event1"
+[  5575.650] (--) evdev: Sleep Button: Vendor 0 Product 0x3
+[  5575.650] (--) evdev: Sleep Button: Found keys
+[  5575.650] (II) evdev: Sleep Button: Configuring as keyboard
+[  5575.650] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSLPBN:00/input/input1/event1"
+[  5575.650] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 7)
+[  5575.651] (**) Option "xkb_rules" "evdev"
+[  5575.651] (**) Option "xkb_layout" "us"
+[  5575.651] (II) config/udev: Adding input device Parallels Virtual Mouse (/dev/input/event3)
+[  5575.651] (**) Parallels Virtual Mouse: Applying InputClass "evdev pointer catchall"
+[  5575.651] (II) Using input driver 'evdev' for 'Parallels Virtual Mouse'
+[  5575.651] (**) Parallels Virtual Mouse: always reports core events
+[  5575.651] (**) evdev: Parallels Virtual Mouse: Device: "/dev/input/event3"
+[  5575.702] (--) evdev: Parallels Virtual Mouse: Vendor 0x203a Product 0xfffc
+[  5575.702] (--) evdev: Parallels Virtual Mouse: Found 12 mouse buttons
+[  5575.702] (--) evdev: Parallels Virtual Mouse: Found scroll wheel(s)
+[  5575.702] (--) evdev: Parallels Virtual Mouse: Found relative axes
+[  5575.702] (--) evdev: Parallels Virtual Mouse: Found absolute axes
+[  5575.702] (--) evdev: Parallels Virtual Mouse: Found x and y absolute axes
+[  5575.702] (--) evdev: Parallels Virtual Mouse: Found absolute touchscreen
+[  5575.702] (II) evdev: Parallels Virtual Mouse: Configuring as touchscreen
+[  5575.702] (II) evdev: Parallels Virtual Mouse: Adding scrollwheel support
+[  5575.702] (**) evdev: Parallels Virtual Mouse: YAxisMapping: buttons 4 and 5
+[  5575.702] (**) evdev: Parallels Virtual Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[  5575.702] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1:1.0/input/input17/event3"
+[  5575.702] (II) XINPUT: Adding extended input device "Parallels Virtual Mouse" (type: TOUCHSCREEN, id 8)
+[  5575.702] (WW) evdev: Parallels Virtual Mouse: touchpads, tablets and touchscreens ignore relative axes.
+[  5575.702] (II) evdev: Parallels Virtual Mouse: initialized for absolute axes.
+[  5575.702] (**) Parallels Virtual Mouse: (accel) keeping acceleration scheme 1
+[  5575.702] (**) Parallels Virtual Mouse: (accel) acceleration profile 0
+[  5575.702] (**) Parallels Virtual Mouse: (accel) acceleration factor: 2.000
+[  5575.702] (**) Parallels Virtual Mouse: (accel) acceleration threshold: 4
+[  5575.703] (II) config/udev: Adding input device Parallels Virtual Mouse (/dev/input/js0)
+[  5575.703] (II) No input driver specified, ignoring this device.
+[  5575.703] (II) This device may have been added with another device file.
+[  5575.703] (II) config/udev: Adding input device Parallels Virtual Mouse (/dev/input/mouse0)
+[  5575.703] (II) No input driver specified, ignoring this device.
+[  5575.703] (II) This device may have been added with another device file.
+[  5575.703] (II) config/udev: Adding input device Parallels Virtual Mouse (/dev/input/event4)
+[  5575.703] (**) Parallels Virtual Mouse: Applying InputClass "evdev pointer catchall"
+[  5575.703] (II) Using input driver 'evdev' for 'Parallels Virtual Mouse'
+[  5575.703] (**) Parallels Virtual Mouse: always reports core events
+[  5575.703] (**) evdev: Parallels Virtual Mouse: Device: "/dev/input/event4"
+[  5575.755] (--) evdev: Parallels Virtual Mouse: Vendor 0x203a Product 0xfffc
+[  5575.755] (--) evdev: Parallels Virtual Mouse: Found 12 mouse buttons
+[  5575.755] (--) evdev: Parallels Virtual Mouse: Found scroll wheel(s)
+[  5575.755] (--) evdev: Parallels Virtual Mouse: Found relative axes
+[  5575.755] (--) evdev: Parallels Virtual Mouse: Found x and y relative axes
+[  5575.755] (II) evdev: Parallels Virtual Mouse: Configuring as mouse
+[  5575.755] (II) evdev: Parallels Virtual Mouse: Adding scrollwheel support
+[  5575.755] (**) evdev: Parallels Virtual Mouse: YAxisMapping: buttons 4 and 5
+[  5575.755] (**) evdev: Parallels Virtual Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[  5575.755] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1:1.1/input/input18/event4"
+[  5575.755] (II) XINPUT: Adding extended input device "Parallels Virtual Mouse" (type: MOUSE, id 9)
+[  5575.755] (II) evdev: Parallels Virtual Mouse: initialized for relative axes.
+[  5575.756] (**) Parallels Virtual Mouse: (accel) keeping acceleration scheme 1
+[  5575.756] (**) Parallels Virtual Mouse: (accel) acceleration profile 0
+[  5575.756] (**) Parallels Virtual Mouse: (accel) acceleration factor: 2.000
+[  5575.756] (**) Parallels Virtual Mouse: (accel) acceleration threshold: 4
+[  5575.757] (II) config/udev: Adding input device Parallels Virtual Mouse (/dev/input/mouse1)
+[  5575.757] (II) No input driver specified, ignoring this device.
+[  5575.757] (II) This device may have been added with another device file.
+[  5575.758] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+[  5575.758] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[  5575.758] (**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+[  5575.758] (II) Using input driver 'evdev' for 'AT Translated Set 2 keyboard'
+[  5575.758] (**) AT Translated Set 2 keyboard: always reports core events
+[  5575.758] (**) evdev: AT Translated Set 2 keyboard: Device: "/dev/input/event2"
+[  5575.758] (--) evdev: AT Translated Set 2 keyboard: Vendor 0x1 Product 0x1
+[  5575.758] (--) evdev: AT Translated Set 2 keyboard: Found keys
+[  5575.758] (II) evdev: AT Translated Set 2 keyboard: Configuring as keyboard
+[  5575.758] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input2/event2"
+[  5575.758] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 10)
+[  5575.758] (**) Option "xkb_rules" "evdev"
+[  5575.758] (**) Option "xkb_layout" "us"
+[  5575.759] (II) config/udev: Adding input device ImExPS/2 Generic Explorer Mouse (/dev/input/event5)
+[  5575.759] (**) ImExPS/2 Generic Explorer Mouse: Applying InputClass "evdev pointer catchall"
+[  5575.759] (**) ImExPS/2 Generic Explorer Mouse: Applying InputClass "prlmouse"
+[  5575.759] (**) ImExPS/2 Generic Explorer Mouse: Applying InputClass "prlmouse"
+[  5575.759] (II) LoadModule: "prlmouse"
+[  5575.760] (II) Loading /usr/lib64/xorg/modules/input/prlmouse_drv.so
+[  5575.760] (II) Module prlmouse: vendor="Parallels Inc."
+[  5575.760] 	compiled for 1.19.0, module version = 1.3.0
+[  5575.760] 	Module class: X.Org XInput Driver
+[  5575.760] 	ABI class: X.Org XInput driver, version 24.1
+[  5575.760] (II) Parallels Mouse: Module was plugged
+[  5575.760] (II) Using input driver 'prlmouse' for 'ImExPS/2 Generic Explorer Mouse'
+[  5575.760] (**) ImExPS/2 Generic Explorer Mouse: always reports core events
+[  5575.760] (II) Parallels Mouse: Initializing (flags=4 (server_fd=0) fd=-1)...
+[  5575.760] (II) Parallels Mouse: Link to Open Tools Gate was opened
+[  5575.760] (**) ImExPS/2 Generic Explorer Mouse: always reports core events
+[  5575.760] (**) Option "Device" "/dev/input/event5"
+[  5575.772] (**) Parallels Mouse: Device: "/dev/input/event5"
+[  5575.772] (**) Parallels Mouse: ZAxisMapping: buttons 4, 5, 6 and 7
+[  5575.772] (II) Parallels Mouse: Module common options were read
+[  5575.772] (II) Parallels Mouse: Module was initialized
+[  5575.772] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input5/event5"
+[  5575.772] (II) XINPUT: Adding extended input device "ImExPS/2 Generic Explorer Mouse" (type: MOUSE, id 11)
+[  5575.772] (II) Parallels Mouse: Device was initialized
+[  5575.772] (**) ImExPS/2 Generic Explorer Mouse: (accel) keeping acceleration scheme 1
+[  5575.772] (**) ImExPS/2 Generic Explorer Mouse: (accel) acceleration profile 0
+[  5575.772] (**) ImExPS/2 Generic Explorer Mouse: (accel) acceleration factor: 2.000
+[  5575.772] (**) ImExPS/2 Generic Explorer Mouse: (accel) acceleration threshold: 4
+[  5575.773] (--) Parallels Mouse: Evdev input device detected "ImExPS/2 Generic Explorer Mouse"
+[  5575.773] (II) Parallels Mouse: Mouse protocol detected: Evdev
+[  5575.773] (II) Parallels Mouse: Sliding Mouse enabling code:0 proto:1
+[  5575.773] (II) Parallels Mouse: Device was switched on
+[  5575.773] (II) config/udev: Adding input device ImExPS/2 Generic Explorer Mouse (/dev/input/mouse2)
+[  5575.773] (II) No input driver specified, ignoring this device.
+[  5575.773] (II) This device may have been added with another device file.
+[  5575.774] (II) config/udev: Adding input device PC Speaker (/dev/input/event6)
+[  5575.774] (II) No input driver specified, ignoring this device.
+[  5575.774] (II) This device may have been added with another device file.
+[  5575.795] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 1 connected from local host ( uid=0 gid=0 pid=5186 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5575.796] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 1 disconnected
+[  5575.800] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 1 connected from local host ( uid=0 gid=0 pid=5188 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5575.802] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 1 disconnected
+[  5575.806] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 1 connected from local host ( uid=0 gid=0 pid=1455 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5575.884] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 2 connected from local host ( uid=42 gid=42 pid=5197 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5575.885] (II) PRLCONTROL: Read gdm (/sbin/nologin) settings from /var/lib/gdm ...
+[  5575.885] (II) PRLCONTROL: Config '/var/lib/gdm/.config/monitors.xml' parsed with result 0
+[  5575.926] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 3 connected from local host ( uid=42 gid=42 pid=5206 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5575.950] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 4 connected from local host ( uid=42 gid=42 pid=5212 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5575.960] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 5 connected from local host ( uid=42 gid=42 pid=5212 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5575.960] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 5 disconnected
+[  5575.966] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 5 connected from local host ( uid=42 gid=42 pid=5214 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5575.966] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 5 disconnected
+[  5575.976] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 5 connected from local host ( uid=42 gid=42 pid=5214 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5575.977] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 5 disconnected
+[  5575.983] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 5 connected from local host ( uid=42 gid=42 pid=5221 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5575.984] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 6 connected from local host ( uid=42 gid=42 pid=5223 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5575.984] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 6 disconnected
+[  5575.986] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 6 connected from local host ( uid=42 gid=42 pid=5223 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5576.018] (II) PRLCONTROL: +GLPBuffer(0x564b4bad8ce0, hpbuf=0x5f5f20c9, pid=5221, SB, GLXDraw=(0x564b4bad8b70, id=10485764(0xa00004)), Draw=(0x564b4bad89f0, id=10485763(0xa00003), redirect=0, sz=(1x1)), Pix=(0x564b4b8447d0, sz=(1024x768)), tgt=0x20dd, fmt=0x20d9) created
+[  5576.026] (II) PRLCONTROL: -GLPBuffer(0x564b4bad8ce0, GlxDraw=0x564b4bad8b70, hpbuf=0x5f5f20c9, tgt=20DD) destroyed (0)
+[  5576.027] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 5 disconnected
+[  5576.028] AUDIT: Mon Sep 14 11:04:47 2020: 5177: client 4 disconnected
+[  5576.098] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 4 connected from local host ( uid=42 gid=42 pid=5242 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5576.105] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 5 connected from local host ( uid=42 gid=42 pid=5242 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5576.105] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 5 disconnected
+[  5576.137] (II) PRLCONTROL: +GLPBuffer(0x564b4ba8ddb0, hpbuf=0x5f5f20c9, pid=5242, SB, GLXDraw=(0x564b4ba7f8b0, id=8388612(0x800004)), Draw=(0x564b4ba7ebc0, id=8388611(0x800003), redirect=0, sz=(1x1)), Pix=(0x564b4b8447d0, sz=(1024x768)), tgt=0x20dd, fmt=0x20d9) created
+[  5576.144] (II) PRLCONTROL: -GLPBuffer(0x564b4ba8ddb0, GlxDraw=0x564b4ba7f8b0, hpbuf=0x5f5f20c9, tgt=20DD) destroyed (0)
+[  5576.171] (II) PRLCONTROL: +GLPBuffer(0x564b4ba7fac0, hpbuf=0x5f5f20c9, pid=5242, SB, GLXDraw=(0x564b4ba7f8b0, id=8388617(0x800009)), Draw=(0x564b4ba7ebc0, id=8388616(0x800008), redirect=0, sz=(1x1)), Pix=(0x564b4b8447d0, sz=(1024x768)), tgt=0x20dd, fmt=0x20d9) created
+[  5576.204] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 5 connected from local host ( uid=42 gid=42 pid=5242 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5576.211] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 7 connected from local host ( uid=42 gid=42 pid=5242 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5576.211] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 7 disconnected
+[  5576.235] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 7 connected from local host ( uid=42 gid=42 pid=5242 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5576.235] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 7 disconnected
+[  5576.251] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 7 connected from local host ( uid=42 gid=42 pid=5252 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5576.252] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 7 disconnected
+[  5576.393] (II) PRLCONTROL: Window manager detected
+[  5576.393] (II) PRLCONTROL: Composite overlay window (DrawPtr=0x564b4bb3c6e0 (id=99)) detected
+[  5576.394] (II) PRLVIDEL: Use HardWare cursor.
+[  5576.938] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 7 connected from local host ( uid=42 gid=42 pid=5286 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5576.944] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 8 connected from local host ( uid=42 gid=42 pid=5286 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5576.945] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 8 disconnected
+[  5576.960] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 8 connected from local host ( uid=42 gid=42 pid=5242 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5576.963] AUDIT: Mon Sep 14 11:04:48 2020: 5177: client 8 disconnected
+[  5577.093] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 8 connected from local host ( uid=42 gid=42 pid=5312 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.105] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 9 connected from local host ( uid=42 gid=42 pid=5313 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.110] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 10 connected from local host ( uid=42 gid=42 pid=5312 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.111] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 10 disconnected
+[  5577.116] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 10 connected from local host ( uid=42 gid=42 pid=5313 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.117] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 10 disconnected
+[  5577.134] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 10 connected from local host ( uid=42 gid=42 pid=5321 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.146] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 11 connected from local host ( uid=42 gid=42 pid=5321 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.159] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 11 disconnected
+[  5577.176] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 11 connected from local host ( uid=42 gid=42 pid=5325 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.198] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 12 connected from local host ( uid=42 gid=42 pid=5330 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.200] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 13 connected from local host ( uid=42 gid=42 pid=5325 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.202] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 13 disconnected
+[  5577.209] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 13 connected from local host ( uid=42 gid=42 pid=5330 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.210] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 13 disconnected
+[  5577.243] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 13 connected from local host ( uid=42 gid=42 pid=5346 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.247] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 14 connected from local host ( uid=42 gid=42 pid=5346 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.248] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 14 disconnected
+[  5577.276] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 14 connected from local host ( uid=42 gid=42 pid=5349 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.282] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 15 connected from local host ( uid=42 gid=42 pid=5349 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.292] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 15 disconnected
+[  5577.298] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 15 connected from local host ( uid=42 gid=42 pid=5354 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.325] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 16 connected from local host ( uid=42 gid=42 pid=5354 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.326] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 16 disconnected
+[  5577.372] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 16 connected from local host ( uid=42 gid=42 pid=5349 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.381] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 16 disconnected
+[  5577.535] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 16 connected from local host ( uid=42 gid=42 pid=5313 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.536] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 16 disconnected
+[  5577.610] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 16 connected from local host ( uid=42 gid=42 pid=5313 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5577.620] AUDIT: Mon Sep 14 11:04:49 2020: 5177: client 16 disconnected
+[  5577.937] (II) PRLCONTROL: +GLPBuffer(0x564b4bb608b0, hpbuf=0x5f5f20ca, pid=5242, SB, GLXDraw=(0x564b4ba93090, id=8388621(0x80000d)), Draw=(0x564b4ba7ed60, id=8388620(0x80000c), redirect=0, sz=(1024x768)), Pix=(0x564b4b8447d0, sz=(1024x768)), tgt=0x20dd, fmt=0x20d9) created
+[  5577.937] (II) PRLCONTROL: OpenGL Composite overlay detected (Draw=(0x564b4ba7ed60, id=8388620(0x80000c)), GLXDraw=(0x564b4ba93090, id=8388621(0x80000d))).
+[  5577.937] (II) PRLCONTROL: OpenGL Compositing enabled.
+[  5689.782] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 15 disconnected
+[  5689.795] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 14 disconnected
+[  5689.795] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 13 disconnected
+[  5689.795] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 12 disconnected
+[  5689.795] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 11 disconnected
+[  5689.795] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 10 disconnected
+[  5689.795] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 9 disconnected
+[  5689.796] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 8 disconnected
+[  5689.807] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 6 disconnected
+[  5689.808] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 7 disconnected
+[  5689.809] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 6 connected from local host ( uid=42 gid=42 pid=5214 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 121
+[  5689.815] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 6 disconnected
+[  5689.895] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 1 disconnected
+[  5689.895] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 2 disconnected
+[  5689.895] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 3 disconnected
+[  5689.896] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 4 disconnected
+[  5689.897] (II) PRLCONTROL: -GLPBuffer(0x564b4ba7fac0, GlxDraw=0x564b4ba7f8b0, hpbuf=0x5f5f20c9, tgt=20DD) destroyed (0)
+[  5689.897] (II) PRLCONTROL: OpenGL Composite overlay lost (Draw=(0x564b4ba7ed60, id=8388620(0x80000c)), GLXDraw=(0x564b4ba93090, id=8388621(0x80000d))).
+[  5689.897] (II) PRLCONTROL: OpenGL Compositing disabled.
+[  5689.899] (II) PRLCONTROL: -GLPBuffer(0x564b4bb608b0, GlxDraw=0x564b4ba93090, hpbuf=0x5f5f20ca, tgt=20DD) destroyed (0)
+[  5689.899] AUDIT: Mon Sep 14 11:06:41 2020: 5177: client 5 disconnected
+[  5689.900] (II) PRLCONTROL: Composite overlay window lost
+[  5689.948] (II) Parallels Mouse: Sliding Mouse disabling [0]
+[  5690.259] (II) Parallels Mouse: Device was switched off
+[  5690.561] (II) Parallels Mouse: Device was closed
+[  5690.562] (II) Parallels Mouse: Link to Open Tools Gate was closed
+[  5690.562] (II) UnloadModule: "prlmouse"
+[  5690.562] (II) Parallels Mouse: Module was deinitialized
+[  5690.562] (II) evdev: AT Translated Set 2 keyboard: Close
+[  5690.562] (II) UnloadModule: "evdev"
+[  5690.562] (II) evdev: Parallels Virtual Mouse: Close
+[  5690.562] (II) UnloadModule: "evdev"
+[  5690.562] (II) evdev: Parallels Virtual Mouse: Close
+[  5690.562] (II) UnloadModule: "evdev"
+[  5690.562] (II) evdev: Sleep Button: Close
+[  5690.562] (II) UnloadModule: "evdev"
+[  5690.562] (II) evdev: Power Button: Close
+[  5690.562] (II) UnloadModule: "evdev"
+[  5690.562] (II) GLX: _PrlGLXScreenDeinit: GLX Parallels screen 0 deinitialized
+[  5690.562] (II) PRLVIDEL: Reset VGA text mode...
+[  5690.563] (II) PRLVIDEL: Text mode activated.
+[  5690.563] (II) PRLVIDEL: Frame buffer was successfully unmapped
+[  5690.563] (II) PRLVIDEL: Cursor deinitialized.
+[  5690.563] (II) PRLCOHERENCE: Coherence deinitialized
+[  5690.563] (II) PRLCONTROL: /proc/driver/prl_tg closed
+[  5690.566] (II) PRLCONTROL: Share states thread stopped
+[  5690.567] (II) PRLVIDEL: VESA link to Open Tools Gate was closed.
+[  5690.567] (II) PRLVIDEL: VESA Screen 0 closed
+[  5690.570] (II) Server terminated successfully (0). Closing log file.
