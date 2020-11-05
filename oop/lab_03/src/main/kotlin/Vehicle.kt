@@ -1,21 +1,21 @@
 interface Vehicle {
     val name: String
-    val velocity: Float
+    val velocity: Double
     val movementType: RaceType
-    fun start(distance: Float): Float
+    fun start(distance: Double): Double
 }
 
 interface TerrestrialVehicle : Vehicle {
     override val name: String
-    override val velocity: Float
-    val movementTime: Float
-    var restAmount: Float
+    override val velocity: Double
+    val movementTime: Double
+    var restAmount: Double
     override val movementType: RaceType
         get() = RaceType.TERRAIN
-    fun rest(): Float
-    override fun start(distance: Float): Float {
-        var tempDistance = 0f
-        var tempTime = 0f
+    fun rest(): Double
+    override fun start(distance: Double): Double {
+        var tempDistance = 0.0
+        var tempTime = 0.0
         while (tempDistance < distance) {
             if (tempDistance + movementTime * velocity < distance) {
                 tempDistance += velocity * movementTime
@@ -33,11 +33,11 @@ interface TerrestrialVehicle : Vehicle {
 
 interface AirVehicle : Vehicle {
     override val name: String
-    override val velocity: Float
+    override val velocity: Double
     override val movementType: RaceType
         get() = RaceType.AIR
-    fun flight(distance: Float): Float
-    override fun start(distance: Float): Float {
-        return flight(distance)
+    fun reduceDistance(distance: Double): Double
+    override fun start(distance: Double): Double {
+        return reduceDistance(distance) / velocity
     }
 }

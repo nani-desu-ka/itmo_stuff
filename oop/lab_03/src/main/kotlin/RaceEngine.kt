@@ -8,7 +8,7 @@ class RaceEngine {
             field = raceNumber
         }
 
-    fun createRace(raceType: RaceType, distance: Float) {
+    fun createRace(raceType: RaceType, distance: Double) {
         _races.add(Race(raceType, distance))
         if (tempRace == -1) {
             tempRace = 0
