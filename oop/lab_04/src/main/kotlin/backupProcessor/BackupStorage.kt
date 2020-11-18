@@ -11,7 +11,7 @@ class BackupStorage {
             return _storage[storageKey]!!
         }
     }
-    fun add(key: KotlinVersion, node: Node) {
-        _storage[key] = node
+    fun add(node: Node) {
+        _storage[node.version] = node
     }
 }

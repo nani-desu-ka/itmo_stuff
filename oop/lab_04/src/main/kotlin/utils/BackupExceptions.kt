@@ -1,4 +1,4 @@
 package utils
 
 class NodeNotFound(key: KotlinVersion) : Exception("Node not found: $key")
-class NoParticipantsFound : Exception("Race without participants")
+class UnknownStorageType(type: StorageType) : Exception("Storage type ($type) is not supported")

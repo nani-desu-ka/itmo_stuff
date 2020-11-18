@@ -1,9 +1,12 @@
+import backupProcessor.BackupManager
+import utils.*
+import java.io.File
+
 fun main() {
-
-}
-
-class Node {
-    private var _nodeType = 0 // delta || full
-    lateinit var deltaList: MutableList<String>
-    lateinit var complexList: MutableList<String>
+    val backuper = BackupManager()
+    val someFile = File("SomePathWhereFileStored")
+    println(backuper.CreateRestore(mutableListOf(someFile),
+        NodeType.FULL, StorageType.ARCHIVE, UpdateType.MAJOR,
+        "SomePathForBackup"))
+    println(backuper.LoadRestore(KotlinVersion(1, 0)))
 }
