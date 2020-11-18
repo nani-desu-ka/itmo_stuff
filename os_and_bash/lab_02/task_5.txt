@@ -1,0 +1,17 @@
+Average_Sleeping_Children_of_ParentID=0 is 7.50
+Average_Sleeping_Children_of_ParentID=1 is 6.53
+Average_Sleeping_Children_of_ParentID=2 is 21.04
+Average_Sleeping_Children_of_ParentID=707 is 1730.00
+Average_Sleeping_Children_of_ParentID=876 is 868.00
+Average_Sleeping_Children_of_ParentID=1014 is 254.14
+Average_Sleeping_Children_of_ParentID=1149 is 1786.00
+Average_Sleeping_Children_of_ParentID=1183 is 90.09
+Average_Sleeping_Children_of_ParentID=1209 is 152.92
+Average_Sleeping_Children_of_ParentID=1433 is 669.00
+Average_Sleeping_Children_of_ParentID=1439 is 2014.00
+Average_Sleeping_Children_of_ParentID=1504 is 1010.00
+Average_Sleeping_Children_of_ParentID=1715 is 186.36
+Average_Sleeping_Children_of_ParentID=2385 is 2052.00
+Average_Sleeping_Children_of_ParentID=2393 is 1030.00
+Average_Sleeping_Children_of_ParentID=10339 is 516.25
+Average_Sleeping_Children_of_ParentID=12077 is 692.33
