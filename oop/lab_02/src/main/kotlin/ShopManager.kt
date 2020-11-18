@@ -48,28 +48,34 @@ class ShopManager {
         return if (leastCost == -1) -1
         else tempShop.getCode()
     }
+    private fun checkCost(shopId: Int, productsAndAmount: MutableList<Pair<Int, Int>>): Int {
+        if (!_shopList.containsKey(shopId)) throw UnknownEntityException(shopId.toString())
+        for (pair in productsAndAmount) {
+            if (!_productList.containsKey(pair.first)) throw UnknownEntityException(pair.first.toString())
+        }
+        return _shopList[shopId]!!.checkCost(productsAndAmount)
+    }
     fun buy(shopId: Int, productsAndAmount: MutableList<Pair<Int, Int>>): String {
         if (!_shopList.containsKey(shopId)) throw UnknownEntityException(shopId.toString())
         for (pair in productsAndAmount) {
             if (!_productList.containsKey(pair.first)) throw UnknownEntityException(pair.first.toString())
         }
-        val check = _shopList[shopId]!!.buy(productsAndAmount)
-        return if (check == -1) "Покупка невозможна"
-        else check.toString()
+        return "Совершена покупка на ${_shopList[shopId]!!.buy(productsAndAmount)}"
     }
     fun buyProfitable(productsAndAmount: MutableList<Pair<Int, Int>>): String {
         var leastCheck = -1
         lateinit var leastCheckShop: Shop
         for (shop in _shopList.values) {
-            val check = buy(shop.getCode(), productsAndAmount)
-            if (check == "Покупка невозможно") continue
-            if (check.toInt() < leastCheck || leastCheck == -1) {
-                leastCheck = check.toInt()
+            val check = checkCost(shop.getCode(), productsAndAmount)
+            if (check == -1) continue
+            if (check < leastCheck || leastCheck == -1) {
+                leastCheck = check
                 leastCheckShop = shop
             }
         }
-        return if (leastCheck == -1) "Покупка невозможна ни в одном из магазинов"
-        else leastCheckShop.getCode().toString()
+        if (leastCheck == -1) throw UnableToBuyException()
+        return buy(leastCheckShop.getCode(), productsAndAmount) + " в магазине " +
+                leastCheckShop.getCode().toString() + " - " + leastCheckShop.name
     }
     fun whatCanIBuy(shopId: Int, cash: Int): MutableList<Pair<Int, Int>> {
         if (!_shopList.containsKey(shopId)) throw UnknownEntityException(shopId.toString())

@@ -32,12 +32,21 @@ class Shop(shopCode: Int, shopName: String, shopAddress: String) {
         }
         return tempList
     }
-    fun buy(productsAndAmount: MutableList<Pair<Int, Int>>): Int {
+    fun checkCost(productsAndAmount: MutableList<Pair<Int, Int>>): Int {
         var check = 0
         for (pair in productsAndAmount) {
             if (!_products.containsKey(pair.first)) return -1
             if (_products[pair.first]!!.first < pair.second) return -1
             check += _products[pair.first]!!.second * pair.second
+        }
+        return check
+    }
+    fun buy(productsAndAmount: MutableList<Pair<Int, Int>>): Int {
+        val check = checkCost(productsAndAmount)
+        if (check == -1) throw UnableToBuyException()
+        for (pair in productsAndAmount) {
+            val tempAmount = _products[pair.first]!!.first - pair.second
+            _products[pair.first] = Pair(tempAmount, _products[pair.first]!!.second)
         }
         return check
     }

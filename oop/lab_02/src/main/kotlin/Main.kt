@@ -34,8 +34,9 @@ fun main() {
         println(manager.whereIsCheaperShopId("Кукурузка"))
         println(manager.whereIsCheaperShopName("Кукурузка"))
         println(manager.whatCanIBuy(1, 50))
-        val toBuy = mutableListOf(Pair(1, 3), Pair(2, 10), Pair(6, 3))
+        val toBuy = mutableListOf(Pair(1, 2), Pair(2, 10), Pair(6, 2))
         println(manager.buy(1, toBuy))
+        println(manager.buyProfitable(toBuy))
     } catch (e: Exception) {
         println(e)
         return
