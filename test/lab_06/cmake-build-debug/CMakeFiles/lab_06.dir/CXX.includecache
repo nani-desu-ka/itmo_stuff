@@ -6,121 +6,125 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/user/Desktop/lab_06/UserInterface.cpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/UserInterface.cpp
 UserInterface.hpp
-C:/Users/user/Desktop/lab_06/UserInterface.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/UserInterface.hpp
 entities/include/TeamLead.hpp
-C:/Users/user/Desktop/lab_06/entities/include/TeamLead.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/TeamLead.hpp
 entities/include/Rabotyaga.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Rabotyaga.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Rabotyaga.hpp
 utils/CustomExceptions.hpp
-C:/Users/user/Desktop/lab_06/utils/CustomExceptions.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/utils/CustomExceptions.hpp
 
-C:/Users/user/Desktop/lab_06/UserInterface.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/UserInterface.hpp
 iostream
-C:/Users/user/Desktop/lab_06/iostream
+/home/just/git_stuff/itmo_stuff/test/lab_06/iostream
 entities/include/Employer.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Employer.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Employer.hpp
 utils/Enums.hpp
-C:/Users/user/Desktop/lab_06/utils/Enums.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/utils/Enums.hpp
 entities/include/Manager.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Manager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Manager.hpp
 entities/include/Task.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Task.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Task.hpp
 
-C:/Users/user/Desktop/lab_06/entities/include/Director.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Director.hpp
 Employer.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Employer.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Employer.hpp
 
-C:/Users/user/Desktop/lab_06/entities/include/Employer.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Employer.hpp
 iostream
 -
 vector
 -
 list
 -
-Director.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Director.hpp
 
-C:/Users/user/Desktop/lab_06/entities/include/Manager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Manager.hpp
 ../../managers/ManagerIncluder.hpp
-C:/Users/user/Desktop/lab_06/managers/ManagerIncluder.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/ManagerIncluder.hpp
 
-C:/Users/user/Desktop/lab_06/entities/include/Rabotyaga.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Rabotyaga.hpp
 Employer.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Employer.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Employer.hpp
 
-C:/Users/user/Desktop/lab_06/entities/include/Report.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Report.hpp
 vector
-C:/Users/user/Desktop/lab_06/entities/include/vector
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/vector
 
-C:/Users/user/Desktop/lab_06/entities/include/Task.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Task.hpp
 iostream
 -
 Employer.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Employer.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Employer.hpp
 ../../utils/Enums.hpp
-C:/Users/user/Desktop/lab_06/utils/Enums.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/utils/Enums.hpp
 
-C:/Users/user/Desktop/lab_06/entities/include/TeamLead.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/TeamLead.hpp
 Employer.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Employer.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Employer.hpp
 
-C:/Users/user/Desktop/lab_06/entities/src/Employer.cpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/Employer.cpp
 ../include/Employer.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Employer.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Employer.hpp
 ../../utils/CustomExceptions.hpp
-C:/Users/user/Desktop/lab_06/utils/CustomExceptions.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/utils/CustomExceptions.hpp
 ../include/Manager.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Manager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Manager.hpp
 
-C:/Users/user/Desktop/lab_06/entities/src/TeamLead.cpp
-../include/TeamLead.hpp
-C:/Users/user/Desktop/lab_06/entities/include/TeamLead.hpp
-../include/Manager.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Manager.hpp
-
-C:/Users/user/Desktop/lab_06/managers/ManagerIncluder.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/ManagerIncluder.hpp
 include/HRManager.hpp
-C:/Users/user/Desktop/lab_06/managers/include/HRManager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/HRManager.hpp
 include/LogManager.hpp
-C:/Users/user/Desktop/lab_06/managers/include/LogManager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/LogManager.hpp
 include/ReportManager.hpp
-C:/Users/user/Desktop/lab_06/managers/include/ReportManager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/ReportManager.hpp
 include/TaskManager.hpp
-C:/Users/user/Desktop/lab_06/managers/include/TaskManager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/TaskManager.hpp
 
-C:/Users/user/Desktop/lab_06/managers/include/HRManager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/HRManager.hpp
 ../../entities/include/Director.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Director.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Director.hpp
 list
 -
 
-C:/Users/user/Desktop/lab_06/managers/include/LogManager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/LogManager.hpp
+iostream
+-
 unordered_map
-C:/Users/user/Desktop/lab_06/managers/include/unordered_map
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/unordered_map
+vector
+-
 
-C:/Users/user/Desktop/lab_06/managers/include/ReportManager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/ReportManager.hpp
 ../../entities/include/Report.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Report.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Report.hpp
 iostream
 -
 
-C:/Users/user/Desktop/lab_06/managers/include/TaskManager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/TaskManager.hpp
 list
 -
 vector
 -
 ../../entities/include/Task.hpp
-C:/Users/user/Desktop/lab_06/entities/include/Task.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Task.hpp
 
-C:/Users/user/Desktop/lab_06/managers/src/HRManager.cpp
-../include/HRManager.hpp
-C:/Users/user/Desktop/lab_06/managers/include/HRManager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/src/LogManager.cpp
+../include/LogManager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/LogManager.hpp
+../../utils/CustomExceptions.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/utils/CustomExceptions.hpp
 
-C:/Users/user/Desktop/lab_06/utils/CustomExceptions.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/src/TaskManager.cpp
+../include/TaskManager.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/TaskManager.hpp
+../../utils/CustomExceptions.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/utils/CustomExceptions.hpp
+
+/home/just/git_stuff/itmo_stuff/test/lab_06/utils/CustomExceptions.hpp
 iostream
 -
 
-C:/Users/user/Desktop/lab_06/utils/Enums.hpp
+/home/just/git_stuff/itmo_stuff/test/lab_06/utils/Enums.hpp
 

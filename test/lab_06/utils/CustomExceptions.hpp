@@ -1,31 +1,39 @@
 #include <iostream>
 
-// âãâ  à §­ë¥ ¨áª«îç¥­¨ï
+// ï¿½ï¿½ï¿½ à §ï¿½ï¿½ ï¿½áª«ï¿½ç¥­ï¿½ï¿½
 
 class SelectorException: public std::exception {
     std::string _error;
 public:
-    SelectorException(std::string);
-    const char * what() const noexcept override;
+    SelectorException(std::string error) : _error(error){}
+    const char * what() const noexcept {
+        return _error.c_str();
+    }
 };
 
 class EmployerException: public std::exception {
     std::string _error;
 public:
-    EmployerException(std::string);
-    const char * what() const noexcept override;
+    EmployerException(std::string error) : _error(error){}
+    const char * what() const noexcept {
+        return _error.c_str();
+    }
 };
 
 class TaskException: public std::exception {
     std::string _error;
 public:
-    TaskException(std::string);
-    const char * what() const noexcept override;
+    TaskException(std::string error) : _error(error){}
+    const char * what() const noexcept {
+        return _error.c_str();
+    }
 };
 
 class LogException: public std::exception {
     std::string _error;
 public:
-    LogException(std::string);
-    const char * what() const noexcept override;
+    LogException(std::string error) : _error(error){}
+    const char * what() const noexcept {
+        return _error.c_str();
+    }
 };

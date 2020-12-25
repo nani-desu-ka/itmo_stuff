@@ -3,7 +3,6 @@
 #include <iostream>
 #include <vector>
 #include <list>
-#include "Director.hpp"
 
 class Employer {
 public:

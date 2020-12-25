@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lab_06"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/just/git_stuff/itmo_stuff/test/lab_06"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/just/git_stuff/itmo_stuff/test/lab_06"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/just/git_stuff/itmo_stuff/test/lab_06"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab_06">
+				<Option output="/home/just/git_stuff/itmo_stuff/test/lab_06/lab_06" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/just/git_stuff/itmo_stuff/test/lab_06"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 lab_06"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab_06/fast">
+				<Option output="/home/just/git_stuff/itmo_stuff/test/lab_06/lab_06" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/just/git_stuff/itmo_stuff/test/lab_06"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 lab_06/fast"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/home/just/git_stuff/itmo_stuff/test/lab_06/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/UserInterface.cpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/UserInterface.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Director.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Employer.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Manager.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Rabotyaga.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Report.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/Task.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/include/TeamLead.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/Director.cpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/Employer.cpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/Manager.cpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/Manager.h">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/Rabotyaga.cpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/Task.cpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/TeamLead.cpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/main.cpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/managers/ManagerIncluder.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/HRManager.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/LogManager.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/ReportManager.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/managers/include/TaskManager.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/managers/src/HRManager.cpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/managers/src/LogManager.cpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/managers/src/TaskManager.cpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/utils/CustomExceptions.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/utils/Enums.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/utils/TimeChecker.hpp">
+			<Option target="lab_06"/>
+		</Unit>
+		<Unit filename="/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
