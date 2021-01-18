@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="lab_11" targetName="lab_11" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bca776df-f7e2-4a6c-ae32-060a8cd2764b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab_09/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../oop/lab_04/src/main/kotlin/backupProcessor/BackupManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../oop/lab_04/src/main/kotlin/backupProcessor/BackupManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../oop/lab_04/src/main/kotlin/backupProcessor/BackupStorage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../oop/lab_04/src/main/kotlin/backupProcessor/BackupStorage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../oop/lab_04/src/main/kotlin/backupProcessor/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../oop/lab_04/src/main/kotlin/backupProcessor/Node.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../oop/lab_04/src/main/kotlin/utils/BackupExceptions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../oop/lab_04/src/main/kotlin/utils/BackupExceptions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../oop/lab_04/src/main/kotlin/utils/Enums.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../oop/lab_04/src/main/kotlin/utils/Enums.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/cmake-build-debug/lab_09.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/cmake-build-debug/lab_09.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_09/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_09/main.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\user\Documents\GitHub\itmo_stuff\programming\1_half\lab_11\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kh6O7LGfYfkH4nF6c9IBUh287Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="lab_11" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab_11" TARGET_NAME="lab_11" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab_11" RUN_TARGET_NAME="lab_11">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bca776df-f7e2-4a6c-ae32-060a8cd2764b" name="Default Changelist" comment="" />
+      <created>1606140440879</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606140440879</updated>
+      <workItem from="1606140445062" duration="1429000" />
+      <workItem from="1606145703660" duration="728000" />
+      <workItem from="1606154305151" duration="1498000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1876" height="261" key="GridCell.Tab.0.bottom" timestamp="1606155816275">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1606155816275" />
+    <state width="1876" height="261" key="GridCell.Tab.0.center" timestamp="1606155816275">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="261" key="GridCell.Tab.0.center/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1606155816275" />
+    <state width="1876" height="261" key="GridCell.Tab.0.left" timestamp="1606155816275">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="261" key="GridCell.Tab.0.left/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1606155816275" />
+    <state width="1876" height="261" key="GridCell.Tab.0.right" timestamp="1606155816275">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="261" key="GridCell.Tab.0.right/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1606155816275" />
+    <state x="636" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1606154306580">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1606154306580" />
+  </component>
+</project>

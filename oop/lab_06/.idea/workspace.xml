@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bce776ae-78d3-4a2a-94ae-b36035f0c55f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../programming/1_half/lab_10/.idea/lab_10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../programming/1_half/lab_11/.idea/lab_11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../programming/1_half/lab_12/.idea/lab_12.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../programming/1_half/lab_13/.idea/lab_13.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../programming/1_half/lab_13/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../programming/1_half/lab_13/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../programming/1_half/lab_14/.idea/lab_13.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../programming/1_half/lab_15/.idea/lab_15.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test/lab_06/.idea/lab_06.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test/lab_06/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_04/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_04/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_04/src/main/kotlin/backupProcessor/BackupManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_04/src/main/kotlin/backupProcessor/BackupManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_04/src/main/kotlin/backupProcessor/BackupStorage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_04/src/main/kotlin/backupProcessor/BackupStorage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_04/src/main/kotlin/backupProcessor/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_04/src/main/kotlin/backupProcessor/Node.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_04/src/main/kotlin/utils/BackupExceptions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_04/src/main/kotlin/utils/BackupExceptions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_04/src/main/kotlin/utils/Enums.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_04/src/main/kotlin/utils/Enums.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../os_and_bash/lab_05/1/mem.bash" beforeDir="false" afterPath="$PROJECT_DIR$/../../os_and_bash/lab_05/1/mem.bash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../os_and_bash/lab_05/1/output_1.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../os_and_bash/lab_05/1/output_1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../os_and_bash/lab_05/1/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../os_and_bash/lab_05/1/report.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../os_and_bash/lab_05/2/newmem.bash" beforeDir="false" afterPath="$PROJECT_DIR$/../../os_and_bash/lab_05/2/newmem.bash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../os_and_bash/lab_05/2/runner.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../os_and_bash/lab_05/2/runner.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/CMakeFiles/lab_09.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/lab_09.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/cmake-build-debug/lab_09.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_09/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_09/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_13/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/3.17.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/lab_13.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/lab_13.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/lab_13.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/lab_13.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/lab_13.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/lab_13.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/lab_13.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/lab_13.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/lab_13.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/lab_13.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/mp3_test.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/mp3_test.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/mp3_test.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/mp3_test.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/mp3_test.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/mp3_test.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/mp3_test.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_13/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../programming/1_half/lab_13/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../programming/1_half/lab_13/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.16.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.16.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.16.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.16.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.16.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.17.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/3.17.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/UserInterface.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/entities/src/Director.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/entities/src/Employer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/entities/src/Manager.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/entities/src/Rabotyaga.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/entities/src/Task.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/entities/src/TeamLead.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/managers/src/HRManager.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/managers/src/LogManager.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/managers/src/TaskManager.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/lab_06.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/UserInterface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/UserInterface.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/UserInterface.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/UserInterface.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/entities/include/Director.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/entities/include/Employer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/entities/include/Employer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/entities/include/Manager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/entities/include/Manager.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/entities/include/Rabotyaga.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/entities/include/Report.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/entities/include/Report.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/entities/include/Task.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/entities/include/Task.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/entities/include/TeamLead.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/entities/src/Director.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/entities/src/Employer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/entities/src/Employer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/entities/src/Rabotyaga.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/entities/src/Task.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/entities/src/Task.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/entities/src/TeamLead.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/lab_06.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/lab_06.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/managers/ManagerIncluder.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/managers/ManagerIncluder.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/managers/include/HRManager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/managers/include/HRManager.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/managers/include/LogManager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/managers/include/LogManager.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/managers/include/ReportManager.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/managers/include/TaskManager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/managers/include/TaskManager.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/managers/src/HRManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/managers/src/HRManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/managers/src/TaskManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/managers/src/TaskManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/utils/CustomExceptions.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/utils/CustomExceptions.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/utils/Enums.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/utils/Enums.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/lab_06/Кратенькое_Описание.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../test/lab_06/Кратенькое_Описание.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1lk4LPkgJLCe6rVtIw1ue9cQyMX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="managers" />
+      <recent name="utils" />
+      <recent name="entities" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\GitHub\itmo_stuff\oop\lab_06\src\main\kotlin\utils" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="untitled.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bce776ae-78d3-4a2a-94ae-b36035f0c55f" name="Default Changelist" comment="" />
+      <created>1608127698085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608127698085</updated>
+      <workItem from="1608127713805" duration="15849000" />
+      <workItem from="1608223455653" duration="10898000" />
+      <workItem from="1608297046041" duration="5187000" />
+      <workItem from="1608752979364" duration="38000" />
+      <workItem from="1608833437878" duration="12745000" />
+      <workItem from="1608895937673" duration="12008000" />
+      <workItem from="1609331866153" duration="4865000" />
+      <workItem from="1609602968030" duration="1598000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="739" y="286" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1609603410915">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="286" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1609603410915" />
+    <state x="2474" y="472" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040/1920.235.1440.860@1920.235.1440.860" timestamp="1608842692096" />
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1608752988518">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1608752988518" />
+    <state width="1877" height="361" key="GridCell.Tab.0.bottom" timestamp="1609338251978">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="361" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1609338251978" />
+    <state width="1877" height="361" key="GridCell.Tab.0.center" timestamp="1609338251977">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="361" key="GridCell.Tab.0.center/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1609338251977" />
+    <state width="1877" height="361" key="GridCell.Tab.0.left" timestamp="1609338251977">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="361" key="GridCell.Tab.0.left/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1609338251977" />
+    <state width="1877" height="361" key="GridCell.Tab.0.right" timestamp="1609338251977">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="361" key="GridCell.Tab.0.right/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1609338251977" />
+    <state x="668" y="95" width="583" height="849" key="find.popup" timestamp="1609337413518">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="95" width="583" height="849" key="find.popup/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1609337413518" />
+    <state x="457" y="121" key="new project wizard" timestamp="1608753013439">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="457" y="121" key="new project wizard/0.0.1920.1040/1920.235.1440.860@0.0.1920.1040" timestamp="1608753013439" />
+  </component>
+</project>
