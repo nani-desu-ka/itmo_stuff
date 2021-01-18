@@ -1,24 +1,19 @@
 #include "UserInterface.hpp"
-#include "entities/include/TeamLead.hpp"
-#include "entities/include/Rabotyaga.hpp"
 #include "utils/CustomExceptions.hpp"
 
-void UserInterface::hire_new_employer(std::string name, Employer *head = nullptr) {
+void UserInterface::hire_new_employer(std::string name, Employer *head) {
     if (name.empty()) throw EmployerException("Empty name");
-    Manager::get()->hrManager.add_employer(new Rabotyaga(name, head));
+    Manager::get()->hrManager.add_employer(new Employer(name, head));
 }
-void UserInterface::set_new_teamlead(Employer *employer) {
+void UserInterface::new_teamlead(Employer *employer) {
     if (employer->head != nullptr) {
         employer->head->remove_vassal(employer);
         employer->head = Manager::get()->hrManager.director;
     }
-    Manager::get()->hrManager.director->head;
-    Manager::get()->hrManager.director->add_vassal(employer);
     Manager::get()->hrManager.director->add_vassal(employer);
 }
 void UserInterface::set_new_head(Employer *employer, Employer *new_head) {
-    if (employer->head != nullptr) employer->head->remove_vassal(employer);
-    employer->head = new_head;
+    new_head->add_vassal(employer);
 }
 void UserInterface::fire_employer(Employer *employer) {
     Manager::get()->hrManager.remove_employer(employer);
@@ -48,4 +43,26 @@ std::vector<Task> UserInterface::find_tasks(Employer *employer, Selector selecto
         default:
             throw SelectorException("EMPLOYER || EMPLOYER_TOUCHED only");
     }
+}
+
+void UserInterface::start_sprint() {
+    for (auto employer : Manager::get()->hrManager.employers) {
+        employer->clean_reports();
+    }
+    sprint_active = true;
+}
+
+void UserInterface::end_day() {
+    for (auto employer : Manager::get()->hrManager.employers) {
+        employer->write_report();
+    }
+}
+
+std::vector<TotalSprintReport> UserInterface::end_sprint() {
+    sprint_active = false;
+    return Manager::get()->hrManager.director->get_sprint();
+}
+
+void UserInterface::print_ierarchy() {
+    Manager::get()->hrManager.director->print_ierarchy(0);
 }

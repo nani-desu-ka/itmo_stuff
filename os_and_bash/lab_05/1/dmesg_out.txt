@@ -1,0 +1,2 @@
+[ 1660.841080] [ 9913]     0  9913   661861   415796  4911104   187442             0 bash
+[ 1660.854624] Out of memory: Killed process 9913 (bash) total-vm:2647444kB, anon-rss:1663184kB, file-rss:0kB, shmem-rss:0kB, UID:0

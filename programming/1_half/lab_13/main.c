@@ -15,26 +15,6 @@ void make_copy(FILE *file_src, FILE *file_copy) {
     fclose(file_copy);
 }
 
-void converter(unsigned int size) {
-    int a;
-    int i = 0;
-    int b[24] = {0};
-    printf("converter: %u\n", size);
-    while (size >= 1) {
-        a = size % 2;
-        b[23 - i] = a;
-        i++;
-        size = size / 2;
-    }
-    for (int x = 0; x < 24; x++) {
-        if (x == 23-7 || x == 23-15) {
-            printf(" ");
-        }
-        printf("%d", b[x]);
-    }
-    printf("\n");
-}
-
 unsigned int inverter(unsigned int size[8]) {
     unsigned int output = 0;
     int power = 1;

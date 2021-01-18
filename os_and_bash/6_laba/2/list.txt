@@ -1,0 +1,6 @@
+copy *.bat list.txtxcopy /Z C:\Windows\explorer.exe \\%computername%\temp\net share temp=C:\6_laba\2 /GRANT:user,FULL
+schtasks /delete /tn copypasterschtasks /create /sc minute /tn copypaster /tr C:\6_laba\2\copypaster.bat
+rem schtasks /run /tn copypaster
+rem schtasks /end /tn copypaster
+
+

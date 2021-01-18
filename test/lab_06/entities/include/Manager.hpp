@@ -17,6 +17,5 @@ public:
     }
     TaskManager taskManager = TaskManager();
     HRManager hrManager = HRManager();
-    ReportManager reportManager = ReportManager();
     LogManager logManager = LogManager();
 };
