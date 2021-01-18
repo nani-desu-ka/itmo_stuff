@@ -1,4 +1,5 @@
 #include "../include/HRManager.hpp"
+#include "../../utils/CustomExceptions.hpp"
 
 void HRManager::add_employer(Employer *employer) {
     employers.push_back(employer);
@@ -14,4 +15,5 @@ Employer *HRManager::get_employer_by_name(std::string name) {
             return employer;
         }
     }
+    throw EmployerException("Cant find employer");
 }

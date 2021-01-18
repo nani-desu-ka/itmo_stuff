@@ -1,0 +1,3 @@
+C:/Users/user/Documents/GitHub/itmo_stuff/programming/1_half/lab_15/cmake-build-debug/CMakeFiles/lab_15.dir
+C:/Users/user/Documents/GitHub/itmo_stuff/programming/1_half/lab_15/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/user/Documents/GitHub/itmo_stuff/programming/1_half/lab_15/cmake-build-debug/CMakeFiles/rebuild_cache.dir

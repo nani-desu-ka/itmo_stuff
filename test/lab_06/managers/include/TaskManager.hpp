@@ -6,7 +6,7 @@
 
 class TaskManager {
 public:
-    void add_task(Task);
+    int add_task(Task);
     Task &find_task_by_id(int);
     std::vector<Task> find_tasks_by_employer(Employer *);
     std::vector<Task> find_tasks_employer_edited(Employer *);

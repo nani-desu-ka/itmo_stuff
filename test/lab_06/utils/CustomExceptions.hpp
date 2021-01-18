@@ -1,6 +1,6 @@
 #include <iostream>
 
-// ��� ࠧ�� �᪫�祭��
+//тута разные исключения
 
 class SelectorException: public std::exception {
     std::string _error;

@@ -34,6 +34,7 @@ std::vector<Task> TaskManager::find_tasks_employer_edited(Employer *employer) {
     }
     return output;
 }
-void TaskManager::add_task(Task task) {
+int TaskManager::add_task(Task task) {
     tasks.push_back(task);
+    return tasks.size() - 1;
 }
