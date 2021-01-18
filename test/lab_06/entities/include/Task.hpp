@@ -15,6 +15,4 @@ public:
     bool modified = false;
     Employer *responsible_employer;
     void task_modification(std::string); //модификация задачи
-    void activate_task();
-    void resolve_task();
 };

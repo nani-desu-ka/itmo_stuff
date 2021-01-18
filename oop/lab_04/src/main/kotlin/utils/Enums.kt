@@ -18,10 +18,6 @@ enum class UpdateType {
 enum class StorageLimit {
     DATE,
     AMOUNT,
-    SIZE
-}
-
-enum class DeletePreferences {
-    MORE,
-    LESS
+    SIZE,
+    HYBRID
 }

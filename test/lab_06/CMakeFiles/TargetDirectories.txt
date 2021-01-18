@@ -1,3 +1,3 @@
-C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir
-C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/CMakeFiles/edit_cache.dir
-C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/CMakeFiles/rebuild_cache.dir
+/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/rebuild_cache.dir
+/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/edit_cache.dir
+/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir

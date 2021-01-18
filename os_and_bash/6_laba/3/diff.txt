@@ -1,3 +1,0 @@
-Сравнение файлов servicies.txt и SERVICIES_2.TXT
-FC: различия не найдены
-

@@ -2,11 +2,10 @@
 
 // тута разные енумы
 
-enum ChangeType {
-    OPENED_TASK,
-    ACTIVATED_TASK,
-    RESOLVED_TASK,
-    MODIFIED_TASK,
+enum EmployerType {
+    PESHKA_NAVALNOGO, //обычный работник
+    TEAMLEAD, //тимлид (у него в подчинении все обычные работники)
+    DIRECTOR, //управляющий (у него в подчинении все тимлиды)
 };
 
 enum Selector {

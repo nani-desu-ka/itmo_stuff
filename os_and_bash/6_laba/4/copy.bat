@@ -1,1 +1,0 @@
-copy 4.bat list.txt

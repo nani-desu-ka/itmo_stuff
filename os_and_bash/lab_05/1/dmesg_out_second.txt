@@ -1,9 +1,0 @@
-[ 2021.682602] CPU: 0 PID: 13329 Comm: bash Kdump: loaded Tainted: G                 ---------r-  - 4.18.0-193.el8.x86_64 #1
-[ 2021.910962] [13329]     0 13329   396937   245355  2789376    92910             0 bash
-[ 2021.923014] Out of memory: Killed process 13329 (bash) total-vm:1587748kB, anon-rss:981420kB, file-rss:0kB, shmem-rss:0kB, UID:0
-[ 2022.090552] oom_reaper: reaped process 13329 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
-[ 2021.912757] [13330]     0 13330   318793   165915  2162688    94219             0 bash
-[ 2196.738761] CPU: 0 PID: 13330 Comm: bash Kdump: loaded Tainted: G                 ---------r-  - 4.18.0-193.el8.x86_64 #1
-[ 2196.969044] [13330]     0 13330   663313   417589  4923392   187062             0 bash
-[ 2196.977602] Out of memory: Killed process 13330 (bash) total-vm:2653252kB, anon-rss:1670356kB, file-rss:0kB, shmem-rss:0kB, UID:0
-[ 2197.314475] oom_reaper: reaped process 13330 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB

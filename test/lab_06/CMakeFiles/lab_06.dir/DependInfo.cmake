@@ -4,17 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/UserInterface.cpp" "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/UserInterface.cpp.obj"
-  "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/entities/src/Employer.cpp" "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/entities/src/Employer.cpp.obj"
-  "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/entities/src/Manager.cpp" "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/entities/src/Manager.cpp.obj"
-  "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/entities/src/Report.cpp" "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/entities/src/Report.cpp.obj"
-  "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/entities/src/Task.cpp" "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/entities/src/Task.cpp.obj"
-  "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/main.cpp" "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/main.cpp.obj"
-  "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/managers/src/HRManager.cpp" "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/managers/src/HRManager.cpp.obj"
-  "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/managers/src/LogManager.cpp" "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/managers/src/LogManager.cpp.obj"
-  "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/managers/src/TaskManager.cpp" "C:/Users/user/Documents/GitHub/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/managers/src/TaskManager.cpp.obj"
+  "/home/just/git_stuff/itmo_stuff/test/lab_06/UserInterface.cpp" "/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/UserInterface.cpp.o"
+  "/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/Director.cpp" "/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/entities/src/Director.cpp.o"
+  "/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/Employer.cpp" "/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/entities/src/Employer.cpp.o"
+  "/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/Manager.cpp" "/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/entities/src/Manager.cpp.o"
+  "/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/Rabotyaga.cpp" "/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/entities/src/Rabotyaga.cpp.o"
+  "/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/Task.cpp" "/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/entities/src/Task.cpp.o"
+  "/home/just/git_stuff/itmo_stuff/test/lab_06/entities/src/TeamLead.cpp" "/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/entities/src/TeamLead.cpp.o"
+  "/home/just/git_stuff/itmo_stuff/test/lab_06/main.cpp" "/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/main.cpp.o"
+  "/home/just/git_stuff/itmo_stuff/test/lab_06/managers/src/HRManager.cpp" "/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/managers/src/HRManager.cpp.o"
+  "/home/just/git_stuff/itmo_stuff/test/lab_06/managers/src/LogManager.cpp" "/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/managers/src/LogManager.cpp.o"
+  "/home/just/git_stuff/itmo_stuff/test/lab_06/managers/src/TaskManager.cpp" "/home/just/git_stuff/itmo_stuff/test/lab_06/CMakeFiles/lab_06.dir/managers/src/TaskManager.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
